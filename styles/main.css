@@ -1447,10 +1447,13 @@ body {
     margin-top: -15px;
   }
 
+<<<<<<< HEAD
   .shop-cart::before {
     display: none;
   }
 
+=======
+>>>>>>> daab4498f5dfdc417691d5e061687e12e6720b01
   .header__list {
     flex-direction: column;
     justify-content: space-around;
