@@ -57,6 +57,7 @@ const requireDir = require("require-dir"),
             src: "./src/.htaccess",
             dist: "./dist/"
         }
+        
     };
 
 requireDir("./gulp-tasks/");
