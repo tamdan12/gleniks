@@ -30,6 +30,9 @@
         padding: 10px 0;
     }
 
+    &__menu {
+    }
+
     &__logo {
         display: flex;
         align-items: center;
@@ -84,6 +87,7 @@
 
 .header-contacts {
     text-align: center;
+    margin-right: 1rem;
 
     &__link {
         margin-top: 0.25rem;
@@ -106,6 +110,8 @@
 .header-callback {
     display: flex;
     flex-direction: column;
+    margin-right: 1rem;
+    
 
     &__link {
         padding: 0.5rem .75rem;
@@ -120,14 +126,9 @@
     }
 }
 
-.lang-choise {
-    &__btn {
-        color: $main-color;
-        font-weight: 700;
-    }
-}
-
 .shop-cart {
+    position: relative;
+
     background: #FCFCFC;
     border: 0.5px solid #B8ACA9;
     box-sizing: border-box;
@@ -137,7 +138,25 @@
     padding-bottom: 0.25rem;
     padding-left: 0.75rem;
     padding-right: 0.75rem;
+    margin-right: 1rem;
+    &::before {
+        content: '';
+        position: absolute;
+        height: 90%;
+        border-left: 1px solid $sec-color;
+        left: -.5rem;
+    }
+
 }
+
+.lang-choise {
+    &__btn {
+        color: $main-color;
+        font-weight: 700;
+    }
+}
+
+
 
 
 .li-contacts-mob {

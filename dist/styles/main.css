@@ -1120,6 +1120,7 @@ body {
 
 .header-contacts {
   text-align: center;
+  margin-right: 1rem;
 }
 
 .header-contacts__link {
@@ -1141,6 +1142,7 @@ body {
 .header-callback {
   display: flex;
   flex-direction: column;
+  margin-right: 1rem;
 }
 
 .header-callback__link {
@@ -1155,12 +1157,8 @@ body {
   transform: translateY(0.4rem);
 }
 
-.lang-choise__btn {
-  color: #000C31;
-  font-weight: 700;
-}
-
 .shop-cart {
+  position: relative;
   background: #FCFCFC;
   border: 0.5px solid #B8ACA9;
   box-sizing: border-box;
@@ -1170,6 +1168,20 @@ body {
   padding-bottom: 0.25rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+  margin-right: 1rem;
+}
+
+.shop-cart::before {
+  content: '';
+  position: absolute;
+  height: 90%;
+  border-left: 1px solid #8A8382;
+  left: -.5rem;
+}
+
+.lang-choise__btn {
+  color: #000C31;
+  font-weight: 700;
 }
 
 .li-contacts-mob {
@@ -1351,7 +1363,7 @@ body {
   width: 450px;
   height: 120px;
   top: -10px;
-  left: calc(-100% - 180px);
+  left: calc(-100% - 160px);
 }
 
 .page1-h1__decor-text {
