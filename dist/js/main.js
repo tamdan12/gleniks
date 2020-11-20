@@ -86,38 +86,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/blocks/modules/cases-slider/cases-slider.js":
-/*!*********************************************************!*\
-  !*** ./src/blocks/modules/cases-slider/cases-slider.js ***!
-  \*********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-var menu = ['Slide 1', 'Slide 2', 'Slide 3'];
-var mySwiper = new Swiper('.swiper-container', {
-  autoHeight: true,
-  speed: 300,
-  cubeEffect: {
-    slideShadows: false,
-    shadow: false
-  },
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    renderBullet: function renderBullet(index, className) {
-      return '<span class="' + className + '">' + menu[index] + '</span>';
-    }
-  },
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev'
-  }
-});
-
-/***/ }),
-
 /***/ "./src/blocks/modules/footer/footer.js":
 /*!*********************************************!*\
   !*** ./src/blocks/modules/footer/footer.js ***!
@@ -205,25 +173,6 @@ document.addEventListener("scroll", function (e) {
 
 /***/ }),
 
-/***/ "./src/blocks/modules/page-form/page-form.js":
-/*!***************************************************!*\
-  !*** ./src/blocks/modules/page-form/page-form.js ***!
-  \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-modules.define('page-form', ['i-bem-dom'], function (provide, bemDom) {
-  provide(bemDom.declBlock(this.name, {
-    onSetMod: {
-      js: {
-        inited: function inited() {}
-      }
-    }
-  }));
-});
-
-/***/ }),
-
 /***/ "./src/js/import/modules.js":
 /*!**********************************!*\
   !*** ./src/js/import/modules.js ***!
@@ -235,14 +184,8 @@ modules.define('page-form', ['i-bem-dom'], function (provide, bemDom) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! %modules%/header/header */ "./src/blocks/modules/header/header.js");
 /* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_modules_header_header__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _modules_cases_slider_cases_slider_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %modules%/cases-slider/cases-slider.js */ "./src/blocks/modules/cases-slider/cases-slider.js");
-/* harmony import */ var _modules_cases_slider_cases_slider_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_cases_slider_cases_slider_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _modules_page_form_page_form_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/page-form/page-form.js */ "./src/blocks/modules/page-form/page-form.js");
-/* harmony import */ var _modules_page_form_page_form_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_modules_page_form_page_form_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_3__);
-
-
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_1__);
 
 
 

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>HD loyalty</title>
+    <title>Gleniks</title>
     <meta name="theme-color" content="#fff">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport"
@@ -25,6 +25,10 @@
     <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
     <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@100;400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
 </head>
 
@@ -35,7 +39,11 @@
         <div class='header__body'>
             <!-- logo -->
             <a href="/" class='header__logo'>
-                < HD.Loyalty />
+                <img src="img/svg/logo.svg" alt="">
+                <span class="header__logo-text">
+                    Официальный <br>
+                    сайт производства
+                </span>
             </a>
             <!-- burger -->
             <div class='header__burger'>
@@ -49,120 +57,167 @@
 
                     <li class=''>
                         <a href='#func_h2' class='header__link func_h2'>
-                            <span class="link-hover link_heder_hover">Функционал</span>
+                            <span class="link-hover link_heder_hover">Товары</span>
                         </a>
                     </li>
                     <li class=''>
                         <a href='#for-who_h2' class='header__link'>
-                            <span class="link-hover link_heder_hover">Для кого</span>
+                            <span class="link-hover link_heder_hover">Партнерам</span>
                         </a>
                     </li>
 
                     <li class=''><a href='#process_h2' class='header__link popup-link'>
-                            <span class="link-hover link_heder_hover">Процесс подключения</span>
+                            <span class="link-hover link_heder_hover">Оплата и доставка</span>
                         </a>
                     </li>
-
 
                     <li class=''>
                         <a href='#cases_h2' class='header__link'>
-                            <span class="link-hover link_heder_hover">Кейсы</span>
-                        </a>
-                    </li>
-
-                    <li class=''>
-                        <a href='#how-work_h2' class='header__link'>
-                            <span class="link-hover link_heder_hover">Как мы работаем</span>
-                        </a>
-                    </li>
-
-
-                    <li class=''>
-                        <a href='#tariffs_h2' class='header__link'>
-                            <span class="link-hover link_heder_hover">Тарифы</span>
-                        </a>
-                    </li>
-
-                  
-
-                    <li class=''>
-                        <a href='#page-form_h2' class='header__link'>
                             <span class="link-hover link_heder_hover">Контакты</span>
                         </a>
                     </li>
 
+                    <li>
+                        <a class="btn btn-download" href="#">
+   <span>скачайте прайс-лист</span>
+   <?xml version="1.0" encoding="utf-8"?><svg class="btn-download__icon"   xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26"><path d="M12.763 9.989a.815.815 0 00-1.15-.002l-2.675 2.677-1.05-1.052a.813.813 0 00-1.15 1.15l1.626 1.624c.157.16.365.24.573.24.209 0 .417-.08.576-.238l3.25-3.25a.813.813 0 000-1.149zM12.763 16.489a.815.815 0 00-1.15-.002l-2.675 2.677-1.05-1.05a.813.813 0 00-1.15 1.149l1.626 1.625a.816.816 0 001.149 0l3.25-3.25a.813.813 0 000-1.149zM18.688 11.375h-3.25a.813.813 0 000 1.625h3.25a.813.813 0 000-1.625zM18.688 17.875h-3.25a.813.813 0 000 1.625h3.25a.813.813 0 000-1.625z" fill="#000C31"/><path d="M21.125 3.25h-3.25v-.813a.813.813 0 00-.813-.812H15.3A2.444 2.444 0 0013 0c-1.06 0-1.963.68-2.3 1.625H8.939a.813.813 0 00-.813.813v.812h-3.25c-.895 0-1.625.73-1.625 1.625v19.5c0 .895.73 1.625 1.625 1.625h16.25c.895 0 1.625-.73 1.625-1.625v-19.5c0-.895-.73-1.625-1.625-1.625zm-11.375 0h1.625a.813.813 0 00.813-.813.813.813 0 011.624 0c0 .449.365.813.813.813h1.625v1.625h-6.5V3.25zm11.375 21.125H4.875v-19.5h3.25v.813c0 .448.364.812.813.812h8.124a.813.813 0 00.813-.813v-.812h3.25v19.5z"/></svg>
+</a>
+                    </li>
+
+
+                    <li class="li-contacts-mob">
+                        <div class="contacts-mobile-menu">
+                            <div class="header__contacts header-contacts" style="display: inherit;">
+                                <span class="header-contacts__title">Задайти вопрос напрямую в:</span> <br>
+                                <div class="header-contacts__link-wrap">
+                                    <a class="header-contacts__link" href="#">
+                                        <img class="header-contacts__icon" src="img/svg/whatsapp.svg" alt="">
+                                        <span>WhatsApp</span>
+                                    </a>
+                                    <a class="header-contacts__link" href="#">
+                                        <img class="header-contacts__icon" src="img/svg/telegram.svg" alt="">
+                                        <span>Telegram</span>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                            <div class="header-callback">
+                                <span class=" header-callback__num">+7 (495) 003-47-07</span>
+                                <a class="header-callback__link" href="#">
+                                    Перезвоните мне
+                                </a>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </nav>
             <!-- navigation -->
+
+            <div class="header__contacts header-contacts">
+                <span class="header-contacts__title">Задайти вопрос напрямую в:</span> <br>
+                <a class="header-contacts__link" href="#">
+                    <img class="header-contacts__icon" src="img/svg/whatsapp.svg" alt="">
+                    <span>WhatsApp</span>
+                </a>
+                <a class="header-contacts__link" href="#">
+                    <img class="header-contacts__icon" src="img/svg/telegram.svg" alt="">
+                    <span>Telegram</span>
+                </a>
+            </div>
+
+
+            <div class="header-callback">
+                <span class="header-callback__num">+7 (495) 003-47-07</span>
+                <a class="header-callback__link" href="#">
+                    Перезвоните мне
+                </a>
+            </div>
+
+
+            <button class="shop-cart">
+                <img src="img/svg/shop-cart.svg" alt="">
+            </button>
+
+
+            <div class="lang-choice">
+                <button class="lang-choise__btn">RU</button>
+                |
+                <button class="lang-choise__btn">ENG</button>
+            </div>
         </div>
     </div>
 </div>
 <!-- burger -->
-   
-    <!-- burger -->
-<div class="footer">
+    <setion class="section-page1">
     <div class="container">
-        <div class='footer__body'>
-            <!-- logo -->
-            <a href="/" class='footer__logo'>
-                 HD.Loyalty 
-            </a>
-            <!-- burger -->
 
-            <!-- navigation -->
-            <nav class='footer__menu'>
-                <ul class='footer__list'>
+        <div class="page1-wrap">
+            <!-- item -->
+            <div class="page1">
+                <!-- title -->
+                <div class="page1-h1">
+                    <h1 class="page1-h1__title">
+                        <span class="page1-h1__span">ЗАВОД ПО Производству и поставке</span>
+                        <span class="page1-h1__span">уникальных каркасов для кроватей</span>
+                        <span class="page1-h1__span">с гарантией 2 года</span>
+                    </h1>
+                    <div class="page1-h1__title-decor">
+                        <span class="page1-h1__decor-text">по европейским стандартам ISO</span>
+                    </div>
+                </div>
+                <!-- title -->
+                <div class="page1__body">
+                    <p class="page1__descr">
+                        Спите крепче, высыпайтесь быстрее, берегите спину, благодаря неломающемуся каркасу из
+                        металлического
+                        профиля и гибким прочным рейкам из березы
+                    </p>
 
-                    <li class=''>
-                        <a href='#func_h2' class='footer__link'>
-                            <span class="link-hover link_heder_hover">Функционал</span>
-                        </a>
-                    </li>
-                    <li class=''>
-                        <a href='#for-who_h2' class='footer__link'>
-                            <span class="link-hover link_heder_hover">Для кого</span>
-                        </a>
-                    </li>
+                    <div class="advantages">
+                        <div class="advantages__item">
+                            <img class="advantages__icon" src="img/svg/adv-icon/high-quality.svg" alt="">
+                            <p>
+                                Каркас изготовлен <br>
+                                из металлического профиля с качественным
+                                полимерным покрытием.
+                            </p>
+                        </div>
+                        <div class="advantages__item">
+                            <img class="advantages__icon" src="img/svg/adv-icon/flex.svg" alt="">
+                            <p>
+                                Гибкие и прочные <br>
+                                рейки из березы
+                            </p>
+                        </div>
+                        <div class="advantages__item">
+                            <img class="advantages__icon" src="img/svg/adv-icon/star.svg" alt="">
+                            <p>
+                                Цилиндрические <br>
+                                металлические ножки
+                            </p>
+                        </div>
+                    </div>
 
-                    <li class=''><a href='#process_h2' class='footer__link popup-link'>
-                            <span class="link-hover link_heder_hover">Процесс подключения</span>
-                        </a>
-                    </li>
+                    <div>
+                        <a class="btn btn-calc" href="#">
+    <span>Калькулятор стоимости заказа для опта</span>
+    <img class="btn-calc__icon" src="img/svg/calc.svg" alt="">
+</a>
+                    </div>
+                </div>
+            </div>
+            <!-- item -->
 
-                    <li class=''>
-                        <a href='#cases_h2' class='footer__link'>
-                            <span class="link-hover link_heder_hover">Кейсы</span>
-                        </a>
-                    </li>
-
-                    <li class=''>
-                        <a href='#how-work_h2' class='footer__link'>
-                            <span class="link-hover link_heder_hover">Тарифы</span>
-                        </a>
-                    </li>
+            <div class="page1-wrap-img-container">
+                <img class="page1-wrap__img" src="img/bg/page1.png">
+            </div>
 
 
-
-                    <li class=''>
-                        <a href='#tariffs_h2' class='footer__link'>
-                            <span class="link-hover link_heder_hover">Как мы работаем</span>
-                        </a>
-                    </li>
-
-                    <li class=''>
-                        <a href='#page-form_h2' class='footer__link'>
-                            <span class="link-hover link_heder_hover">Контакты</span>
-                        </a>
-                    </li>
-
-                </ul>
-            </nav>
-            <!-- navigation -->
         </div>
     </div>
-</div>
-<!-- burger -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+</setion>
+    
     <script src="js/main.js"></script>
     <script src="js/vendor.js"></script>
 </body>
