@@ -1,0 +1,46 @@
+@import "modules/header/header";
+@import "modules/btn/btn";
+@import "modules/page1/page1";
+@import "modules/page-func/page-func";
+@import "modules/page-for-who/page-for-who";
+@import "modules/page-process/page-process";
+@import "modules/page-cases/page-cases";
+@import "modules/cases-slider/cases-slider";
+@import "modules/page-how-work/page-how-work";
+@import "modules/page-tariffs/page-tariffs";
+@import "modules/page-form/page-form";
+@import "modules/footer/footer";
+
+.text-yellow {
+    color: $yellow;
+}
+
+.text-green {
+    color: $green;
+}
+
+.text-red {
+    color: #DB3C71;
+}
+
+.text-purple {
+    color: $purple;
+}
+
+.main_h2 {
+    font-family: $mainFont;
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 2rem;
+    color: #fff;
+
+    &__descr {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: .75rem;
+        margin-bottom: 1.5rem;
+        color: #fff;
+        text-align: center;
+    }
+}
