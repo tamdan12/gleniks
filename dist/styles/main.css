@@ -1474,6 +1474,12 @@ body {
   margin-top: 1rem;
 }
 
+@media (min-width: 767px) {
+  .swiper-container {
+    display: none;
+  }
+}
+
 @media (min-width: 769px) {
   .iso-dot-svg {
     width: 20px;
