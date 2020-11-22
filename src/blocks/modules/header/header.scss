@@ -249,7 +249,7 @@
     }
 
     .burger_active span {
-        margin-bottom: -16px;
+        margin-bottom: -12px;
         transition: all .3s;
         background-color: $sec-color;
     }
@@ -264,7 +264,7 @@
 
     .burger_active span:nth-child(3) {
         transform: rotate(45deg);
-        margin-top: 13px;
+        margin-top: 8px;
     }
 }
 
