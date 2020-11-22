@@ -35,15 +35,7 @@
 }
 
 .slide {
-    border: 2px dashed #fff;
-    padding: 50px 50px 0;
-    background-color: #2A2A24;
-    width: 100%;
-
-    &__title {
-        font-family: $mainFont;
-        font-size: 1.6rem;
-    }
+    text-align: center;
 }
 
 .slide-content {
@@ -54,16 +46,6 @@
 
     &__corner-collor {
         color: #90D7EE;
-    }
-
-    &__num {
-        display: inline-block;
-        text-align: center;
-        line-height: 28px;
-        border: 2px solid $yellow;
-        width: 30px;
-        height: 30px;
-        margin-right: .5rem;
     }
 
     &__title {
@@ -131,7 +113,6 @@
     }
 
     &__span-color {
-        color: $green;
         font-family: $mainFont;
         font-size: 1.4rem;
     }

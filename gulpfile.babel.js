@@ -57,14 +57,14 @@ const requireDir = require("require-dir"),
             src: "./src/.htaccess",
             dist: "./dist/"
         }
-        
+
     };
 
 requireDir("./gulp-tasks/");
 
 export { paths };
 
-export const development = gulp.series("clean", "smart-grid",
+export const development = gulp.series("clean",
     gulp.parallel(["views", "styles", "scripts", "images", "webp", "sprites", "fonts", "favicons"]),
     gulp.parallel("serve"));
 
