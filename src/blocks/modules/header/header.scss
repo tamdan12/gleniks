@@ -30,8 +30,7 @@
         padding: 10px 0;
     }
 
-    &__menu {
-    }
+
 
     &__logo {
         display: flex;
@@ -248,7 +247,7 @@
     }
 
     .burger_active span {
-        margin-bottom: -12px;
+        margin-bottom: -16px;
         transition: all .3s;
         background-color: $sec-color;
     }
@@ -263,19 +262,21 @@
 
     .burger_active span:nth-child(3) {
         transform: rotate(45deg);
-        margin-top: 8px;
+        margin-top: 13px;
     }
 }
 
 .header-bgc .header {
     transition: all .5s;
-    box-shadow: 0 0 6px 1px #f29f057c;
+    box-shadow: 0 0 6px 1px rgba(255, 255, 255, 0.925);
+    background-color: $main-bg;
 }
 
 .header-none-bgc .header {
     background-color: none;
     transition: all .5s;
 }
+
 
 .contacts-mobile-menu {
     margin-top: 1rem;

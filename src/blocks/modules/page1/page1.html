@@ -7,11 +7,19 @@
                 <!-- title -->
                 <div class="page1-h1">
                     <h1 class="page1-h1__title">
-                        <span class="page1-h1__span"><span class="page1-h1__span-bg">ЗАВОД ПО Производству и поставке</span></span>
-                        <span class="page1-h1__span"><span class="page1-h1__span-bg">уникальных каркасов для кроватей</span></span>
+                        <span class="page1-h1__span"><span class="page1-h1__span-bg">ЗАВОД ПО Производству и
+                                поставке</span></span>
+                        <span class="page1-h1__span"><span class="page1-h1__span-bg">уникальных каркасов для
+                                кроватей</span></span>
                         <span class="page1-h1__span"><span class="page1-h1__span-bg">с гарантией 2 года</span></span>
                     </h1>
                     <div class="page1-h1__title-decor">
+                        <svg class="iso-dot-svg" id="iso-dot" viewBox="0 0 22 22" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="11.0001" cy="11.0001" r="3.9" stroke="#586386" />
+                            <circle cx="11" cy="11" r="10.5" stroke="#3E5977" stroke-opacity="0.26" />
+                            <circle cx="10.9999" cy="11" r="0.942857" fill="#000C31" />
+                        </svg>
                         <span class="page1-h1__decor-text">по европейским стандартам ISO</span>
                     </div>
                 </div>
@@ -48,7 +56,9 @@
                         </div>
                     </div>
 
-                    <div>
+
+
+                    <div class="page1-btn">
                         @@include("../btn/btn-calc.html")
                     </div>
                 </div>
@@ -57,6 +67,7 @@
 
             <div class="page1-wrap-img-container">
                 <picture>
+                    <source srcset="img/bg/page1_mob.png" media="(max-width: 768px)">
 
                     <source srcset="img/bg/page1_tablet.png" media="(max-width: 1110px)">
 
@@ -66,6 +77,31 @@
             </div>
 
 
+        </div>
+    </div>
+    <!-- container -->
+
+    <div class="container-fluid">
+        <div class="page1-wrap-img-container768">
+            <picture>
+
+                <source srcset="img/bg/page1_mob.png" media="(max-width: 768px)">
+
+                <source srcset="img/bg/page1_tablet.png" media="(max-width: 1110px)">
+
+
+                <img class="page1-wrap__img" src="img/bg/page1.png">
+            </picture>
+        </div>
+
+        <div class="container">
+            <div class="page1-btn768">
+                @@include("../btn/btn-calc.html")
+            </div>
+
+
+
+            @@include("../adv-slider/adv-slider.html")
         </div>
     </div>
 </setion>

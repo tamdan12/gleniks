@@ -1,4 +1,7 @@
 .section-page1 {
+    position: relative;
+    max-width: 1980px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,8 +91,8 @@
     }
 
     &__span {
-      display: block;
-      z-index: -1;
+        display: block;
+        z-index: -1;
 
     }
 
@@ -146,7 +149,7 @@
     .page1-h1 {
 
         &__title {
-     
+
 
             &::before {
                 display: block;
@@ -168,11 +171,142 @@
         }
     }
 
+    .page1-h1 {
+
+        &__title {
+            max-width: 50%;
+        }
+
+        &__title-decor {
+            margin-left: 40px;
+            margin-top: -10px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                z-index: 10;
+                background-image: url(../img/svg/h1-line768.svg);
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 450px;
+                height: 120px;
+                top: -5px;
+                left: calc(-102.5%);
+
+            }
+        }
+    }
+
     .page1-wrap-img-container {
         position: relative;
         z-index: 10;
         flex: 0 0 70%;
         margin-top: -50px;
         transform: translateX(calc(-100% + 15px));
+    }
+}
+
+
+//mobile
+.iso-dot-svg {
+    width: 20px;
+    height: 20px;
+
+}
+
+.page1-btn {
+    display: none;
+}
+
+.page1-btn768 {
+    display: none;
+
+}
+
+@media(min-width:769px) {
+    .iso-dot-svg {
+        width: 20px;
+        height: 20px;
+        display: none;
+    }
+
+    .page1-wrap-img-container768 {
+        display: none;
+    }
+
+    .page1-btn {
+        display: block;
+    }
+}
+
+@media(max-width:768px) {
+    .page1-wrap-img-container {
+        display: none;
+    }
+
+    .page1-wrap-img-container768 {
+        margin-top: -70px;
+    }
+
+    .advantages {
+        display: none;
+    }
+
+    .page1-btn768 {
+        display: flex;
+        justify-content: center;
+
+        a {
+            margin-top: 0;
+        }
+    }
+
+
+    .page1-wrap {
+        flex-direction: column;
+
+    }
+
+    .page1 {
+        &__body {
+            width: 100%;
+        }
+
+        &__descr {
+            margin-left: 9px;
+        }
+    }
+
+    .page1-h1 {
+
+        flex-direction: column;
+
+        &__title {
+            max-width: 100%;
+            font-size: 22px;
+        }
+
+        &__span {
+            display: inline;
+        }
+
+        &__title-decor {
+            margin-top: 1.5rem;
+            margin-left: 0;
+            display: flex;
+            align-items: center;
+
+            &::before {
+                display: none;
+            }
+        }
+
+        &__decor-text {
+            display: block;
+            transform: translateX(0);
+            padding: 0.25rem .5rem;
+            border-radius: 5px;
+            margin-top: 0;
+        }
     }
 }
