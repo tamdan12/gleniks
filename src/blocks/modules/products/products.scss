@@ -57,6 +57,15 @@
 .products-descr {
     margin-top: 1.5rem;
 
+    &__title {
+        color: $sec-color;
+    }
+
+    &__icon {
+        width: 8px;
+        height: 8px;
+        margin-right: 0.25rem;
+    }
     &__list {
         list-style: none;
         margin-top: 0.75rem;
@@ -70,6 +79,8 @@
 
 .thumb-btn {
     display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
 
     &__img-div {
         display: flex;
@@ -77,5 +88,43 @@
 
     &__img {
         max-width: 150px;
+        background-color: #DEDFE9;
+        border-radius: 7px;
+        border: 1px solid $main-color;
     }
+
+    &__img:last-child {
+        margin-left: 0.5rem;
+        margin-right: 1rem;
+    }
+
+}
+
+@media(max-width:950px) {
+    .thumb-btn {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .btn-calc {
+            margin-top: 1.5rem;
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .products {
+        &__img-div {
+            margin-right: 0;
+            margin-top: 35px;
+        }
+
+        &__row {
+            flex-direction: column-reverse;
+        }
+    }
+
+    .thumb-btn {
+        align-items: center;
+    }
+
 }

@@ -1294,8 +1294,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 125px;
-  padding-bottom: 25px;
+  padding-top: 145px;
+  padding-bottom: 150px;
   display: block;
 }
 
@@ -1587,6 +1587,16 @@ body {
   margin-top: 1.5rem;
 }
 
+.products-descr__title {
+  color: #8A8382;
+}
+
+.products-descr__icon {
+  width: 8px;
+  height: 8px;
+  margin-right: 0.25rem;
+}
+
 .products-descr__list {
   list-style: none;
   margin-top: 0.75rem;
@@ -1598,6 +1608,8 @@ body {
 
 .thumb-btn {
   display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
 }
 
 .thumb-btn__img-div {
@@ -1606,6 +1618,14 @@ body {
 
 .thumb-btn__img {
   max-width: 150px;
+  background-color: #DEDFE9;
+  border-radius: 7px;
+  border: 1px solid #000C31;
+}
+
+.thumb-btn__img:last-child {
+  margin-left: 0.5rem;
+  margin-right: 1rem;
 }
 
 @media (min-width: 767px) {
@@ -1821,6 +1841,17 @@ body {
   }
 }
 
+@media (max-width: 950px) {
+  .thumb-btn {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .thumb-btn .btn-calc {
+    margin-top: 1.5rem;
+  }
+}
+
 @media (max-width: 768px) {
   body {
     font-size: 14px;
@@ -1909,6 +1940,19 @@ body {
 
   .bed-review__text {
     margin-top: .5rem;
+  }
+
+  .products__img-div {
+    margin-right: 0;
+    margin-top: 35px;
+  }
+
+  .products__row {
+    flex-direction: column-reverse;
+  }
+
+  .thumb-btn {
+    align-items: center;
   }
 }
 
