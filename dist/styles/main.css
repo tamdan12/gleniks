@@ -1182,17 +1182,6 @@ body {
   display: none;
 }
 
-.header-bgc .header {
-  transition: all .5s;
-  box-shadow: 0 0 6px 1px rgba(255, 255, 255, 0.925);
-  background-color: #EAEBF2;
-}
-
-.header-none-bgc .header {
-  background-color: none;
-  transition: all .5s;
-}
-
 .contacts-mobile-menu {
   margin-top: 1rem;
   padding-top: 1rem;
@@ -1231,6 +1220,17 @@ body {
 
 .scroll_down {
   display: none;
+}
+
+.header-bgc .header {
+  transition: all .5s;
+  box-shadow: 0 0 12px 0px  #000c31a9;
+  background-color: #EAEBF2;
+}
+
+.header-none-bgc .header {
+  background-color: none;
+  transition: all .5s;
 }
 
 .btn {
@@ -1295,8 +1295,8 @@ body {
   align-items: center;
   justify-content: center;
   padding-top: 145px;
-  padding-bottom: 150px;
   display: block;
+  min-height: 100vh;
 }
 
 .page1-wrap {
@@ -1474,6 +1474,10 @@ body {
   margin-top: 1rem;
 }
 
+.section-bed-info {
+  margin-top: 3rem;
+}
+
 .bed-review {
   margin-top: 1.5rem;
   color: #8A8382;
@@ -1529,7 +1533,7 @@ body {
 }
 
 .products {
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 
 .products__row {

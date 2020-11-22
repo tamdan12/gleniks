@@ -268,17 +268,6 @@
     }
 }
 
-.header-bgc .header {
-    transition: all .5s;
-    box-shadow: 0 0 6px 1px rgba(255, 255, 255, 0.925);
-    background-color: $main-bg;
-}
-
-.header-none-bgc .header {
-    background-color: none;
-    transition: all .5s;
-}
-
 
 .contacts-mobile-menu {
     margin-top: 1rem;
@@ -315,9 +304,11 @@
         }
     }
 }
+
 .scroll_down {
     display: none;
 }
+
 @media(min-width:1024px) {
     .scroll_down {
         background-color: transparent;
@@ -345,4 +336,17 @@
             transform: translate(0, 30%);
         }
     }
+}
+
+
+
+.header-bgc .header {
+    transition: all .5s;
+    box-shadow: 0 0 12px 0px  #000c31a9;
+    background-color: $main-bg;
+}
+
+.header-none-bgc .header {
+    background-color: none;
+    transition: all .5s;
 }
