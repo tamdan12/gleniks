@@ -1027,17 +1027,8 @@ body {
   text-align: center;
   padding-top: 3rem;
   font-size: 2rem;
-  color: #fff;
-}
-
-.main_h2__descr {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: .75rem;
-  margin-bottom: 1.5rem;
-  color: #fff;
-  text-align: center;
+  color: #000C31;
+  text-transform: uppercase;
 }
 
 .header {
@@ -1175,7 +1166,7 @@ body {
   position: absolute;
   height: 90%;
   border-left: 1px solid #8A8382;
-  left: -.5rem;
+  left: -1rem;
 }
 
 .lang-choise__btn {
@@ -1235,28 +1226,7 @@ body {
 }
 
 .scroll_down {
-  background-color: transparent;
-  outline: none;
-  cursor: pointer;
-  display: block;
-  width: 100%;
-}
-
-.scroll_down img {
-  display: block;
-  margin: 0 auto;
-  transform: translate3d(0, -30%, 0);
-  animation: spin 4.2s infinite ease;
-}
-
-@keyframes spin {
-  0%, 100% {
-    transform: translate(0, 0);
-  }
-
-  50% {
-    transform: translate(0, 30%);
-  }
+  display: none;
 }
 
 .btn {
@@ -1321,6 +1291,7 @@ body {
   align-items: center;
   justify-content: center;
   padding-top: 125px;
+  padding-bottom: 25px;
   display: block;
 }
 
@@ -1522,6 +1493,31 @@ body {
 }
 
 @media (min-width: 1024px) {
+  .scroll_down {
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+  }
+
+  .scroll_down img {
+    display: block;
+    margin: 0 auto;
+    transform: translate3d(0, -30%, 0);
+    animation: spin 4.2s infinite ease;
+  }
+
+@keyframes spin {
+    0%, 100% {
+      transform: translate(0, 0);
+    }
+
+    50% {
+      transform: translate(0, 30%);
+    }
+}
+
   .page1-wrap-img-container {
     flex: 0 0 50%;
     margin-top: -50px;
