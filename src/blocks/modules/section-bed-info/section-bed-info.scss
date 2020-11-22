@@ -1,6 +1,7 @@
 .section-bed-info {
     margin-top: 3rem;
 }
+
 .bed-review {
     margin-top: 1.5rem;
     color: #8A8382;
@@ -46,9 +47,14 @@
     }
 
     &__icon {
+        flex-shrink: 0;
+        width: 32px;
+        height: 32px;
+        margin-right: 5px;
+
         img {
             width: 32px;
-            margin-right: 5px;
+            height: 32px;
         }
     }
 
@@ -68,7 +74,7 @@
 
         &__img-div {
             flex-basis: 40%;
-    
+
         }
     }
 }
@@ -85,13 +91,13 @@
 
         &__img-div {
             flex-basis: 100%;
-    
+
         }
 
         &__item {
             flex-basis: 100%;
         }
- 
+
         &__text {
             margin-top: .5rem;
         }
