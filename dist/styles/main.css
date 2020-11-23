@@ -1300,6 +1300,11 @@ body {
   margin-top: 3rem;
 }
 
+.btn-calc_more-padding {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .section-page1 {
   position: relative;
   max-width: 1980px;
@@ -1955,6 +1960,139 @@ body {
 .btn-bg__text {
   position: relative;
   z-index: 2;
+}
+
+.section-calc label {
+  color: #6A6464;
+}
+
+.calc {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4rem 0;
+  border-bottom: 2px dashed #B2B8C5;
+}
+
+.calc__title {
+  position: relative;
+  font-size: 42px;
+}
+
+.calc__title::before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  background-image: url(../img/svg/calc-title-circle.svg);
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 150px;
+  bottom: -35px;
+  left: -85px;
+}
+
+.calc__title-text {
+  position: relative;
+  z-index: 10;
+}
+
+.calc-price {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  color: #6A6464;
+}
+
+.calc-price__title {
+  font-size: 1.2rem;
+}
+
+.calc-price__num {
+  font-size: 1.8rem;
+}
+
+.calc-price__btn {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+/* Reset Select */
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: transparent;
+  background-image: none;
+}
+
+.select {
+  border: 1px solid #B8ACA9;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* Remove IE arrow */
+
+select::-ms-expand {
+  display: none;
+}
+
+/* Custom Select */
+
+.select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  line-height: 3;
+  background: transparent;
+  overflow: hidden;
+  border-radius: .25em;
+  transition: all .25s;
+}
+
+select {
+  flex: 1;
+  padding: 0 .5em;
+  cursor: pointer;
+  color: #6A6464;
+  transition: all .25s;
+}
+
+/* Arrow */
+
+.select::after {
+  content: '';
+  position: absolute;
+  background-image: url(../img/svg/select-arrow.svg);
+  width: 12px;
+  height: 12px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  padding: 0 1em;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
+}
+
+/* Transition */
+
+.select:hover {
+  background-color: #6a64642d;
 }
 
 @media (min-width: 767px) {
