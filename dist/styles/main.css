@@ -2531,6 +2531,7 @@ select {
     overflow: auto;
     padding: 20px 15px;
     transition: .8s;
+    background-image: url();
     background-color: #fff;
     text-align: left;
     align-items: flex-start;
@@ -2897,6 +2898,7 @@ select {
   .products__img-div {
     margin-right: 0;
     margin-top: 35px;
+    max-width: 60%;
   }
 
   .products__row {
