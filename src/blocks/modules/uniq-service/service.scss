@@ -140,3 +140,10 @@
         margin-left: 0;
     }
 }
+
+@media(max-width: 425px) {
+
+.uniq-service__item:last-child {
+    padding-left: 0;
+}
+}

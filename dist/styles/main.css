@@ -2315,6 +2315,70 @@ select {
   margin-top: 3rem;
 }
 
+.footer {
+  padding: 2rem 0;
+  background-color: #fff;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #6D6E6E;
+}
+
+.footer__row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__row:last-child {
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.footer__logo-nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.footer__nav {
+  width: 100%;
+  max-width: 85%;
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+}
+
+.footer .header-contacts {
+  margin-right: 0;
+}
+
+.footer .header-callback {
+  align-self: center;
+  margin-top: 1.75rem;
+  margin-right: 0;
+}
+
+.footer .header-callback__num {
+  background-color: #fff;
+  text-align: center;
+}
+
+.footer__link:nth-child(2) {
+  margin: 0 2.5rem;
+}
+
 @media (min-width: 767px) {
   .swiper-container {
     display: none;
@@ -2474,6 +2538,14 @@ select {
   .burger_active span:nth-child(3) {
     transform: rotate(45deg);
     margin-top: 8px;
+  }
+
+  .footer .header-contacts {
+    display: block;
+  }
+
+  .footer .header-callback {
+    display: flex;
   }
 }
 
@@ -2819,6 +2891,35 @@ select {
     background-repeat: no-repeat;
     background-position: 50% 50%;
   }
+
+  .footer__logo-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .footer__nav {
+    margin-top: 1rem;
+    margin-left: 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer__nav-li:not(:first-child) {
+    margin-top: 0.75rem;
+  }
+
+  .footer__row:last-child {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 2px dashed #B2B8C5;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer__link:nth-child(2) {
+    margin: 1rem 0;
+  }
 }
 
 @media (max-width: 550px) {
@@ -2854,8 +2955,30 @@ select {
     font-size: 12px;
   }
 
+  .uniq-service__item:last-child {
+    padding-left: 0;
+  }
+
   .page-last__h2 {
     font-size: 18px;
+  }
+
+  .footer__row {
+    align-items: flex-start;
+  }
+
+  .footer .header-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .header-contacts__link:last-child {
+    margin-top: 1rem;
+  }
+
+  .footer .header-callback {
+    margin-top: 1rem;
   }
 }
 /*# sourceMappingURL=maps/main.css.map */

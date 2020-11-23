@@ -1,0 +1,134 @@
+.footer {
+    padding: 2rem 0;
+    background-color: #fff;
+
+    a {
+        text-decoration: none;
+        color: #6D6E6E;
+    }
+
+    &__row {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__row:last-child {
+        justify-content: center;
+        margin-top: 2rem;
+    }
+
+    &__logo-nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__nav {
+        width: 100%;
+        max-width: 85%;
+        margin-left: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .header-contacts {
+        margin-right: 0;
+    }
+
+    .header-callback {
+        align-self: center;
+        margin-top: 1.75rem;
+        margin-right: 0;
+
+        &__num {
+            background-color: #fff;
+            text-align: center;
+        }
+    }
+
+    &__link:nth-child(2) {
+        margin: 0 2.5rem;
+    }
+}
+
+@media (max-width: 1260px) {
+
+    .footer {
+        .header-contacts {
+            display: block;
+        }
+
+        .header-callback {
+            display: flex;
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .footer {
+        &__logo-nav {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        &__nav {
+            margin-top: 1rem;
+            margin-left: 0;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__nav-li:not(:first-child) {
+            margin-top: 0.75rem;
+        }
+
+        &__row:last-child {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 2px dashed #B2B8C5;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__link:nth-child(2) {
+            margin: 1rem 0;
+        }
+    }
+}
+
+
+@media(max-width:425px) {
+    .footer {
+
+        &__row {
+            align-items: flex-start;
+
+        }
+
+        .header-contacts {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &__link:last-child {
+                margin-top: 1rem;
+            }
+        }
+
+        .header-callback {
+            margin-top: 1rem;
+        }
+    }
+}
