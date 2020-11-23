@@ -167,12 +167,23 @@
             }
         }
     }
+
     .single-product-product {
         margin-top: 1.5rem;
     }
 }
 
 @media(max-width:450px) {
+
+
+    .single-product-product {
+        padding: 3rem 1.5rem;
+
+        &::before {
+            transform: translate(-7.5px, 7.5px);
+        }
+    }
+
     .single-product__span-bg {
         font-size: 30px;
     }
