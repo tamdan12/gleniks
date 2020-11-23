@@ -5,7 +5,7 @@
 .materials {
     margin-top: 4rem;
 
-   
+
 
     &__row {
         display: flex;
@@ -60,6 +60,8 @@
 
     &__text {
         margin-top: 1.75rem;
+        max-width: 85%;
+        margin-left: auto;
     }
 
     &__list {
@@ -68,6 +70,7 @@
 
     &__title {
         display: flex;
+        color: #6A6464;
     }
 
     &__title-icon {
@@ -99,4 +102,18 @@
     }
 
     .material {}
+}
+
+
+@media(max-width:550px) {
+    .material {
+
+
+        &__text {
+            margin-top: 1.75rem;
+            max-width: 95%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
 }

@@ -1,6 +1,22 @@
 .products {
     margin-top: 5rem;
 
+    &__title {
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            transform: translateX(10px);
+            background-image: url(../img/svg/title-dots.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 40px;
+            height: 20px;
+        }
+    }
+
     &__row {
         display: flex;
         justify-content: center;
@@ -88,7 +104,7 @@
     }
 
     &__img {
-        max-width: 150px;
+        max-width: 100px;
         background-color: #DEDFE9;
         border-radius: 7px;
         border: 1px solid $main-color;
@@ -141,5 +157,17 @@
 @media(max-width:550px) {
     .section-page1 {
         padding-top: 110px;
+    }
+}
+
+@media(max-width:375px) {
+    .products {
+
+        &__title {
+
+            &::after {
+                display: none;
+            }
+        }
     }
 }

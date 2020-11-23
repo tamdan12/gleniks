@@ -1249,8 +1249,8 @@ body {
   display: inline-block;
   font-family: "Roboto", sans-serif;
   letter-spacing: .35px;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   text-decoration: none;
   transition: all .25s;
   border-radius: 50px;
@@ -1522,7 +1522,6 @@ body {
   margin-top: 1.5rem;
   color: #8A8382;
   font-size: 14px;
-  background-color: #fff;
 }
 
 .bed-review b {
@@ -1581,6 +1580,22 @@ body {
 
 .products {
   margin-top: 5rem;
+}
+
+.products__title {
+  position: relative;
+}
+
+.products__title::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  transform: translateX(10px);
+  background-image: url(../img/svg/title-dots.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 20px;
 }
 
 .products__row {
@@ -1668,7 +1683,7 @@ body {
 }
 
 .thumb-btn__img {
-  max-width: 150px;
+  max-width: 100px;
   background-color: #DEDFE9;
   border-radius: 7px;
   border: 1px solid #000C31;
@@ -1739,6 +1754,8 @@ body {
 
 .material__text {
   margin-top: 1.75rem;
+  max-width: 85%;
+  margin-left: auto;
 }
 
 .material__list {
@@ -1747,6 +1764,7 @@ body {
 
 .material__title {
   display: flex;
+  color: #6A6464;
 }
 
 .material__title-icon {
@@ -1774,6 +1792,7 @@ body {
 
 .uniq-service__h2 {
   margin-left: 20px;
+  font-size: 36px;
 }
 
 .uniq-service__h3 {
@@ -2134,7 +2153,7 @@ select {
 }
 
 .single-product__item {
-  flex-basis: calc(40% - 50px);
+  flex-basis: calc(35% - 50px);
 }
 
 .single-product__h2 {
@@ -2337,6 +2356,10 @@ select {
   color: #6D6E6E;
 }
 
+.footer__logo {
+  flex-basis: 20%;
+}
+
 .footer__row {
   width: 100%;
   display: flex;
@@ -2357,8 +2380,9 @@ select {
 
 .footer__nav {
   width: 100%;
-  max-width: 85%;
-  margin-left: 2rem;
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -2369,7 +2393,9 @@ select {
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 300px;
+  max-width: 340px;
+  margin-bottom: -60px;
+  flex-basis: 20%;
 }
 
 .footer .header-contacts {
@@ -2942,6 +2968,13 @@ select {
   .section-page1 {
     padding-top: 110px;
   }
+
+  .material__text {
+    margin-top: 1.75rem;
+    max-width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media (max-width: 450px) {
@@ -2991,6 +3024,12 @@ select {
 
   .footer .header-callback {
     margin-top: 1rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .products__title::after {
+    display: none;
   }
 }
 /*# sourceMappingURL=maps/main.css.map */
