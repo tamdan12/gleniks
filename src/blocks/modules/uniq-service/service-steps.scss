@@ -1,0 +1,246 @@
+.service-steps {
+    &__row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        flex-basis: 41%;
+    }
+
+    &__item:last-child {
+        margin-left: 20px;
+    }
+}
+
+.service-step {
+    position: relative;
+    background-color: #FFFFFF;
+    box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 26px;
+    text-align: center;
+    padding: .75rem .5rem;
+
+    &::after {
+        content: '';
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #fff;
+        border-radius: 26px;
+    }
+
+    &__title {
+        position: relative;
+        z-index: 10;
+    }
+
+    &__icon {
+        position: relative;
+        z-index: 10;
+    }
+
+    &__text {
+        position: relative;
+        z-index: 10;
+    }
+
+    &__btn {
+        align-self: flex-end;
+        margin-left: 30px;
+    }
+
+    &_1 {
+        align-self: flex-start;
+
+    }
+
+    &_2 {
+        position: relative;
+        margin-top: 85px;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -75%;
+            right: calc(0 - 1rem);
+            left: -50%;
+            width: 300px;
+            height: 100%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(../img/svg/service-icon/s-line1.svg);
+        }
+    }
+
+    &_3 {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -91%;
+            right: -66%;
+            width: 260px;
+            height: 145px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(../img/svg/service-icon/s-line2.svg);
+        }
+    }
+
+    &_4 {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: -180%;
+            width: 300px;
+            height: 200px;
+            left: -110%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-image: url(../img/svg/service-icon/s-line3.svg);
+        }
+    }
+}
+
+.btn-bg {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #fff;
+        border-radius: 24px;
+    }
+
+    &__text {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+@media(max-width:1305px) {
+    .service-step {
+
+
+        &_4 {
+            &::before {
+                width: 260px;
+                left: -70%;
+            }
+        }
+    }
+}
+
+@media(max-width:1240px) {
+    .service-step {
+
+        &_2 {
+
+            &::before {
+                width: 230px;
+                top: -57%;
+            }
+        }
+    }
+}
+
+@media(max-width:1090px) {
+    .service-step {
+
+        &_2 {
+
+            &::before {
+                width: 230px;
+                top: -55%;
+                left: -54%;
+            }
+        }
+    }
+}
+
+@media(max-width: 1024px) {
+    .service-step {
+        &_2 {
+            margin-top: 25px;
+
+            &::before {
+                width: 270px;
+                top: -65%;
+                left: -54%;
+            }
+        }
+
+        &_3 {
+            margin-top: 25px;
+        }
+
+        &_4 {
+            &::before {
+                width: 280px;
+                left: -80%;
+            }
+        }
+
+        &__btn {
+            align-self: center;
+            margin-left: 0;
+            margin-top: 25px;
+        }
+
+    }
+}
+
+@media(max-width:768px) {
+    .service-step {
+
+        flex-direction: column;
+
+        &__row {
+            flex-direction: column;
+        }
+
+
+
+
+
+
+        &_1 {
+            &::before {
+                display: none;
+            }
+        }
+
+        &_2 {
+            &::before {
+                display: none;
+            }
+        }
+
+        &_3 {
+            &::before {
+                display: none;
+            }
+        }
+
+        &_4 {
+            &::before {
+                display: none;
+            }
+        }
+    }
+}
+
+
+
+//adapt 
