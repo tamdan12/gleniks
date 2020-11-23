@@ -143,3 +143,28 @@ select {
 .select:hover {
     background-color: #6a64642d;
 }
+
+
+@media(max-width:768px) {
+    .calc {
+        flex-direction: column;
+
+        &__title {
+            text-align: center;
+            font-size: 24px;
+        }
+
+        &__item:last-child {
+            margin-top: 2rem;
+        }
+
+       
+    }
+
+    .calc-price {
+        &__btn {
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+    }
+}

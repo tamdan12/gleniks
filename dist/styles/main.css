@@ -2540,6 +2540,24 @@ select {
   .service-step__row {
     flex-direction: column;
   }
+
+  .calc {
+    flex-direction: column;
+  }
+
+  .calc__title {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .calc__item:last-child {
+    margin-top: 2rem;
+  }
+
+  .calc-price__btn {
+    justify-content: center;
+    margin-top: 1.5rem;
+  }
 }
 
 @media (max-width: 550px) {
