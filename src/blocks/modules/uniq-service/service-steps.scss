@@ -34,6 +34,7 @@
     }
 
     &__title {
+        text-transform: uppercase;
         position: relative;
         z-index: 10;
     }
@@ -98,7 +99,7 @@
         &::before {
             content: '';
             position: absolute;
-            top: -180%;
+            top: -190%;
             width: 300px;
             height: 200px;
             left: -110%;
@@ -135,8 +136,8 @@
 
         &_4 {
             &::before {
-                width: 260px;
-                left: -70%;
+                width: 295px;
+                left: -90%;
             }
         }
     }
@@ -174,21 +175,23 @@
         &_2 {
             margin-top: 25px;
 
+
             &::before {
-                width: 270px;
-                top: -65%;
-                left: -54%;
+                display: none;
             }
         }
 
         &_3 {
             margin-top: 25px;
+
+            &::before {
+                display: none;
+            }
         }
 
         &_4 {
             &::before {
-                width: 280px;
-                left: -80%;
+                display: none;
             }
         }
 
@@ -196,6 +199,10 @@
             align-self: center;
             margin-left: 0;
             margin-top: 25px;
+
+            &::before {
+                display: none;
+            }
         }
 
     }
@@ -212,32 +219,6 @@
 
 
 
-
-
-
-        &_1 {
-            &::before {
-                display: none;
-            }
-        }
-
-        &_2 {
-            &::before {
-                display: none;
-            }
-        }
-
-        &_3 {
-            &::before {
-                display: none;
-            }
-        }
-
-        &_4 {
-            &::before {
-                display: none;
-            }
-        }
     }
 }
 
