@@ -34,6 +34,7 @@
 }
 
 .uniq-service-text {
+    position: relative;
     margin-top: 1.5rem;
     padding: 1rem;
     background-color: #DEDFE9;
@@ -41,17 +42,46 @@
     border-radius: 26px;
     margin-left: 20px;
 
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        left: -50px;
+        bottom: -50px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(../img/svg/service-icon/white-circle.svg);
+    }
+
+    &:after  {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: #DEDFE9;
+        border-radius: 26px;
+    }
+    
     &__dot-icon {
+        position: relative;
+        z-index: 2;
         display: block;
         margin-left: auto;
     }
 
     &__title {
+        position: relative;
+        z-index: 2;
         text-transform: uppercase;
         color: #414141;
     }
 
     &__p {
+        position: relative;
+        z-index: 2;
         color: #6A6464;
         margin-top: .75rem;
         line-height: 1.5;
@@ -67,13 +97,27 @@
 
 
 @media(max-width:1024px) {
+
+    .uniq-service-text {
+        margin-left: 0;
+    }
+
     .uniq-service {
         &__row {
             flex-direction: column;
         }
 
+        &__item:first-child {
+            border-right: none;
+            padding-right: 0;
+        }
+
         &__item:last-child {
             margin-top: 4rem;
+        }
+
+        &__h2 {
+            margin-left: 0;
         }
 
         &__h3 {

@@ -80,6 +80,9 @@
 }
 
 @media(max-width:768px) {
+    .section-bed-info {
+        margin-top: 1rem;
+    }
     .bed-review {
         &__row {
             display: none;
