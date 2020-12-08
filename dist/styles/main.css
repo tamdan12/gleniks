@@ -1147,18 +1147,15 @@ body {
   display: flex;
   flex-direction: column;
   margin-right: 1rem;
+  padding: 0.75rem 1.25rem;
+  border: 1px solid #B8ACA9;
+  border-radius: 50px;
+  cursor: pointer;
 }
 
 .header-callback__link {
-  padding: 0.5rem .75rem;
-  border: 1px solid #000C31;
-  border-radius: 50px;
+  text-decoration: underline;
   color: #000C31;
-}
-
-.header-callback__num {
-  background-color: #EAEBF2;
-  transform: translateY(0.4rem);
 }
 
 .shop-cart {
@@ -1234,7 +1231,7 @@ body {
 
 .header-bgc .header {
   transition: all .5s;
-  box-shadow: 0 0 12px 0px  #000c31a9;
+  box-shadow: 0 0 12px 0px #000c31a9;
   background-color: #EAEBF2;
 }
 
@@ -1287,18 +1284,52 @@ body {
   max-width: 450px;
 }
 
+.modal__container_basket {
+  min-height: 100vh;
+  min-width: 100vw;
+  max-width: 100%;
+  background-color: #fff;
+}
+
 .modal__header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.modal__header_basket {
+  border-bottom: 2px dashed #B8ACA9;
+  padding-bottom: 25px;
 }
 
 .modal__close {
-  background: transparent;
-  border: 0;
+  position: relative;
+  margin-right: 25px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
 }
 
-.modal__header .modal__close:before {
-  content: "\2715";
+.modal__close::before {
+  content: '';
+  position: absolute;
+  right: 50%;
+  width: 40px;
+  height: 2px;
+  border-radius: 3px;
+  background-color: #B8ACA9;
+  transform: translateX(50%) rotate(45deg);
+}
+
+.modal__close::after {
+  content: '';
+  position: absolute;
+  right: 50%;
+  width: 40px;
+  height: 2px;
+  border-radius: 3px;
+  background-color: #B8ACA9;
+  transform: translateX(50%) rotate(-45deg);
 }
 
 .modal__content {
@@ -1306,6 +1337,15 @@ body {
   margin-bottom: 2rem;
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.8);
+}
+
+.modal__content_basket {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /**************************\
@@ -1512,6 +1552,21 @@ body {
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);
+}
+
+.empty-basket-bg {
+  background-image: url(../img/bg/basket-empty.svg);
+  background-size: contain;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: 60vw;
+  height: 60vh;
+}
+
+.empty-basket-span {
+  display: inline-block;
+  margin-top: 1.5rem;
+  color: #6A6464;
 }
 
 .btn {
@@ -2283,6 +2338,11 @@ body {
   color: #6A6464;
 }
 
+.section-calc label:not(:first-child) {
+  display: inline-block;
+  margin-top: 1.25rem;
+}
+
 .calc {
   display: flex;
   justify-content: space-around;
@@ -2575,6 +2635,7 @@ select {
 
 .page-last {
   text-align: center;
+  background-image: url(../img/bg/page-last.png);
 }
 
 .page-last__h2 {

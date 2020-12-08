@@ -103,7 +103,6 @@
 
 
                             <div class="header-callback">
-                                <span class=" header-callback__num">+7 (495) 003-47-07</span>
                                 <a class="header-callback__link" href="#">
                                     Перезвоните мне
                                 </a>
@@ -128,13 +127,13 @@
 
 
             <div class="header-callback">
-                <button data-micromodal-trigger="modal-1" class="header-callback__link">
+                <a data-micromodal-trigger="modal-1" class="header-callback__link">
                     Перезвоните мне
-                </button>
+                </a>
             </div>
 
 
-            <button class="shop-cart">
+            <button data-micromodal-trigger="modal-2"  class="shop-cart">
                 <img src="img/svg/shop-cart.svg" alt="">
             </button>
 
@@ -813,6 +812,15 @@
             </div>
             <!-- item -->
             <div class="calc__item">
+                <label for="quantity">КОЛИЧЕСТВО</label>
+                <div class="select">
+                    <select name="quantity" id="quantity">
+                        <option selected disabled>Выберите количество</option>
+                        <option value="1">1000</option>
+                        <option value="2">2000</option>
+                        <option value="3">3000</option>
+                    </select>
+                </div>
                 <label for="slct">РАЗМЕР</label>
                 <div class="select">
                     <select name="slct" id="slct">
@@ -822,13 +830,31 @@
                         <option value="3">3000</option>
                     </select>
                 </div>
+                <label for="material">МАТЕРИАЛ</label>
+                <div class="select">
+                    <select name="material" id="material">
+                        <option selected disabled>Выберите материал</option>
+                        <option value="1">1000</option>
+                        <option value="2">2000</option>
+                        <option value="3">3000</option>
+                    </select>
+                </div>
+                <label for="city">ГОРОД</label>
+                <div class="select">
+                    <select name="city" id="city">
+                        <option selected disabled>Выберите город</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
                 <div class="calc__price calc-price">
                     <span class="calc-price__title">оптовая цена</span>
                     <span class="calc-price__num">3100,00 ₽</span>
                 </div>
                 <div class="calc-price__btn">
                     <a class="btn btn-calc btn-calc_more-padding" href="#">
-                        Подробнее
+                        заказать
                     </a>
                 </div>
             </div>
@@ -1058,8 +1084,7 @@
 
 
                 <div class="header-callback">
-                    <span class="header-callback__num">+7 (495) 003-47-07</span>
-                    <a class="header-callback__link" href="#">
+                    <a  data-micromodal-trigger="modal-1" class="header-callback__link">
                         Перезвоните мне
                     </a>
                 </div>
@@ -1133,9 +1158,30 @@
         </div>
     </div>
 </div>
+<div class="modal micromodal-slide" id="modal-2" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container modal__container_basket" role="dialog" aria-modal="true"
+            aria-labelledby="modal-2-title">
+            <header class="modal__header modal__header_basket">
+                <h2 class="modal__title" id="modal-2-title">
+                    КОРЗИНА
+                </h2>
+                <button class="modal__close" aria-label="Close modal" data-micromodal-close>
 
+                </button>
+            </header>
+            <main class="modal__content modal__content_basket" id="modal-2-content">
+                <div class="empty-basket-bg">
 
+                </div>
+                <span class="empty-basket-span">Корзина пуста</span>
+            </main>
+            <footer class="modal__footer">
 
+            </footer>
+        </div>
+    </div>
+</div>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>

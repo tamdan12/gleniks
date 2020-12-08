@@ -4,6 +4,11 @@
     label {
         color: #6A6464;
     }
+
+    label:not(:first-child) {
+        display: inline-block;
+        margin-top: 1.25rem;
+    }
 }
 
 .calc {

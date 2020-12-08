@@ -1,0 +1,16 @@
+.empty-basket-bg {
+    background-image: url(../img/bg/basket-empty.svg);
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    width: 60vw;
+    height: 60vh;
+}
+
+.empty-basket-span {
+    display: inline-block;
+    margin-top: 1.5rem;
+    color: #6A6464;
+}
+
+//basket
