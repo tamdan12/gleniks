@@ -1,0 +1,88 @@
+#modal-1-title {
+    font-family: $textFont;
+    color: #000C31;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.modal_1_sub_title {
+    color: #6A6464;
+    font-size: 14px;
+    line-height: 16px;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+.callback-form {
+    &__label {
+        color: #000C31;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    &__input {
+        border: 1px solid #B8ACA9;
+        border-radius: 10px;
+        background-color: transparent;
+        padding: .75rem 1.5rem .75rem .75rem;
+        width: 100%;
+        max-width: 250px;
+    }
+
+    &__btn {
+        margin-top: 1rem;
+    }
+}
+
+.callback_time_choise {
+    margin-top: .35rem;
+
+    &__label_margin-left {
+        display: block;
+        margin-left: 1rem;
+
+    }
+
+}
+
+
+.our-tel {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+
+    &__span {
+        color: #000C31;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    &__link {
+        display: inline-block;
+        margin-top: 0.5rem;
+        text-decoration: none;
+        color: #000000;
+        font-size: 16px;
+        line-height: 18px;
+    }
+}
+
+.personal-date {
+    margin-top: 1.5rem;
+    color: #6A6464;
+    font-size: 12px;
+    line-height: 14px;
+
+    &__link {
+        text-decoration: none;
+        color: #000C31;
+        border-bottom: 1px solid #000C31;
+    }
+}
+
+
+
+
+
+@import "custom-radio"

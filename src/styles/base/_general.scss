@@ -16,9 +16,11 @@ h6 {
     border: none;
     box-sizing: border-box;
 }
+
 img {
     max-width: 100%;
 }
+
 html,
 body {
     font-family: $textFont;
@@ -40,10 +42,12 @@ body {
         font-size: 12px;
     }
 }
+
 .container-fluid {
     max-width: 1980px;
     margin: 0 auto;
 }
+
 .container {
     width: 100%;
     max-width: 1440px;

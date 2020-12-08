@@ -23,7 +23,7 @@
         <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
         <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
         <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-        <link rel="stylesheet" href="styles/main.min.css">
+        <link rel="stylesheet" href="styles/main.css">
     </head>
     <body>
         <!-- burger -->
@@ -121,10 +121,9 @@
 
 
             <div class="header-callback">
-                <span class="header-callback__num">+7 (495) 003-47-07</span>
-                <a class="header-callback__link" href="#">
+                <button data-micromodal-trigger="modal-1" class="header-callback__link">
                     Перезвоните мне
-                </a>
+                </button>
             </div>
 
 
@@ -211,7 +210,64 @@
         </div>
     </div>
 </footer>
-        <script src="js/pageB.min.js"></script>
-        <script src="js/vendor.min.js"></script>
+
+
+
+
+<div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container modal__container_callback" role="dialog" aria-modal="true"
+            aria-labelledby="modal-1-title">
+            <header class="modal__header">
+                <div class="modal__title-container">
+                    <h2 class="modal__title" id="modal-1-title">
+                        Давайте мы вам позвоним
+                    </h2>
+                    <span class="modal_1_sub_title">Оставте свой номер и мы перезвоним вам</span>
+                </div>
+                <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+            </header>
+            <main class="modal__content" id="modal-1-content">
+                <form class="callback-form" action="POST">
+                    <label class="callback-form__label" for="tel">Ваш номер телефона</label> <br>
+                    <input class="callback-form__input" type="tel" name="tel" placeholder="+7 (000) 000-00-00"
+                        pattern="[+]{1}[0-9]{11,14}">
+                    <!-- time-choise -->
+                    <div class="callback-form__time-choise callback_time_choise">
+                        <input class="callback_time_choise__input" type="radio" id="now" name="time-choise"
+                            value="Сейчас" checked>
+                        <label class="callback_time_choise__label" for="now">Сейчас</label>
+                        <input class="callback_time_choise__input" type="radio" id="later" name="time-choise"
+                            value="Точное время">
+                        <label class="callback_time_choise__label callback_time_choise__label_margin-left" for="later">Точное время</label>
+
+                    </div>
+                    <!-- time-choise -->
+                    <div class="callback-form__btn">
+                        <button class="btn btn-calc">
+                            жду звонка
+                        </button>
+                    </div>
+                </form>
+
+                <div class="modal__contacts our-tel">
+                    <span class="our-tel__span">Наш номер телефона</span>
+                    <a class="our-tel__link" href="tel:+7 (495) 003-47-07">+7 (495) 003-47-07</a>
+                </div>
+
+
+                <div class="modal__personal-date personal-date">
+                    Нажимая на кнопку вы даете свое согласие на <br>
+                    <a class="personal-date__link" href="#">обработку персональных данных.</a>
+                </div>
+            </main>
+        </div>
+    </div>
+</div>
+
+
+
+        <script src="js/pageB.js"></script>
+        <script src="js/vendor.js"></script>
     </body>
 </html>
