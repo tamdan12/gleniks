@@ -223,33 +223,35 @@ window.addEventListener('DOMContentLoaded', function () {
   });
 }); // slowScroll
 
-var anchors = document.querySelectorAll('a[href*="#"]');
+if (document.querySelectorAll('a[href*="#"]')) {
+  var anchors = document.querySelectorAll('a[href*="#"]');
 
-var _iterator = _createForOfIteratorHelper(anchors),
-    _step;
+  var _iterator = _createForOfIteratorHelper(anchors),
+      _step;
 
-try {
-  var _loop = function _loop() {
-    var anchor = _step.value;
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      var blockID = anchor.getAttribute('href').substr(1);
-      document.getElementById(blockID).scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
+  try {
+    var _loop = function _loop() {
+      var anchor = _step.value;
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        var blockID = anchor.getAttribute('href').substr(1);
+        document.getElementById(blockID).scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
       });
-    });
-  };
+    };
 
-  for (_iterator.s(); !(_step = _iterator.n()).done;) {
-    _loop();
-  } //add class on scroll
+    for (_iterator.s(); !(_step = _iterator.n()).done;) {
+      _loop();
+    }
+  } catch (err) {
+    _iterator.e(err);
+  } finally {
+    _iterator.f();
+  }
+} //add class on scroll
 
-} catch (err) {
-  _iterator.e(err);
-} finally {
-  _iterator.f();
-}
 
 document.addEventListener("scroll", function (e) {
   var content = document.querySelector("body");
