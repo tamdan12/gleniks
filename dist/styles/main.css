@@ -3372,6 +3372,103 @@ select {
   max-width: 75%;
 }
 
+.delivery {
+  padding: 4rem 0;
+}
+
+.delivery__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.delivery__row:not(:first-child) {
+  margin-top: 3rem;
+  justify-content: center;
+}
+
+.delivery__row:first-child {
+  position: relative;
+}
+
+.delivery__row:first-child::before {
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  left: -50px;
+  background-image: url(../img/svg/calc-title-circle.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+}
+
+.delivery__item {
+  flex-basis: calc(50% - 15px);
+  background: #DEDFE9;
+  box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.2);
+  border-radius: 26px;
+  padding: 45px 30px;
+}
+
+.delivery__item_m-region {
+  position: relative;
+}
+
+.delivery__item_m-region::after {
+  content: '';
+  position: absolute;
+  background-image: url(../img/svg/rect-title.svg);
+  width: 150px;
+  height: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: -75px;
+  height: -25px;
+}
+
+.delivery__item_region {
+  position: relative;
+}
+
+.delivery__item_region::after {
+  content: '';
+  position: absolute;
+  background-image: url(../img/svg/rect-title.svg);
+  width: 75px;
+  height: 75px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  right: -25px;
+  top: -25px;
+}
+
+.delivery__item:first-child {
+  position: relative;
+  background-image: url(../img/bg/ccc-bg.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.delivery__title {
+  color: #414141;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+.delivery__text {
+  margin-top: 1.5rem;
+  position: relative;
+}
+
+.delivery__text p:not(:first-child) {
+  margin-top: 1rem;
+}
+
+.fw500_delivery {
+  color: #414141;
+  font-weight: 500;
+}
+
 .footer {
   padding: 2rem 0;
   background-color: #fff;
@@ -4153,6 +4250,42 @@ select {
 
   .page-single-product__btn button {
     width: 100%;
+  }
+
+  .delivery__row {
+    flex-direction: column;
+  }
+
+  .delivery__row:last-child {
+    margin-top: 0;
+  }
+
+  .delivery__item {
+    margin-top: 3rem;
+  }
+
+  .delivery__item {
+    flex-basis: calc(50% - 15px);
+    background: #DEDFE9;
+    box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 26px;
+    padding: 45px 30px;
+  }
+
+  .delivery__item_m-region {
+    position: relative;
+  }
+
+  .delivery__item_m-region::after {
+    display: none;
+  }
+
+  .delivery__item_region {
+    position: relative;
+  }
+
+  .delivery__item_region::after {
+    display: none;
   }
 
   .footer__logo-nav {
