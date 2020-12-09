@@ -1,0 +1,151 @@
+.single-product_page {
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.single-product__item_page-single-product {
+    flex-basis: 40%;
+
+}
+
+.single-product__item_page-single-product:last-child {
+    position: sticky;
+    top: 90px;
+    margin-left: 3rem;
+}
+
+
+
+
+.single-product-labels {
+    position: relative;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 2px dashed #DEDFE9;
+    z-index: 10;
+
+    &__item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__span {
+        margin-left: 0.5rem;
+    }
+}
+
+.single-product-material {
+    &__title {
+        font-family: $textFont;
+        color: #6A6464;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    &__list {
+        list-style: none;
+
+        svg {
+            object-fit: contain;
+            flex-shrink: 0;
+            margin-right: 0.5rem;
+            margin-top: 5px;
+        }
+
+        li {
+            display: flex;
+            align-items: flex-start;
+            margin-top: 1rem;
+
+        }
+
+    }
+}
+
+.page-single-product {
+    margin-top: 10%;
+
+    &__cost-div {
+        margin-top: 1.5rem;
+        display: flex;
+        align-items: flex-end;
+
+        .counter {
+            margin-left: 1.5rem;
+        }
+    }
+
+    &__counter {
+        margin-left: 1.5rem;
+    }
+
+    &__selects {
+        margin-top: 1.5rem;
+
+        label {
+            color: #6A6464;
+            font-size: 20px;
+        }
+    }
+
+    &__cost {
+        color: #6A6464;
+        font-weight: 900;
+        font-size: 32px;
+    }
+
+    &__cost-span {
+        font-weight: 400;
+        font-size: 14px;
+        margin-bottom: 0.5rem;
+        display: inline-block;
+    }
+
+    &__btn {
+        margin-top: 1.5rem;
+    }
+}
+
+.more-option {
+    display: inline-block;
+    margin-top: 1.5rem;
+}
+
+
+
+.page-single-product-calc {
+    margin-top: 3rem;
+
+    &__cost {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 39.8824px;
+
+        text-transform: uppercase;
+
+        color: #6A6464;
+    }
+}
+
+
+@media(max-width:768px) {
+
+
+    .single-product__item_page-single-product:last-child {
+        position: sticky;
+        top: 90px;
+        margin-left: 0;
+        margin-top: 5rem;
+    }
+
+    .page-single-product {
+        &__btn {
+            display: flex;
+            width: 100%;
+            button {
+                width: 100%;
+            }
+        }
+    }
+}

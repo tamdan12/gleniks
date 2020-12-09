@@ -326,39 +326,79 @@ MicroModal.init({
   disableScroll: true
 });
 
-var drawCounter = function drawCounter() {
-  document.getElementById('counter').innerHTML = store.counter;
-};
+if (document.getElementById('counter')) {
+  //counter 
+  var drawCounter = function drawCounter() {
+    document.getElementById('counter').innerHTML = store.counter;
+  };
 
-var bindEvents = function bindEvents() {
-  document.getElementById('increase').addEventListener('click', function () {
-    increase();
+  var bindEvents = function bindEvents() {
+    document.getElementById('increase').addEventListener('click', function () {
+      increase();
+      drawCounter();
+    });
+    document.getElementById('decrease').addEventListener('click', function () {
+      decrease();
+      drawCounter();
+    });
+  };
+
+  var store = {
+    counter: 1
+  };
+
+  var increase = function increase() {
+    store.counter++;
+  };
+
+  var decrease = function decrease() {
+    store.counter--;
+  };
+
+  var init = function init() {
+    bindEvents();
     drawCounter();
-  });
-  document.getElementById('decrease').addEventListener('click', function () {
-    decrease();
-    drawCounter();
-  });
-};
+  };
 
-var store = {
-  counter: 1
-};
+  init();
+}
 
-var increase = function increase() {
-  store.counter++;
-};
+if (document.getElementById('counter-2')) {
+  //counter-single-product
+  var drawCounter2 = function drawCounter2() {
+    document.getElementById('counter-2').innerHTML = store2.counter;
+  };
 
-var decrease = function decrease() {
-  store.counter--;
-};
+  var bindEvents2 = function bindEvents2() {
+    document.getElementById('increase-2').addEventListener('click', function () {
+      increase2();
+      drawCounter2();
+    });
+    document.getElementById('decrease-2').addEventListener('click', function () {
+      decrease2();
+      drawCounter2();
+    });
+  };
 
-var init = function init() {
-  bindEvents();
-  drawCounter();
-};
+  var store2 = {
+    counter: 1
+  };
 
-init();
+  var increase2 = function increase2() {
+    store2.counter++;
+  };
+
+  var decrease2 = function decrease2() {
+    store2.counter--;
+  };
+
+  var init2 = function init2() {
+    bindEvents2();
+    drawCounter2();
+  };
+
+  init2();
+}
 
 /***/ }),
 
@@ -402,8 +442,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_adv_slider_adv_slider_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/adv-slider/adv-slider.js */ "./src/blocks/modules/adv-slider/adv-slider.js");
 /* harmony import */ var _modules_products_products_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/products/products.js */ "./src/blocks/modules/products/products.js");
 /* harmony import */ var _modules_products_products_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_products_products_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _modules_page_ordering_page_ordering_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! %modules%/page-ordering/page-ordering.js */ "./src/blocks/modules/page-ordering/page-ordering.js");
-/* harmony import */ var _modules_page_ordering_page_ordering_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_modules_page_ordering_page_ordering_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _modules_page_ordering_page_ordering__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! %modules%/page-ordering/page-ordering */ "./src/blocks/modules/page-ordering/page-ordering.js");
+/* harmony import */ var _modules_page_ordering_page_ordering__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_modules_page_ordering_page_ordering__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
 /* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_5__);
 

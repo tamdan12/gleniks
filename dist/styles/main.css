@@ -2790,6 +2790,8 @@ select {
 
 .breadCrumbs__title {
   text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0.5rem;
 }
 
 .breadCrumbs__text {
@@ -2802,6 +2804,22 @@ select {
   width: 50px;
   height: 50px;
   background-color: transparent;
+}
+
+.crumbs {
+  display: flex;
+}
+
+.crumbs__item {
+  margin: 0 .25rem;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #C6CBCB;
+}
+
+.crumbs__item_active {
+  color: #000C31;
 }
 
 .section-partnersInfo {
@@ -3152,6 +3170,166 @@ select {
   display: none;
 }
 
+.single-product_page {
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.single-product__item_page-single-product {
+  flex-basis: 40%;
+}
+
+.single-product__item_page-single-product:last-child {
+  position: sticky;
+  top: 90px;
+  margin-left: 3rem;
+}
+
+.single-product-labels {
+  position: relative;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 2px dashed #DEDFE9;
+  z-index: 10;
+}
+
+.single-product-labels__item {
+  display: flex;
+  align-items: center;
+}
+
+.single-product-labels__span {
+  margin-left: 0.5rem;
+}
+
+.single-product-material__title {
+  font-family: "Roboto", sans-serif;
+  color: #6A6464;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.single-product-material__list {
+  list-style: none;
+}
+
+.single-product-material__list svg {
+  object-fit: contain;
+  flex-shrink: 0;
+  margin-right: 0.5rem;
+  margin-top: 5px;
+}
+
+.single-product-material__list li {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 1rem;
+}
+
+.page-single-product {
+  margin-top: 10%;
+}
+
+.page-single-product__cost-div {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+.page-single-product__cost-div .counter {
+  margin-left: 1.5rem;
+}
+
+.page-single-product__counter {
+  margin-left: 1.5rem;
+}
+
+.page-single-product__selects {
+  margin-top: 1.5rem;
+}
+
+.page-single-product__selects label {
+  color: #6A6464;
+  font-size: 20px;
+}
+
+.page-single-product__cost {
+  color: #6A6464;
+  font-weight: 900;
+  font-size: 32px;
+}
+
+.page-single-product__cost-span {
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+.page-single-product__btn {
+  margin-top: 1.5rem;
+}
+
+.more-option {
+  display: inline-block;
+  margin-top: 1.5rem;
+}
+
+.page-single-product-calc {
+  margin-top: 3rem;
+}
+
+.page-single-product-calc__cost {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 39.8824px;
+  text-transform: uppercase;
+  color: #6A6464;
+}
+
+.catalog {
+  padding: 5rem 0;
+}
+
+.catalog__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog__item {
+  flex-basis: calc(33.333% - 10px);
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 9.95334px 29.0306px rgba(0, 0, 0, 0.2);
+  border-radius: 21.5656px;
+  padding: 30px 15px;
+}
+
+.catalog__title {
+  font-size: 20px;
+}
+
+.catalog__cost {
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #6A6464;
+}
+
+.catalog__btn {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.catalog__btn button {
+  width: 100%;
+  max-width: 75%;
+}
+
 .footer {
   padding: 2rem 0;
   background-color: #fff;
@@ -3426,6 +3604,12 @@ select {
   }
 }
 
+@media (max-width: 1150px) {
+  .catalog__title {
+    font-size: 18px;
+  }
+}
+
 @media (max-width: 1090px) {
   .service-step_2::before {
     width: 230px;
@@ -3598,6 +3782,25 @@ select {
     flex-direction: column;
     margin-left: auto;
     max-width: 320px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .catalog__row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+  }
+
+  .catalog__item:not(:first-child) {
+    margin-top: 3rem;
+  }
+
+  .catalog__btn button {
+    max-width: 95%;
   }
 }
 
@@ -3882,6 +4085,22 @@ select {
     align-items: center;
   }
 
+  .single-product__item_page-single-product:last-child {
+    position: sticky;
+    top: 90px;
+    margin-left: 0;
+    margin-top: 5rem;
+  }
+
+  .page-single-product__btn {
+    display: flex;
+    width: 100%;
+  }
+
+  .page-single-product__btn button {
+    width: 100%;
+  }
+
   .footer__logo-nav {
     flex-direction: column;
     align-items: flex-start;
@@ -3987,6 +4206,14 @@ select {
   }
 
   .page-last__h2 {
+    font-size: 18px;
+  }
+
+  .catalog__title {
+    font-size: 16px;
+  }
+
+  .catalog__cost {
     font-size: 18px;
   }
 
