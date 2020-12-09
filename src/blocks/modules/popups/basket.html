@@ -11,10 +11,49 @@
                 </button>
             </header>
             <main class="modal__content modal__content_basket" id="modal-3-content">
-                <div class="empty-basket-bg">
+                <section class="basket-products">
+                    <!-- row -->
+                    <div class="basket-products__row">
+                        <div class="basket-products__item basket-product">
+                            <img src="img/single-product.jpg" alt="" class="basket-product__img">
+                            <div class="basket-product__text">
+                                <span class="basket-product__name">Ортопедический каркас (ортопедические решетки)</span>
+                                <span class="basket-product__descr">Размер: 2000*1200 мм</span>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="basket-products__item basket-single-cost">
+                            <div class="basket-single-cost__counter counter">
+                                <button class="counter__btn" id="decrease">-</button>
+                                <span id="counter">1</span>
+                                <button class="counter__btn" id="increase">+</button>
+                            </div>
+                            <span class="basket-single-cost__cost">
+                                3100,00 ₽
+                            </span>
+                            <button class="basket-single-cost__del-btn">
 
-                </div>
-                <span class="empty-basket-span">Корзина пуста</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- row -->
+                    <div class="basket-products__row">
+                        <div class="basket-products__item basket-products__continue-btn">
+                            <button class="btn btn-calc" aria-label="Close modal" data-micromodal-close>
+                                ПРОДОЛЖИТЬ ПОКУПКИ
+                            </button>
+                        </div>
+                        <!-- item -->
+                        <div class="basket-products__item checkout">
+                            <span class="checkout__cost">
+                                3100,00 ₽
+                            </span>
+                            <button class="btn btn-calc-blue">
+                                ОФОРМИТЬ ЗАКАЗ
+                            </button>
+                        </div>
+                    </div>
+                </section>
             </main>
             <footer class="modal__footer">
 

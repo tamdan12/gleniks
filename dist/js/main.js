@@ -310,9 +310,45 @@ document.addEventListener("scroll", function (e) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var micromodal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! micromodal */ "./node_modules/micromodal/dist/micromodal.es.js");
 
+
+
 MicroModal.init({
   disableScroll: true
 });
+
+var drawCounter = function drawCounter() {
+  document.getElementById('counter').innerHTML = store.counter;
+};
+
+var bindEvents = function bindEvents() {
+  document.getElementById('increase').addEventListener('click', function () {
+    increase();
+    drawCounter();
+  });
+  document.getElementById('decrease').addEventListener('click', function () {
+    decrease();
+    drawCounter();
+  });
+};
+
+var store = {
+  counter: 1
+};
+
+var increase = function increase() {
+  store.counter++;
+};
+
+var decrease = function decrease() {
+  store.counter--;
+};
+
+var init = function init() {
+  bindEvents();
+  drawCounter();
+};
+
+init();
 
 /***/ }),
 

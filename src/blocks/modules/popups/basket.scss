@@ -14,3 +14,154 @@
 }
 
 //basket
+
+.basket-products {
+    width: 100%;
+
+    &__row {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__row:not(:first-child) {
+        margin-top: 3rem;
+    }
+
+    &__continue-btn {
+        align-self: flex-end;
+    }
+}
+
+.basket-product {
+    display: flex;
+    align-items: center;
+
+    &__img {
+        max-width: 200px;
+    }
+
+    &__text {
+        margin-left: 2.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__name {
+        color: #6A6464;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    &__descr {
+        margin-top: 1rem;
+        font-size: 14px;
+        line-height: 16px;
+        color: rgba(106, 100, 100, 0.5);
+    }
+}
+
+.basket-single-cost {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-basis: 40%;
+
+    &__cost {
+        color: #6A6464;
+        font-weight: 500;
+        margin: 0 30px;
+    }
+}
+
+.counter {
+    border: 0.733333px solid #B8ACA9;
+    box-sizing: border-box;
+    border-radius: 7.33333px;
+    padding: .5rem .75rem;
+    color: #B8ACA9;
+
+    &__btn {
+        width: 30px;
+        height: 30px;
+        color: #B8ACA9;
+        background-color: transparent;
+        outline: none;
+        font-size: 20px;
+
+    }
+}
+
+
+.checkout {
+    border: 1px solid #000C31;
+    border-radius: 15px;
+    padding: 2rem 4rem;
+
+    &__cost {
+
+        color: #6A6464;
+        font-size: 24px;
+        margin-right: 1.5rem;
+    }
+}
+
+@media(max-width:950px) {
+    .basket-product {
+        &__img {
+            max-width: 100px;
+        }
+    }
+}
+
+
+@media(max-width:768px) {
+    .basket-products {
+        &__row {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__row:last-child {
+            flex-direction: column-reverse;
+        }
+    }
+
+    .basket-products__continue-btn {
+        align-self: center;
+        margin-top: 3rem;
+
+    }
+
+    .basket-single-cost {
+        margin-top: 1.5rem;
+    }
+}
+
+@media(max-width:550px) {
+    .checkout {
+        border: 1px solid #000C31;
+        border-radius: 15px;
+        padding: 3rem 1.5rem;
+
+        &__cost {
+            color: #6A6464;
+            font-size: 16px;
+            margin-right: 1rem;
+        }
+    }
+}
+
+@media(max-width:400px) {
+    .checkout {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        &__cost {
+            color: #6A6464;
+            font-size: 18px;
+            margin-right: 0;
+            margin-top: 1.5rem;
+        }
+    }
+}
