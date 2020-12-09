@@ -2959,6 +2959,10 @@ select {
   margin-top: 1.5rem;
 }
 
+.calc__title-text_partnersForm {
+  font-size: 62px;
+}
+
 .footer {
   padding: 2rem 0;
   background-color: #fff;
