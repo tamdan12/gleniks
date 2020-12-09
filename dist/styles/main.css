@@ -1725,6 +1725,11 @@ body {
   color: #fff;
 }
 
+.btn-calc-blue_more-p {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 .btn-calc_mt3rem {
   margin-top: 4rem;
 }
@@ -2784,16 +2789,20 @@ select {
   align-items: center;
 }
 
-.breadCrumbs__btn {
-  width: 50px;
-  height: 50px;
-  background-color: transparent;
+.breadCrumbs__title {
+  text-transform: uppercase;
 }
 
 .breadCrumbs__text {
   margin-right: auto;
   margin-left: auto;
   transform: translateX(-25px);
+}
+
+.breadCrumbs__btn {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
 }
 
 .section-partnersInfo {
@@ -2877,12 +2886,12 @@ select {
   margin-top: 1.5rem;
 }
 
-.swiper-container_partners .swiper-slide-active {
+.swiper-container_partners .swiper-slide {
   position: relative;
   border-radius: 20px;
 }
 
-.swiper-container_partners .swiper-slide-active::before {
+.swiper-container_partners .swiper-slide::before {
   content: '';
   position: absolute;
   z-index: -1;
@@ -2894,8 +2903,60 @@ select {
   border-radius: 20px;
 }
 
-.swiper-container_partners .swiper-slide-active img {
+.swiper-container_partners .swiper-slide img {
   border-radius: 20px;
+}
+
+.section-partnersForm {
+  padding: 50px 0;
+}
+
+.partnersForm {
+  display: flex;
+  align-items: center;
+}
+
+.partnersForm__item {
+  flex-basis: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.partners-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.partners-form__input {
+  border: 1px solid #B8ACA9;
+  border-radius: 10px;
+  background-color: transparent;
+  height: 50px;
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+  width: 100%;
+}
+
+.partners-form__input:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
+.partners-form__textarea {
+  border: 1px solid #B8ACA9;
+  border-radius: 10px;
+  background-color: transparent;
+  resize: none;
+  margin-top: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+  padding-top: 20px;
+  height: 120px;
+}
+
+.partners-form__btn {
+  margin-top: 1.5rem;
 }
 
 .footer {
@@ -3563,6 +3624,30 @@ select {
     flex-basis: 100%;
   }
 
+  .calc__title-text_partnersForm {
+    font-size: 36px;
+  }
+
+  .partnersForm {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .partnersForm__item {
+    width: 100%;
+  }
+
+  .partnersForm__item:last-child {
+    margin-top: 5rem;
+  }
+
+  .partners-form__btn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
   .footer__logo-nav {
     flex-direction: column;
     align-items: flex-start;
@@ -3627,6 +3712,16 @@ select {
     max-width: 95%;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .breadCrumbs__text {
+    transform: translateX(-15px);
+  }
+
+  .breadCrumbs__btn {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
   }
 }
 
