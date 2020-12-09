@@ -29,6 +29,10 @@ body {
     color: $sec-color;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 @media(max-width: 768px) {
 
     body {

@@ -311,6 +311,17 @@ if (btnScrollDown) {
 
 /***/ }),
 
+/***/ "./src/blocks/modules/page-single-product/page-single-product.js":
+/*!***********************************************************************!*\
+  !*** ./src/blocks/modules/page-single-product/page-single-product.js ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
 /***/ "./src/blocks/modules/popups/popups.js":
 /*!*********************************************!*\
   !*** ./src/blocks/modules/popups/popups.js ***!
@@ -446,8 +457,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_products_products_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_products_products_js__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _modules_page_ordering_page_ordering__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! %modules%/page-ordering/page-ordering */ "./src/blocks/modules/page-ordering/page-ordering.js");
 /* harmony import */ var _modules_page_ordering_page_ordering__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_modules_page_ordering_page_ordering__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _modules_page_single_product_page_single_product__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! %modules%/page-single-product/page-single-product */ "./src/blocks/modules/page-single-product/page-single-product.js");
+/* harmony import */ var _modules_page_single_product_page_single_product__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_modules_page_single_product_page_single_product__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_6__);
+
 
 
 

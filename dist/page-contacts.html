@@ -155,141 +155,67 @@
             </button>
             <div class="breadCrumbs__text">
                 <h1 class="breadCrumbs__title">
-                    Партнерам
+                    Контакты
                 </h1>
             </div>
         </div>
     </div>
 </section>
 
-    <section class="section-partnersInfo">
+
+    <section class="page-contacts">
     <div class="container">
-        <div class="partnersInfo">
-            <div class="partnersInfo__item">
-                <ul class=" partnersInfoList">
-                    <li class="partnersInfoList__li">
-                        <h3 class="partnersInfoList__title">
-                            Мы ищем
-                        </h3>
-                    </li>
-                    <li class="partnersInfoList__li">
-                        Оптовых производителей мебели
-                    </li>
-                    <li class="partnersInfoList__li">
-                        Владельцев мебельных магазинов, гостиниц
-                    </li>
-                </ul>
-            </div>
-
-            <!-- item -->
-            <div class="partnersInfo__item">
-                <ul class="partnersInfoList">
-                    <li class="partnersInfoList__li">
-                        <h3 class="partnersInfoList__title">
-                            МЫ ПРЕДЛАГАЕМ:
-                        </h3>
-                    </li>
-                    <li class="partnersInfoList__li">
-                        Право на продажу продукции ведущего производителя
-                    </li>
-                    <li class="partnersInfoList__li">
-                        Гарантированная высокая рентабельность бизнеса
-                    </li>
-                    <li class="partnersInfoList__li">
-                        Полная окупаемость менее 1 года
-                    </li>
-                    <li class="partnersInfoList__li">
-                        Увеличение торговой цены от 55%
-                    </li>
-                    <li class="partnersInfoList__li">
-                        Доставка
-                    </li>
-                    <li class="partnersInfoList__li">
-                        Доставка
-                    </li>
-                    <li class="partnersInfoList__li">
-                        Образование
-                    </li>
-                    <li class="partnersInfoList__li">
-                        Беспроцентная рассрочка на выставочную продукцию
-                    </li>
-                    <li class="partnersInfoList__li">
-                        Успешно реализованные программы по увеличению продаж
-                    </li>
-                </ul>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-    <section class="section-partnersSlider">
-    <div class="container">
-        <div class="partnersSliderContent">
-            <div class="partnersSliderContent__item partnersSliderContent__item_w50">
-                <h3 class="partnersSliderContent__title">
-                    мы всегда готовы
-                </h3>
-                <p class="partnersSliderContent__p">
-                    выполнить практически любые требования заказчика в короткие сроки, с высоким качеством, внедрить
-                    ваши чертежи или разработать их вместе.
-                </p>
-            </div>
-            <!-- item -->
-            <div class="partnersSliderContent__item">
-                <!-- Slider main container -->
-                <div class="swiper-container swiper-container_partners">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <img src="img/partnersSlider/1.png" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/partnersSlider/2.png" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/partnersSlider/1.png" alt="">
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/partnersSlider/2.png" alt="">
-                        </div>
+        <div class="contacts">
+            <div class="contacts__row">
+                <div class="contacts__item contacts__item_map">
+                    <div class="map-border" id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+                        <div  id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+                        <script>(function () {
+                                var setting = { "height": 450,  "zoom": 17, "queryString": "Verkhnyaya Krasnosel'skaya Ulitsa, 16б, Москва, Россия", "place_id": "ChIJVVWlUYY1tUYR8h8Twe_43Yg", "satellite": false, "centerCoord": [55.78470584935954, 37.66774475687817], "cid": "0x88ddf8efc1131ff2", "lang": "en", "cityUrl": "/russia/moscow", "cityAnchorText": "Map of Moscow, Central Federal District, Russia", "id": "map-9cd199b9cc5410cd3b1ad21cab2e54d3", "embed_id": "323061" };
+                                var d = document;
+                                var s = d.createElement('script');
+                                s.src = 'https://1map.com/js/script-for-user.js?embed_id=323061';
+                                s.async = true;
+                                s.onload = function (e) {
+                                    window.OneMap.initMap(setting)
+                                };
+                                var to = d.getElementsByTagName('script')[0];
+                                to.parentNode.insertBefore(s, to);
+                            })();</script>
                     </div>
-
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                </div>
+                <!-- item -->
+                <div class="contacts__item contacts__item_form">
+                    <div class="contacts-tel-email">
+                        <a class="contacts-tel-email__link" href="tel:+7(495)0034707">
+                            +7 (495) 003-47-07
+                        </a>
+                        <span class="contacts-tel-email__adress">
+                            ул. Верхняя Красносельская, 16б, Москва, Россия
+                        </span>
+                        <a class="contacts-tel-email__link" href="mailto:info@gleniks.ru">
+                            info@gleniks.ru
+                        </a>
+                    </div>
+                    <!-- contacts -->
+                    <form action="POST" class="contacts-form">
+                        <h3 class="contacts-form__title">
+                            СВЯЖИТЕСЬ С НАМИ
+                        </h3>
+                        <input type="name" placeholder="Имя" class="contacts-form__input">
+                        <input type="email" placeholder="E-mail" class="contacts-form__input">
+                        <input type="tel" placeholder="+7 900 00 00" class="contacts-form__input">
+                        <textarea placeholder="Сообщение" class="contacts-form__textarea"></textarea>
+                        <button class="contacts-form__btn btn btn-calc-blue btn-calc_more-padding">
+                            СВЯЗАТЬСЯ СО МНОЙ
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-    <section class="section-partnersForm">
-    <div class="container">
-        <div class="partnersForm">
-            <div class="partnersForm__item">
-                <h2 class="calc__title">
-                    <span class="calc__title-text calc__title-text_partnersForm">
-                        Свяжитесь <br>
-                        с нами
-                    </span>
-                </h2>
-            </div>
-            <div class="partnersForm__item">
-                <form action="#" class="partners-form">
-                    <input type="name" class="partners-form__input" placeholder="Имя">
-                    <input type="name" class="partners-form__input" placeholder="E-mail">
-                    <input type="name" class="partners-form__input" placeholder="Телефон">
-                    <textarea class="partners-form__textarea" placeholder="Сообщение"></textarea>
-                    <div class="partners-form__btn">
-                        <button class="btn btn-calc-blue btn-calc-blue_more-p">Связаться со мной</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
 
     <footer class="footer">
     <div class="container">
@@ -499,7 +425,6 @@
         </div>
     </div>
 </div>
-
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
