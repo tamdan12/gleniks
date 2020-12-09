@@ -68,16 +68,6 @@
         text-decoration: none;
         font-weight: 700;
         font-size: 12px;
-
-
-        &:hover {
-            cursor: pointer;
-        }
-
-        .link-hover {
-            display: inline-block;
-            padding: 1rem .25rem;
-        }
     }
 
     &__burger {
@@ -163,6 +153,44 @@
     display: none;
 }
 
+
+
+.link-hover {
+    position: relative;
+    cursor: pointer;
+    padding: 1rem .5rem;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -18px;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background-color: $main-color;
+        width: 100%;
+        transition: all .3s;
+
+        transform: scale(0);
+    }
+
+    &:hover {
+        &:after {
+            transform: scale(1);
+        }
+    }
+}
+
+@media(max-width:1370px) {
+    .header {
+        font-size: 0.8rem;
+    }
+}
+@media(max-width:1300px) {
+    .header {
+        font-size: 0.7rem;
+    }
+}
 @media (max-width: 1260px) {
 
     .li-contacts-mob {

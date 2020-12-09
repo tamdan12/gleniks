@@ -13,10 +13,16 @@
         box-shadow: 0px 9.95334px 29.0306px rgba(0, 0, 0, 0.2);
         border-radius: 21.5656px;
         padding: 30px 15px;
+
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     &__title {
         font-size: 20px;
+        text-transform: uppercase;
     }
 
     &__cost {
@@ -25,6 +31,12 @@
         font-size: 22px;
         text-transform: uppercase;
         color: #6A6464;
+        margin-top: auto;
+    }
+
+    &__img-div {
+        margin-bottom: auto;
+        margin-top: 2rem;
     }
 
     &__btn {
@@ -32,6 +44,7 @@
         display: flex;
         justify-content: center;
         width: 100%;
+        
 
         button {
             width: 100%;

@@ -1109,15 +1109,6 @@ body {
   font-size: 12px;
 }
 
-.header__link:hover {
-  cursor: pointer;
-}
-
-.header__link .link-hover {
-  display: inline-block;
-  padding: 1rem .25rem;
-}
-
 .header__burger {
   display: none;
 }
@@ -1187,6 +1178,29 @@ body {
 
 .li-contacts-mob {
   display: none;
+}
+
+.link-hover {
+  position: relative;
+  cursor: pointer;
+  padding: 1rem .5rem;
+}
+
+.link-hover::after {
+  content: '';
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #000C31;
+  width: 100%;
+  transition: all .3s;
+  transform: scale(0);
+}
+
+.link-hover:hover:after {
+  transform: scale(1);
 }
 
 .contacts-mobile-menu {
@@ -1670,6 +1684,14 @@ body {
   border-radius: 50px;
 }
 
+.btn:hover {
+  background-color: #C7CBD1;
+}
+
+.btn:active {
+  background-color: #586386;
+}
+
 .btn-download {
   display: inline-flex;
   align-items: center;
@@ -1704,6 +1726,7 @@ body {
   font-size: 14px;
   background-color: #fff;
   box-shadow: 0px -1px 35px rgba(255, 255, 255, 0.5), 0px 15px 25px rgba(12, 12, 26, 0.12);
+  cursor: pointer;
 }
 
 .btn-calc__icon {
@@ -1723,11 +1746,20 @@ body {
   box-shadow: 0px -1px 35px rgba(255, 255, 255, 0.5), 0px 15px 25px rgba(12, 12, 26, 0.12);
   background-color: #000C31;
   color: #fff;
+  cursor: pointer;
 }
 
 .btn-calc-blue_more-p {
   padding-left: 3rem;
   padding-right: 3rem;
+}
+
+.btn-calc-blue:hover {
+  background: #C7CBD1;
+}
+
+.btn-calc-blue:active {
+  background: #586386;
 }
 
 .btn-calc_mt3rem {
@@ -3304,10 +3336,14 @@ select {
   box-shadow: 0px 9.95334px 29.0306px rgba(0, 0, 0, 0.2);
   border-radius: 21.5656px;
   padding: 30px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .catalog__title {
   font-size: 20px;
+  text-transform: uppercase;
 }
 
 .catalog__cost {
@@ -3316,6 +3352,12 @@ select {
   font-size: 22px;
   text-transform: uppercase;
   color: #6A6464;
+  margin-top: auto;
+}
+
+.catalog__img-div {
+  margin-bottom: auto;
+  margin-top: 2rem;
 }
 
 .catalog__btn {
@@ -3465,10 +3507,22 @@ select {
   }
 }
 
+@media (max-width: 1370px) {
+  .header {
+    font-size: 0.8rem;
+  }
+}
+
 @media (max-width: 1305px) {
   .service-step_4::before {
     width: 295px;
     left: -90%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .header {
+    font-size: 0.7rem;
   }
 }
 
