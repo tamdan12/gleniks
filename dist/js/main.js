@@ -275,27 +275,30 @@ document.addEventListener("scroll", function (e) {
     content.classList.add('header-none-bgc');
   }
 });
+var btnScrollDown = document.querySelector('#scroll_down');
 
-(function () {
-  var btnScrollDown = document.querySelector('#scroll_down');
+if (btnScrollDown) {
+  (function () {
+    var btnScrollDown = document.querySelector('#scroll_down');
 
-  function scrollDown() {
-    var windowCoords = document.documentElement.clientHeight;
+    function scrollDown() {
+      var windowCoords = document.documentElement.clientHeight;
 
-    (function scroll() {
-      if (window.pageYOffset < windowCoords) {
-        window.scrollBy(0, 10);
-        setTimeout(scroll, 0);
-      }
+      (function scroll() {
+        if (window.pageYOffset < windowCoords) {
+          window.scrollBy(0, 10);
+          setTimeout(scroll, 0);
+        }
 
-      if (window.pageYOffset > windowCoords) {
-        window.scrollTo(0, windowCoords);
-      }
-    })();
-  }
+        if (window.pageYOffset > windowCoords) {
+          window.scrollTo(0, windowCoords);
+        }
+      })();
+    }
 
-  btnScrollDown.addEventListener('click', scrollDown);
-})();
+    btnScrollDown.addEventListener('click', scrollDown);
+  })();
+}
 
 /***/ }),
 
@@ -362,14 +365,17 @@ init();
 var productsContainer = document.querySelector('.products__row');
 var contentContainer = document.querySelector('.products__item_content');
 var newLi = document.querySelector('.thumb-btn');
-window.addEventListener('resize', thumbBtnReplace);
 
-function thumbBtnReplace() {
-  if (window.innerWidth <= 768) {
-    productsContainer.insertBefore(newLi, productsContainer.children[0]);
-  } else {
-    contentContainer.insertBefore(newLi, contentContainer.children[2]);
-  }
+if (newLi) {
+  var thumbBtnReplace = function thumbBtnReplace() {
+    if (window.innerWidth <= 768) {
+      productsContainer.insertBefore(newLi, productsContainer.children[0]);
+    } else {
+      contentContainer.insertBefore(newLi, contentContainer.children[2]);
+    }
+  };
+
+  window.addEventListener('resize', thumbBtnReplace);
 }
 
 /***/ }),

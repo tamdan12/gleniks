@@ -2771,6 +2771,83 @@ select {
   margin-top: 3rem;
 }
 
+.section-breadCrumbs {
+  margin-top: 80px;
+  background-color: #fff;
+  padding: 10px 0;
+}
+
+.breadCrumbs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.breadCrumbs__btn {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+}
+
+.breadCrumbs__text {
+  margin-right: auto;
+  margin-left: auto;
+  transform: translateX(-25px);
+}
+
+.section-partnersInfo {
+  padding: 50px 0;
+}
+
+.partnersInfo {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.partnersInfo__item {
+  position: relative;
+  flex-basis: calc(50% - 155px);
+}
+
+.partnersInfo__item:first-child::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  background-image: url(../img/svg/partnersInfo.svg);
+  width: 600px;
+  height: 360px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.partnersInfoList {
+  position: relative;
+  background-image: url(../img/bg/ccc-bg.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  list-style: none;
+  padding: 50px 30px;
+  background: #DEDFE9;
+  box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.2);
+  border-radius: 26px;
+}
+
+.partnersInfoList__title {
+  text-transform: uppercase;
+  color: #414141;
+}
+
+.partnersInfoList__li:not(:first-child) {
+  margin-top: 1rem;
+}
+
+.partnersInfoList__li:nth-child(2) {
+  margin-top: 2rem;
+}
+
 .footer {
   padding: 2rem 0;
   background-color: #fff;
@@ -3176,6 +3253,23 @@ select {
   .service-steps__item:last-child {
     margin-left: 0;
   }
+
+  .partnersInfo__item {
+    position: relative;
+    flex-basis: calc(50% - 50px);
+  }
+
+  .partnersInfo__item:first-child::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    background-image: url(../img/svg/partnersInfoTablet.svg);
+    width: 600px;
+    height: 360px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 
 @media (max-width: 990px) {
@@ -3419,6 +3513,26 @@ select {
 
   .footer__nav-li:not(:first-child) {
     margin-top: 0.75rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .partnersInfo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .partnersInfo__item {
+    flex-basis: 100%;
+    width: 100%;
+  }
+
+  .partnersInfo__item:first-child::before {
+    display: none;
+  }
+
+  .partnersInfo__item:last-child {
+    margin-top: 3rem;
   }
 }
 

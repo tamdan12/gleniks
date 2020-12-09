@@ -1,0 +1,108 @@
+.section-partnersInfo {
+    padding: 50px 0;
+}
+
+
+.partnersInfo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+
+    &__item {
+        position: relative;
+        flex-basis: calc(50% - 155px);
+
+    }
+
+    &__item:first-child {
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 20%;
+            background-image: url(../img/svg/partnersInfo.svg);
+            width: 600px;
+            height: 360px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+.partnersInfoList {
+    position: relative;
+    background-image: url(../img/bg/ccc-bg.png);
+    background-size: cover;
+    background-position: 50% 50%;
+    list-style: none;
+    padding: 50px 30px;
+    background: #DEDFE9;
+    box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 26px;
+
+    &__title {
+        text-transform: uppercase;
+        color: #414141;
+    }
+
+    &__li:not(:first-child) {
+        margin-top: 1rem;
+    }
+
+    &__li:nth-child(2) {
+        margin-top: 2rem;
+    }
+}
+
+
+@media(max-width:1024px) {
+
+    .partnersInfo {
+
+
+        &__item {
+            position: relative;
+            flex-basis: calc(50% - 50px);
+
+        }
+
+        &__item:first-child {
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 20%;
+                background-image: url(../img/svg/partnersInfoTablet.svg);
+                width: 600px;
+                height: 360px;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
+
+@media(max-width:600px) {
+    .partnersInfo {
+        flex-direction: column;
+        align-items: center;
+
+        &__item {
+            flex-basis: 100%;
+            width: 100%;
+        }
+
+        &__item:first-child {
+
+            &::before {
+                display: none;
+            }
+        }
+
+        &__item:last-child {
+            margin-top: 3rem;
+        }
+    }
+}
