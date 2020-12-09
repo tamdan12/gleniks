@@ -1,0 +1,110 @@
+<section class="page-ordering">
+    <div class="container">
+        <div class="ordering-back">
+            <button class="breadCrumbs__btn">
+                <img src="img/svg/arrow-back.svg" alt="">
+            </button>
+            <h1 class="ordering-back__title">
+                ОФОРМЛЕНИЕ ЗАКАЗА
+            </h1>
+        </div>
+
+        <div class="ordering">
+            <div class="ordering__col">
+                <div class="ordering__row ordering__row_contacts">
+                    <h2 class="ordering__title">
+                        1. Контактная информация
+                    </h2>
+                    <form action="POST" class="ordering__contacts ordering-contacts">
+                        <div class="ordering-contacts__row">
+                            <div class="ordering-contacts__item">
+                                <label for="ordering-name">Имя</label>
+                                <input class="ordering-contacts__input" type="name" id="ordering-name">
+                            </div>
+                            <!-- item -->
+                            <div class="ordering-contacts__item">
+                                <label for="ordering-phone">Номер телефона</label>
+                                <input class="ordering-contacts__input" type="tel" id="ordering-phone">
+                            </div>
+                        </div>
+                        <!-- row -->
+                        <div class="ordering-contacts__row">
+                            <div class="ordering-contacts__item">
+                                <label for="ordering-e-mail">E-mail</label>
+                                <input class="ordering-contacts__input" type="email" id="ordering-e-mail">
+                            </div>
+                        </div>
+                        <!-- row -->
+                        <div class="ordering-contacts__row">
+                            <div class="ordering-contacts__item ordering-contacts__item_btn">
+                                <div
+                                    class="ordering-btn-toggle ordering-btn-toggle_contacts btn btn-calc-blue btn-calc_more-padding">
+                                    ПРОДОЛЖИТЬ ОФОРМЛЕНИЕ
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!-- row -->
+                <div class="ordering__row ordering__row_delivery ordering-row-hidden">
+                    <div class="ordering__hidden-row">
+                        <h2 class="ordering__title">
+                            2. Выбор способа доставки
+                        </h2>
+                        <button class="ordering__btn-unhidden">
+                            изменить
+                        </button>
+                    </div>
+                </div>
+                <!-- row -->
+                <textarea class="ordering__row ordering__row_textarea"
+                    placeholder="Добавить коментарий к заказу"></textarea>
+                <!-- row -->
+            </div>
+            <!-- col -->
+            <div class="ordering__col ordering-checkout">
+                <h3 class="ordering-checkout__title">
+                    Итого:
+                </h3>
+                <!-- ordering-cost-div -->
+                <div class="ordering-checkout__cost-div ordering-cost-div">
+                    <div class="ordering-cost-div__row">
+                        <span class="ordering-cost-div__item">
+                            Количество товаров
+                        </span>
+                        <span class="ordering-cost-div__item">
+                            <span>1</span>
+                        </span>
+                    </div>
+                    <div class="ordering-cost-div__row">
+                        <span class="ordering-cost-div__item">
+                            Сумма заказа
+                        </span>
+                        <span class="ordering-cost-div__item">
+                            <span>3100,00 ₽</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- ordering-cost-div -->
+                <div class="ordering-checkout__info">
+                    <span class="ordering-checkout__info-span">Оплата при получении</span>
+                    <span class="ordering-checkout__info-date">
+                            Подтверждая заказ, я принимаю условия <br>
+                            <a class="ordering-checkout__info-link" href="#">пользовательского соглашения</a>
+                    </span>
+                </div>
+
+                <div class="ordering-checkout__btn">
+                    <span class="ordering-checkout__info-date ordering-checkout__info-date_mobile">
+                        Подтверждая заказ, я принимаю условия <br>
+                        <a class="ordering-checkout__info-link" href="#">пользовательского соглашения</a>
+                    </span>
+                    <button class="btn btn-calc-blue">
+                        ОФОРМИТЬ ЗАКАЗ
+                    </button>
+                </div>
+            </div>
+            <!-- col -->
+        </div>
+    </div>
+</section>

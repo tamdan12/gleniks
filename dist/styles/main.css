@@ -2962,6 +2962,196 @@ select {
   font-size: 62px;
 }
 
+.page-ordering {
+  margin-top: 80px;
+}
+
+.ordering-back {
+  display: flex;
+  align-items: center;
+}
+
+.ordering-back__title {
+  margin-left: 1.5rem;
+}
+
+.ordering {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 5rem;
+}
+
+.ordering__col:first-child {
+  flex-basis: 70%;
+}
+
+.ordering__col:last-child {
+  flex-basis: 30%;
+  margin-left: 20px;
+}
+
+.ordering__col {
+  width: 100%;
+}
+
+.ordering__row {
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.2);
+  border-radius: 26px;
+  padding: 60px 30px;
+  transition: all .25s;
+}
+
+.ordering__row_textarea {
+  resize: none;
+  outline: none;
+}
+
+.ordering__row_textarea:focus {
+  box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.4);
+}
+
+.ordering__row:not(:first-child) {
+  margin-top: 3rem;
+}
+
+.ordering__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #8A8382;
+}
+
+.ordering__hidden-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.ordering__btn-unhidden {
+  border: 1.85016px solid #B8ACA9;
+  box-sizing: border-box;
+  filter: drop-shadow(0px -1.85016px 64.7555px rgba(255, 255, 255, 0.5)), drop-shadow(0px 27.7524px 46.254px rgba(12, 12, 26, 0.12));
+  border-radius: 25px;
+  padding: .75rem 3rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: transparent;
+  color: #B8ACA9;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.ordering-contacts__row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.ordering-contacts__row:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ordering-contacts__item {
+  flex-basis: calc(50% - 50px);
+  display: flex;
+  flex-direction: column;
+}
+
+.ordering-contacts__item_btn {
+  max-width: 380px;
+}
+
+.ordering-contacts__input {
+  margin-top: .75rem;
+  height: 60px;
+  border: 0.782px solid #B8ACA9;
+  border-radius: 7.82px;
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+}
+
+.ordering-row-hidden {
+  background-color: #DEDFE9;
+}
+
+.ordering-checkout {
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.2);
+  border-radius: 26px;
+  padding: 60px 30px;
+  transition: all .25s;
+  position: sticky;
+  top: 90px;
+}
+
+.ordering-checkout__title {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #8A8382;
+}
+
+.ordering-checkout__info {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px dashed #B2B8C5;
+  padding-top: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.ordering-checkout__info-span {
+  font-size: 18px;
+  line-height: 21px;
+  color: #6A6464;
+  font-weight: 500;
+}
+
+.ordering-checkout__info-date {
+  margin-top: 0.75rem;
+  font-size: 14px;
+  line-height: 16px;
+  color: #6A6464;
+}
+
+.ordering-checkout__info-link {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 16px;
+  color: #6A6464;
+  border-bottom: 1px solid #6A6464;
+}
+
+.ordering-checkout__btn {
+  margin-top: 1.5rem;
+}
+
+.ordering-cost-div {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #6A6464;
+  margin-top: 1rem;
+}
+
+.ordering-cost-div__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ordering-cost-div__item:last-child {
+  flex-basis: 30%;
+}
+
+.ordering-checkout__info-date_mobile {
+  display: none;
+}
+
 .footer {
   padding: 2rem 0;
   background-color: #fff;
@@ -3384,6 +3574,31 @@ select {
     background-size: contain;
     background-repeat: no-repeat;
   }
+
+  .ordering {
+    flex-direction: column;
+  }
+
+  .ordering__col:last-child {
+    margin-left: 0;
+    margin-top: 3rem;
+  }
+
+  .ordering-checkout__info-date {
+    display: none;
+  }
+
+  .ordering-checkout__info-date_mobile {
+    display: block;
+    margin-bottom: .5rem;
+  }
+
+  .ordering-checkout__btn {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    max-width: 320px;
+  }
 }
 
 @media (max-width: 990px) {
@@ -3649,6 +3864,22 @@ select {
     display: flex;
     flex-direction: column;
     align-items: stretch;
+  }
+
+  .ordering-contacts__row {
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  .ordering-contacts__item:not(:first-child) {
+    margin-top: 2rem;
+  }
+
+  .ordering-contacts__row:last-child {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
   }
 
   .footer__logo-nav {

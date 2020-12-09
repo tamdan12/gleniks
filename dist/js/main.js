@@ -291,6 +291,24 @@ if (btnScrollDown) {
 
 /***/ }),
 
+/***/ "./src/blocks/modules/page-ordering/page-ordering.js":
+/*!***********************************************************!*\
+  !*** ./src/blocks/modules/page-ordering/page-ordering.js ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// let rowContacts = document.querySelector(".ordering__row_contacts")
+// let btnContacts = document.querySelector(".ordering-btn-toggle")
+// let rowHidden = document.querySelector(".ordering-row-hidden")
+// if (rowContacts) {
+//     document.btnContacts.addEventListener('click', function () {
+//         rowContacts.classList.toggle(rowHidden)
+//     })
+// }
+
+/***/ }),
+
 /***/ "./src/blocks/modules/popups/popups.js":
 /*!*********************************************!*\
   !*** ./src/blocks/modules/popups/popups.js ***!
@@ -384,8 +402,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_adv_slider_adv_slider_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/adv-slider/adv-slider.js */ "./src/blocks/modules/adv-slider/adv-slider.js");
 /* harmony import */ var _modules_products_products_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/products/products.js */ "./src/blocks/modules/products/products.js");
 /* harmony import */ var _modules_products_products_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_modules_products_products_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
-/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _modules_page_ordering_page_ordering_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! %modules%/page-ordering/page-ordering.js */ "./src/blocks/modules/page-ordering/page-ordering.js");
+/* harmony import */ var _modules_page_ordering_page_ordering_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_modules_page_ordering_page_ordering_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! %modules%/footer/footer */ "./src/blocks/modules/footer/footer.js");
+/* harmony import */ var _modules_footer_footer__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_modules_footer_footer__WEBPACK_IMPORTED_MODULE_5__);
+
 
 
 
