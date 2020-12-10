@@ -262,7 +262,7 @@ if (document.documentElement.clientWidth <= 1260) {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
     var href = location.href;
 
-    if (href == 'https://borisslonov.github.io/gleniks/dist/index.html') {
+    if (href == 'https://borisslonov.github.io/gleniks/dist/page-catalog.html') {
       jquery__WEBPACK_IMPORTED_MODULE_0___default()('.header__link_1').addClass('header__link_active');
     }
 

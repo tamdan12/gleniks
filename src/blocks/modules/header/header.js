@@ -45,7 +45,7 @@ if (document.documentElement.clientWidth <= 1260) {
     $(document).ready(function () {
         let href = location.href
     
-        if (href == 'https://borisslonov.github.io/gleniks/dist/index.html') {
+        if (href == 'https://borisslonov.github.io/gleniks/dist/page-catalog.html') {
             $('.header__link_1').addClass('header__link_active');
         }
     
