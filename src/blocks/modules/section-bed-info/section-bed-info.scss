@@ -35,6 +35,14 @@
         align-items: center;
         max-width: 220px;
         flex-basis: 33.333%;
+
+        &_1 {
+            transform: translate(70px, 50px);
+        }
+
+        &_3 {
+            transform: translate(-70px, 50px);
+        }
     }
 
 

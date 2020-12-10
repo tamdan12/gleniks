@@ -1104,6 +1104,10 @@ body {
   text-transform: uppercase;
 }
 
+.header__list li {
+  width: 100%;
+}
+
 .header__link {
   transition: all .25s;
   font-family: "Roboto", sans-serif;
@@ -1111,6 +1115,31 @@ body {
   text-decoration: none;
   font-weight: 700;
   font-size: 12px;
+}
+
+.header__link_active {
+  position: relative;
+  margin-left: 25px;
+  color: #485A83;
+}
+
+.header__link_active::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url(../img/icons/mob-active.svg);
+  background-size: contain;
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header__link_lang {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header__burger {
@@ -1182,6 +1211,20 @@ body {
 
 .li-contacts-mob {
   display: none;
+}
+
+.lang-choice-mob {
+  margin-right: 30px;
+  color: #958B88;
+  display: flex;
+  align-items: center;
+}
+
+.lang-choise-mob__btn {
+  font-size: 16px;
+  color: #958B88;
+  background-color: transparent;
+  margin: 0 0.5rem;
 }
 
 .link-hover {
@@ -2010,6 +2053,14 @@ body {
   align-items: center;
   max-width: 220px;
   flex-basis: 33.333%;
+}
+
+.bed-review__item_1 {
+  transform: translate(70px, 50px);
+}
+
+.bed-review__item_3 {
+  transform: translate(-70px, 50px);
 }
 
 .bed-review__item-col {
@@ -3790,14 +3841,16 @@ select {
     justify-content: space-around;
     position: fixed;
     z-index: 1000;
-    top: 0;
+    top: 65px;
     right: -100%;
     width: 100%;
     height: 100vh;
     overflow: auto;
     padding: 20px 15px;
     transition: .8s;
-    background-image: url();
+    background-image: url(../img/bg/mobile-menu-bg.png);
+    background-size: cover;
+    background-position: 50% 50%;
     background-color: #fff;
     text-align: left;
     align-items: flex-start;
@@ -3833,13 +3886,13 @@ select {
   }
 
   .burger_active span {
-    margin-bottom: -12px;
     transition: all .3s;
     background-color: #8A8382;
   }
 
   .burger_active span:nth-child(1) {
     transform: rotate(-45deg);
+    margin-top: 8px;
   }
 
   .burger_active span:nth-child(2) {
@@ -3848,7 +3901,8 @@ select {
 
   .burger_active span:nth-child(3) {
     transform: rotate(45deg);
-    margin-top: 8px;
+    border-top: 1px solid transparent;
+    margin-top: -3px;
   }
 
   .footer .header-contacts {
