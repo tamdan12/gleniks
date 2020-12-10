@@ -1,3 +1,5 @@
+import $ from "jquery"
+
 'use strict'
 
 //burger
@@ -36,6 +38,35 @@ if (document.querySelectorAll('a[href*="#"]')) {
         })
     }
 }
+
+// header__link_active
+
+if (document.documentElement.clientWidth <= 1260) {
+    $(document).ready(function () {
+        let href = location.href
+    
+        if (href == 'https://borisslonov.github.io/gleniks/dist/index.html') {
+            $('.header__link_1').addClass('header__link_active');
+        }
+    
+        if (href == 'https://borisslonov.github.io/gleniks/dist/page-partners.html') {
+            $('.header__link_2').addClass('header__link_active');
+        }
+    
+    
+    
+        if (href == 'https://borisslonov.github.io/gleniks/dist/page-delivery.html') {
+            $('.header__link_3').addClass('header__link_active');
+        }
+    
+    
+        if (href == 'https://borisslonov.github.io/hi-fi/dist/page-contacts.html') {
+            $('.header__link_4').addClass('header__link_active');
+        }
+    
+    })
+}
+
 
 
 

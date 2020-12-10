@@ -195,17 +195,22 @@ var mySwiper = new Swiper('.swiper-container', {
 /*!*********************************************!*\
   !*** ./src/blocks/modules/header/header.js ***!
   \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
- //burger
-
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
 function _createForOfIteratorHelper(o, allowArrayLike) { var it; if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) { if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") { if (it) o = it; var i = 0; var F = function F() {}; return { s: F, n: function n() { if (i >= o.length) return { done: true }; return { done: false, value: o[i++] }; }, e: function e(_e) { throw _e; }, f: F }; } throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); } var normalCompletion = true, didErr = false, err; return { s: function s() { it = o[Symbol.iterator](); }, n: function n() { var step = it.next(); normalCompletion = step.done; return step; }, e: function e(_e2) { didErr = true; err = _e2; }, f: function f() { try { if (!normalCompletion && it["return"] != null) it["return"](); } finally { if (didErr) throw err; } } }; }
 
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
 
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+
+'use strict'; //burger
+
 
 window.addEventListener('DOMContentLoaded', function () {
   var menu = document.querySelector('.header__list'),
@@ -250,6 +255,29 @@ if (document.querySelectorAll('a[href*="#"]')) {
   } finally {
     _iterator.f();
   }
+} // header__link_active
+
+
+if (document.documentElement.clientWidth <= 1260) {
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
+    var href = location.href;
+
+    if (href == 'https://borisslonov.github.io/gleniks/dist/index.html') {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.header__link_1').addClass('header__link_active');
+    }
+
+    if (href == 'https://borisslonov.github.io/gleniks/dist/page-partners.html') {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.header__link_2').addClass('header__link_active');
+    }
+
+    if (href == 'https://borisslonov.github.io/gleniks/dist/page-delivery.html') {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.header__link_3').addClass('header__link_active');
+    }
+
+    if (href == 'https://borisslonov.github.io/hi-fi/dist/page-contacts.html') {
+      jquery__WEBPACK_IMPORTED_MODULE_0___default()('.header__link_4').addClass('header__link_active');
+    }
+  });
 } //add class on scroll
 
 
@@ -450,7 +478,6 @@ if (newLi) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! %modules%/header/header */ "./src/blocks/modules/header/header.js");
-/* harmony import */ var _modules_header_header__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_modules_header_header__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _modules_popups_popups__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! %modules%/popups/popups */ "./src/blocks/modules/popups/popups.js");
 /* harmony import */ var _modules_adv_slider_adv_slider_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! %modules%/adv-slider/adv-slider.js */ "./src/blocks/modules/adv-slider/adv-slider.js");
 /* harmony import */ var _modules_products_products_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! %modules%/products/products.js */ "./src/blocks/modules/products/products.js");
