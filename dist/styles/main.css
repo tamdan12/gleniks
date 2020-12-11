@@ -2035,11 +2035,39 @@ body {
 }
 
 .bed-review__item_1 {
-  transform: translate(70px, 50px);
+  transform: translate(170px, 50px);
 }
 
 .bed-review__item_3 {
-  transform: translate(-70px, 50px);
+  transform: translate(-170px, 50px);
+}
+
+.bed-review__item_4 {
+  transform: translateX(170px);
+}
+
+.bed-review__item_5 {
+  transform: translateX(150px);
+}
+
+.bed-review__item_6 {
+  transform: translateX(180px);
+}
+
+.bed-review__item_7 {
+  transform: translateX(160px);
+}
+
+.bed-review__item_8 {
+  transform: translate(-160px, -15px);
+}
+
+.bed-review__item_9 {
+  transform: translateX(-160px);
+}
+
+.bed-review__item_10 {
+  transform: translate(-170px, -35px);
 }
 
 .bed-review__item-col {
@@ -3786,6 +3814,49 @@ select {
 @media (max-width: 1300px) {
   .header {
     font-size: 0.7rem;
+  }
+
+  .bed-review__item {
+    display: flex;
+    align-items: center;
+    max-width: 220px;
+    flex-basis: 33.333%;
+  }
+
+  .bed-review__item_1 {
+    transform: translate(70px, 50px);
+  }
+
+  .bed-review__item_3 {
+    transform: translate(-70px, 50px);
+  }
+
+  .bed-review__item_4 {
+    transform: translateX(70px);
+  }
+
+  .bed-review__item_5 {
+    transform: translateX(50px);
+  }
+
+  .bed-review__item_6 {
+    transform: translateX(80px);
+  }
+
+  .bed-review__item_7 {
+    transform: translateX(140px);
+  }
+
+  .bed-review__item_8 {
+    transform: translate(-60px, -15px);
+  }
+
+  .bed-review__item_9 {
+    transform: translateX(-60px);
+  }
+
+  .bed-review__item_10 {
+    transform: translate(-70px, -35px);
   }
 }
 
