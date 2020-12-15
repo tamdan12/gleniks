@@ -113,3 +113,20 @@ if (btnScrollDown) {
         btnScrollDown.addEventListener('click', scrollDown);
     })();
 }
+
+
+
+
+
+
+window.onload = function TypeText() {
+
+    new Typed('#typed1', {
+        strings: ['неломких ^3000', 'крепких ^3000', 'премиальных ^3000', 'УНИКАЛЬНЫХ ^3000'],
+        typeSpeed: 60,
+        backSpeed: 40,
+        loop: true,
+        startDelay: 2000,
+        cursorChar: ''
+    });
+}
