@@ -2212,6 +2212,14 @@ body {
   margin-right: 1rem;
 }
 
+.products__img {
+  display: none;
+}
+
+.products__img_active {
+  display: block;
+}
+
 .section-materials {
   margin-top: 2rem;
 }

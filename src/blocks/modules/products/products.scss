@@ -172,3 +172,11 @@
         }
     }
 }
+
+
+.products__img {
+    display: none;
+    &_active {
+        display: block;
+    }
+}

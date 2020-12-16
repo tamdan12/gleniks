@@ -28,7 +28,11 @@ const changingImg2 = document.querySelector('.products__img_2')
 if (linkChanger1) {
 
     linkChanger1.addEventListener('click', function () {
-        changingImg1.style.display = "block"
-        changingImg2.style.display = "none"
+        changingImg1.classList.add("products__img_active")
+        changingImg2.classList.remove("products__img_active")
+    });
+    linkChanger2.addEventListener('click', function () {
+        changingImg1.classList.remove("products__img_active")
+        changingImg2.classList.add("products__img_active")
     });
 }
