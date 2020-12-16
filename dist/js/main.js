@@ -477,6 +477,18 @@ if (newLi) {
   window.addEventListener('resize', thumbBtnReplace);
 }
 
+var linkChanger1 = document.querySelector('.js-product-change_1');
+var linkChanger2 = document.querySelector('.js-product-change_2');
+var changingImg1 = document.querySelector('.products__img_1');
+var changingImg2 = document.querySelector('.products__img_2');
+
+if (linkChanger1) {
+  linkChanger1.addEventListener('click', function () {
+    changingImg1.style.display = "block";
+    changingImg2.style.display = "none";
+  });
+}
+
 /***/ }),
 
 /***/ "./src/js/import/modules.js":

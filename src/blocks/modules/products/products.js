@@ -14,3 +14,21 @@ if (newLi) {
     }
 }
 
+
+
+const linkChanger1 = document.querySelector('.js-product-change_1')
+
+const linkChanger2 = document.querySelector('.js-product-change_2')
+
+const changingImg1 = document.querySelector('.products__img_1')
+
+const changingImg2 = document.querySelector('.products__img_2')
+
+
+if (linkChanger1) {
+
+    linkChanger1.addEventListener('click', function () {
+        changingImg1.style.display = "block"
+        changingImg2.style.display = "none"
+    });
+}
