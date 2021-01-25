@@ -38,31 +38,287 @@ if (linkChanger1) {
 }
 
 
-
+// 1
 (function () {
 
-    let item1 = document.querySelector('.bed-review__item_2');
-    let dot1 = document.querySelector('.bed-dot_1');
+    let item = document.querySelector('.bed-review__item_2');
+    let dot = document.querySelector('.bed-dot_1');
 
-    function showDot1() {
-        dot1.classList.add('dot-active')
+    function showDot() {
+        dot.classList.add('dot-active')
     }
 
-    function hideDot1() {
-        dot1.classList.remove('dot-active')
+    function hideDot() {
+        dot.classList.remove('dot-active')
     }
 
     function activeIconDot() {
-        item1.classList.add('dot-icon-active')
+        item.classList.add('dot-icon-active')
     }
 
     function deactiveIconDot() {
-        item1.classList.remove('dot-icon-active')
+        item.classList.remove('dot-icon-active')
     }
 
-    item1.onmouseover = showDot1;
-    item1.onmouseleave = hideDot1;
-    dot1.onmouseover = activeIconDot;
-    dot1.onmouseleave = deactiveIconDot;
+    item.onmouseover = showDot;
+    item.onmouseleave = hideDot;
+    dot.onmouseover = activeIconDot;
+    dot.onmouseleave = deactiveIconDot;
 
 })();
+// 2
+(function () {
+
+    let item = document.querySelector('.bed-review__item_6');
+    let dot = document.querySelector('.bed-dot_2');
+
+    function showDot() {
+        dot.classList.add('dot-active')
+    }
+
+    function hideDot() {
+        dot.classList.remove('dot-active')
+    }
+
+    function activeIconDot() {
+        item.classList.add('dot-icon-active')
+    }
+
+    function deactiveIconDot() {
+        item.classList.remove('dot-icon-active')
+    }
+
+    item.onmouseover = showDot;
+    item.onmouseleave = hideDot;
+    dot.onmouseover = activeIconDot;
+    dot.onmouseleave = deactiveIconDot;
+
+})();
+// 3
+(function () {
+
+    let item = document.querySelector('.bed-review__item_4');
+    let dot = document.querySelector('.bed-dot_3');
+
+    function showDot() {
+        dot.classList.add('dot-active')
+    }
+
+    function hideDot() {
+        dot.classList.remove('dot-active')
+    }
+
+    function activeIconDot() {
+        item.classList.add('dot-icon-active')
+    }
+
+    function deactiveIconDot() {
+        item.classList.remove('dot-icon-active')
+    }
+
+    item.onmouseover = showDot;
+    item.onmouseleave = hideDot;
+    dot.onmouseover = activeIconDot;
+    dot.onmouseleave = deactiveIconDot;
+
+})();
+// 4
+(function () {
+
+    let item = document.querySelector('.bed-review__item_1');
+    let dot = document.querySelector('.bed-dot_4');
+
+    function showDot() {
+        dot.classList.add('dot-active')
+    }
+
+    function hideDot() {
+        dot.classList.remove('dot-active')
+    }
+
+    function activeIconDot() {
+        item.classList.add('dot-icon-active')
+    }
+
+    function deactiveIconDot() {
+        item.classList.remove('dot-icon-active')
+    }
+
+    item.onmouseover = showDot;
+    item.onmouseleave = hideDot;
+    dot.onmouseover = activeIconDot;
+    dot.onmouseleave = deactiveIconDot;
+
+})();
+
+// 5
+(function () {
+
+    let item = document.querySelector('.bed-review__item_8');
+    let dot = document.querySelector('.bed-dot_5');
+
+    function showDot() {
+        dot.classList.add('dot-active')
+    }
+
+    function hideDot() {
+        dot.classList.remove('dot-active')
+    }
+
+    function activeIconDot() {
+        item.classList.add('dot-icon-active')
+    }
+
+    function deactiveIconDot() {
+        item.classList.remove('dot-icon-active')
+    }
+
+    item.onmouseover = showDot;
+    item.onmouseleave = hideDot;
+    dot.onmouseover = activeIconDot;
+    dot.onmouseleave = deactiveIconDot;
+
+})();
+// 6
+(function () {
+
+    let item = document.querySelector('.bed-review__item_10');
+    let dot = document.querySelector('.bed-dot_6');
+
+    function showDot() {
+        dot.classList.add('dot-active')
+    }
+
+    function hideDot() {
+        dot.classList.remove('dot-active')
+    }
+
+    function activeIconDot() {
+        item.classList.add('dot-icon-active')
+    }
+
+    function deactiveIconDot() {
+        item.classList.remove('dot-icon-active')
+    }
+
+    item.onmouseover = showDot;
+    item.onmouseleave = hideDot;
+    dot.onmouseover = activeIconDot;
+    dot.onmouseleave = deactiveIconDot;
+
+})();
+// 7
+(function () {
+
+    let item = document.querySelector('.bed-review__item_3');
+    let dot = document.querySelector('.bed-dot_7');
+
+    function showDot() {
+        dot.classList.add('dot-active')
+    }
+
+    function hideDot() {
+        dot.classList.remove('dot-active')
+    }
+
+    function activeIconDot() {
+        item.classList.add('dot-icon-active')
+    }
+
+    function deactiveIconDot() {
+        item.classList.remove('dot-icon-active')
+    }
+
+    item.onmouseover = showDot;
+    item.onmouseleave = hideDot;
+    dot.onmouseover = activeIconDot;
+    dot.onmouseleave = deactiveIconDot;
+
+})();
+// 8
+(function () {
+
+    let item = document.querySelector('.bed-review__item_5');
+    let dot = document.querySelector('.bed-dot_8');
+
+    function showDot() {
+        dot.classList.add('dot-active')
+    }
+
+    function hideDot() {
+        dot.classList.remove('dot-active')
+    }
+
+    function activeIconDot() {
+        item.classList.add('dot-icon-active')
+    }
+
+    function deactiveIconDot() {
+        item.classList.remove('dot-icon-active')
+    }
+
+    item.onmouseover = showDot;
+    item.onmouseleave = hideDot;
+    dot.onmouseover = activeIconDot;
+    dot.onmouseleave = deactiveIconDot;
+
+})();
+// 9
+(function () {
+
+    let item = document.querySelector('.bed-review__item_9');
+    let dot = document.querySelector('.bed-dot_9');
+
+    function showDot() {
+        dot.classList.add('dot-active')
+    }
+
+    function hideDot() {
+        dot.classList.remove('dot-active')
+    }
+
+    function activeIconDot() {
+        item.classList.add('dot-icon-active')
+    }
+
+    function deactiveIconDot() {
+        item.classList.remove('dot-icon-active')
+    }
+
+    item.onmouseover = showDot;
+    item.onmouseleave = hideDot;
+    dot.onmouseover = activeIconDot;
+    dot.onmouseleave = deactiveIconDot;
+
+})();
+// 10
+(function () {
+
+    let item = document.querySelector('.bed-review__item_7');
+    let dot = document.querySelector('.bed-dot_10');
+
+    function showDot() {
+        dot.classList.add('dot-active')
+    }
+
+    function hideDot() {
+        dot.classList.remove('dot-active')
+    }
+
+    function activeIconDot() {
+        item.classList.add('dot-icon-active')
+    }
+
+    function deactiveIconDot() {
+        item.classList.remove('dot-icon-active')
+    }
+
+    item.onmouseover = showDot;
+    item.onmouseleave = hideDot;
+    dot.onmouseover = activeIconDot;
+    dot.onmouseleave = deactiveIconDot;
+
+})();
+
+
+
