@@ -490,5 +490,13 @@
 .mob-swiper {
     top: 50px;
 }
+.swiper-container-mobile {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 2rem 0;
+    --swiper-theme-color: $sec-color;
+    margin-top: 1.25rem;
+}
 
 // new
