@@ -1025,7 +1025,7 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1500px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -1056,8 +1056,6 @@ body {
   font-family: "Roboto", sans-serif;
   text-align: center;
   color: #000C31;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
 }
 
 .header:before {
@@ -1076,7 +1074,7 @@ body {
   position: relative;
   z-index: 2;
   height: 100%;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 .header__logo {
@@ -1809,9 +1807,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 145px;
+  padding-top: 180px;
   display: block;
-  min-height: 100vh;
 }
 
 .page1-wrap {
@@ -1850,7 +1847,7 @@ body {
 .page1-h1__title {
   position: relative;
   text-transform: uppercase;
-  font-size: 1.75rem;
+  font-size: 26px;
   margin-bottom: 0;
   margin-top: 0;
 }
@@ -3135,7 +3132,7 @@ select {
 }
 
 .section-breadCrumbs {
-  margin-top: 75px;
+  margin-top: 100px;
   background-color: #fff;
   padding: 10px 0;
 }
