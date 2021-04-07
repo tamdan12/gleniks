@@ -1,4 +1,5 @@
 .service-steps {
+    margin-top: 75px;
     &__row {
         display: flex;
         justify-content: space-between;
@@ -15,13 +16,15 @@
 }
 
 .service-step {
+
     position: relative;
     background-color: #FFFFFF;
     box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.2);
     border-radius: 26px;
     text-align: center;
-    padding: 20px 25px 40px;
+    padding: 20px 20px 40px;
     width: 249px;
+    line-height: 20px;
 
 
     &::after {
@@ -37,12 +40,11 @@
     }
 
     &__title {
-        margin-top: 5px;
         text-transform: uppercase;
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 18px;
         text-transform: uppercase;
 
         color: #414141;
@@ -56,6 +58,7 @@
     }
 
     &__text {
+        font-size: 16px;
         position: relative;
         z-index: 10;
         margin-top: 25px;
@@ -63,25 +66,27 @@
 
     &__btn {
         align-self: flex-end;
-        margin-left: 30px;
+        margin-left: 10px;
+        border-radius: 25px;
     }
 
     &_1 {
         align-self: flex-start;
+        height: 298px;
 
     }
 
     &_2 {
         position: relative;
-        margin-top: 85px;
+        margin-top: 110px;
+        height: 298px;
 
         &::before {
             content: '';
             position: absolute;
-            top: -75%;
-            right: calc(0 - 1rem);
-            left: -50%;
-            width: 300px;
+            top: -155px;
+            left: -140px;
+            width: 280px;
             height: 100%;
             background-size: contain;
             background-repeat: no-repeat;
@@ -91,14 +96,15 @@
 
     &_3 {
         position: relative;
+        height: 207px;
 
         &::before {
             content: '';
             position: absolute;
-            top: -100%;
-            right: -60%;
-            width: 261px;
-            height: 160px;
+            top: -168px;
+            right: -135px;
+            width: 281px;
+            height: 200px;
             background-size: contain;
             background-repeat: no-repeat;
             background-image: url(../img/svg/service-icon/s-line2.svg);
@@ -111,16 +117,26 @@
         &::before {
             content: '';
             position: absolute;
-            top: -175%;
-            width: 340px;
-            height: 230px;
-            left: -120%;
+            top: -67px;
+            width: 275px;
+            height: 125px;
+            left: -129px;
             background-size: contain;
             background-repeat: no-repeat;
             background-image: url(../img/svg/service-icon/s-line3.svg);
         }
     }
 }
+
+
+.btn-steps {
+    width: 260px;
+    height: 61px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .btn-bg {
     position: relative;
@@ -142,98 +158,12 @@
     }
 }
 
-@media(max-width:1305px) {
-    .service-step {
 
 
-        &_4 {
-            &::before {
-                width: 295px;
-                left: -90%;
-            }
-        }
-    }
+.uniq-service-text {
+    margin-right:60px;
+
 }
-
-@media(max-width:1240px) {
-    .service-step {
-
-        &_2 {
-
-            &::before {
-                width: 230px;
-                top: -57%;
-            }
-        }
-    }
-}
-
-@media(max-width:1090px) {
-    .service-step {
-
-        &_2 {
-
-            &::before {
-                width: 230px;
-                top: -55%;
-                left: -54%;
-            }
-        }
-    }
-}
-
-@media(max-width: 1024px) {
-    .service-step {
-        &_2 {
-            margin-top: 25px;
-
-
-            &::before {
-                display: none;
-            }
-        }
-
-        &_3 {
-            margin-top: 25px;
-
-            &::before {
-                display: none;
-            }
-        }
-
-        &_4 {
-            &::before {
-                display: none;
-            }
-        }
-
-        &__btn {
-            align-self: center;
-            margin-left: 0;
-            margin-top: 25px;
-
-            &::before {
-                display: none;
-            }
-        }
-
-    }
-}
-
-@media(max-width:768px) {
-    .service-step {
-
-        flex-direction: column;
-
-        &__row {
-            flex-direction: column;
-        }
-
-
-
-    }
-}
-
 
 
 //adapt 

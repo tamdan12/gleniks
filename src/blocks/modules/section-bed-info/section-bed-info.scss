@@ -88,7 +88,7 @@
         &::after {
             content: '';
             position: absolute;
-            z-index: 122;
+            z-index: 13;
             background-image: url(../img/svg/width-arrow.svg);
             background-size: contain;
             background-repeat: no-repeat;
@@ -492,9 +492,7 @@
 }
 
 @media(max-width:768px) {
-    .section-bed-info {
-        margin-top: 1rem;
-    }
+   
 
     .bed-review {
         &__row {
