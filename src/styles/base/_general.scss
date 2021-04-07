@@ -29,10 +29,11 @@ body {
     color: $sec-color;
 }
 
-body {
-    overflow-x: hidden;
-}
 
+.overflow-body-hidden {
+    overflow-x: hidden;
+
+}
 .container-fluid {
     position: relative;
     max-width: 2098px;
