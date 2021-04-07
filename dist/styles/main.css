@@ -1014,7 +1014,7 @@ body {
   color: #8A8382;
 }
 
-.overflow-body-hidden {
+body {
   overflow-x: hidden;
 }
 
