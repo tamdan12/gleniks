@@ -3281,7 +3281,7 @@ select {
 .page-last__h2 {
   position: relative;
   text-transform: uppercase;
-  font-size: 28px;
+  font-size: 48px;
 }
 
 .page-last__h2::before {
