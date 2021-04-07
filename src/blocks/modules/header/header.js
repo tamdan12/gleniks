@@ -79,7 +79,7 @@ document.addEventListener("scroll", (e) => {
     let position = content.offsetTop;
     let header = document.querySelector("header");
 
-    if (scrolled > position + 50) {
+    if (scrolled > position + 20) {
         content.classList.add('header-bgc');
     } else {
         content.classList.remove('header-bgc');
@@ -102,7 +102,7 @@ if (btnScrollDown) {
             (function scroll() {
                 if (window.pageYOffset < windowCoords) {
                     window.scrollBy(0, 10);
-                    setTimeout(scroll, 0);
+                    setTimeout(scroll, 5);
                 }
                 if (window.pageYOffset > windowCoords) {
                     window.scrollTo(0, windowCoords);

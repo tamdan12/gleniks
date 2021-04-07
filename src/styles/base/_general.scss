@@ -33,6 +33,26 @@ body {
     overflow-x: hidden;
 }
 
+.container-fluid {
+    position: relative;
+    max-width: 2098px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 100%;
+    max-width: 1530px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+@media(max-width:1024px) {
+    .container {
+        padding: 0 25px;
+    }
+}
+
 @media(max-width: 768px) {
 
     body {
@@ -45,16 +65,10 @@ body {
     body {
         font-size: 12px;
     }
+
+    .container {
+       
+        padding: 0 15px;
+    }
 }
 
-.container-fluid {
-    max-width: 1980px;
-    margin: 0 auto;
-}
-
-.container {
-    width: 100%;
-    max-width: 1500px;
-    padding: 0 15px;
-    margin: 0 auto;
-}

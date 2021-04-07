@@ -1,8 +1,9 @@
-.section-partnersForm {
-    padding: 50px 0;
-}
+
 
 .partnersForm {
+    margin-top: 120px;
+    padding: 75px 0;
+    border-top: 2px dashed #B2B8C5;
     display: flex;
     align-items: center;
 
@@ -11,20 +12,24 @@
         display: flex;
         justify-content: center;
     }
+
+    &__item:first-child {
+        margin-top: -150px;
+    }
 }
 
 .partners-form {
     width: 100%;
     display: flex;
     flex-direction: column;
-    max-width: 400px;
+    max-width: 540px;
 
     &__input {
         border: 1px solid #B8ACA9;
         border-radius: 10px;
         background-color: transparent;
-        height: 50px;
-        padding-left: 1rem;
+        height: 75px;
+        padding-left: 35px;
         padding-right: 0.5rem;
         width: 100%;
     }
@@ -39,19 +44,64 @@
         background-color: transparent;
         resize: none;
         margin-top: 1.5rem;
-        padding-left: 1rem;
+        padding-left: 35px;
         padding-right: 0.5rem;
         padding-top: 20px;
-        height: 120px;
+        height: 200px;
     }
 
     &__btn {
-        margin-top: 1.5rem;
+        margin-top: 55px;
     }
 }
 .calc__title-text_partnersForm {
-    font-size: 62px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 78px;
+    text-transform: uppercase;
 }
+
+
+
+@media(max-width:1240px) {
+    .partnersForm {
+        flex-direction: column;
+        border-top: none;
+    }
+
+    .calc__title-text_partnersForm  {
+        font-size: 36px;
+    }
+
+    .partnersForm__item {
+        width: 100%;
+        flex-basis: 100%;
+    }
+  
+    .calc__title-text_partnersForm {
+
+        br {
+            display: none;
+        }
+    }
+
+
+    .partnersForm__item:last-child {
+        margin-top: 60px;
+    }
+
+    .partners-form__btn {
+        button {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+
 
 @media(max-width:768px) {
     .calc__title-text_partnersForm {
@@ -66,11 +116,6 @@
             width: 100%;
         }
 
-        &__item:last-child {
-            margin-top: 5rem;
-        }
-
-
     }
 
     .partners-form {
@@ -81,4 +126,34 @@
             align-items: stretch;
         }
     }
+
+
+    .partnersSliderContent__item:last-child {
+        margin-left: 0;
+        max-width: 90%;
+    }
+}
+
+
+@media(max-width:550px) {
+    .partnersForm {
+       
+
+        &__item:last-child {
+            margin-top: 50px;
+        }
+
+    }
+
+    .partnersForm__item:last-child {
+        position: relative;
+        z-index: 2;
+        max-width: 100%;
+    }
+
+
+    .swiper-slide {
+        padding: 0 10px;
+    }
+  
 }

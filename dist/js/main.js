@@ -274,7 +274,23 @@ if (window.innerWidth <= 768) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+var footerContacts = document.querySelector('.js-replaceFooterContacts');
+var footerLogoWrapper = document.querySelector('.footer__logo-wrapper');
+var footerNavWrapper = document.querySelector('.footer__nav-wrapper');
 
+var footerReplace = function footerReplace() {
+  if (window.innerWidth <= 1160) {
+    footerLogoWrapper.insertBefore(footerContacts, footerLogoWrapper.children[1]);
+  } else {
+    footerNavWrapper.insertBefore(footerContacts, footerNavWrapper.children[2]);
+  }
+};
+
+if (window.innerWidth <= 1160) {
+  footerReplace();
+}
+
+window.addEventListener('resize', footerReplace);
 
 /***/ }),
 
@@ -374,7 +390,7 @@ document.addEventListener("scroll", function (e) {
   var position = content.offsetTop;
   var header = document.querySelector("header");
 
-  if (scrolled > position + 50) {
+  if (scrolled > position + 20) {
     content.classList.add('header-bgc');
   } else {
     content.classList.remove('header-bgc');
@@ -393,7 +409,7 @@ if (btnScrollDown) {
       (function scroll() {
         if (window.pageYOffset < windowCoords) {
           window.scrollBy(0, 10);
-          setTimeout(scroll, 0);
+          setTimeout(scroll, 5);
         }
 
         if (window.pageYOffset > windowCoords) {

@@ -1,34 +1,45 @@
 .section-partnersInfo {
-    padding: 50px 0;
+    padding: 80px 0;
 }
 
 
 .partnersInfo {
     display: flex;
     align-items: flex-start;
-    justify-content: space-around;
+    justify-content: center;
 
     &__item {
         position: relative;
-        flex-basis: calc(50% - 155px);
+        flex-basis: 50%;
 
     }
 
     &__item:first-child {
+        max-width: 600px;
 
         &::before {
             content: '';
             position: absolute;
-            top: 50%;
-            left: 20%;
+            top: 335px;
+            left: 14%;
             background-image: url(../img/svg/partnersInfo.svg);
-            width: 600px;
-            height: 360px;
+            width: 640px;
+            height: 376px;
             background-size: contain;
             background-repeat: no-repeat;
         }
     }
+
+
+    &__item:last-child {
+        margin-left: 115px;
+        max-width: 700px;
+    }
+
+
 }
+
+
 
 .partnersInfoList {
     position: relative;
@@ -36,34 +47,46 @@
     background-size: cover;
     background-position: 50% 50%;
     list-style: none;
-    padding: 50px 30px;
+    padding: 85px 65px;
     background: #DEDFE9;
     box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.2);
     border-radius: 26px;
 
     &__title {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
         text-transform: uppercase;
         color: #414141;
     }
 
+    &__li {
+        font-size: 24px;
+    }
+
     &__li:not(:first-child) {
-        margin-top: 1rem;
+        margin-top: 22px;
     }
 
     &__li:nth-child(2) {
-        margin-top: 2rem;
+        margin-top: 45px;
     }
 }
 
 
 @media(max-width:1024px) {
 
+    .section-partnersInfo {
+        padding-top: 30px;
+    }
+
     .partnersInfo {
 
 
         &__item {
             position: relative;
-            flex-basis: calc(50% - 50px);
 
         }
 
@@ -72,7 +95,7 @@
             &::before {
                 content: '';
                 position: absolute;
-                top: 50%;
+                top: 100%;
                 left: 20%;
                 background-image: url(../img/svg/partnersInfoTablet.svg);
                 width: 600px;
@@ -81,6 +104,14 @@
                 background-repeat: no-repeat;
             }
         }
+
+        &__item:last-child {
+            margin-left: 30px;
+        }
+    }
+
+    .partnersInfoList {
+        padding: 90px 25px;
     }
 }
 
@@ -103,6 +134,16 @@
 
         &__item:last-child {
             margin-top: 3rem;
+            margin-left: 0;
         }
+    }
+
+
+    .partnersInfoList__title {
+        font-size: 20px;
+    }
+
+    .partnersInfoList__li {
+        font-size: 18px;
     }
 }

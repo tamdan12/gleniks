@@ -1,6 +1,6 @@
 .section-calc {
-   
-   
+
+
     label {
         color: #6A6464;
     }
@@ -17,6 +17,7 @@
     align-items: center;
     padding: 4rem 0;
     border-bottom: 2px dashed #B2B8C5;
+
     &__title {
         position: relative;
         font-size: 42px;
@@ -29,10 +30,10 @@
             background-size: contain;
             background-position: 50% 50%;
             background-repeat: no-repeat;
-            width: 150px;
-            height: 150px;
-            bottom: -35px;
-            left: -85px;
+            width: 245px;
+            height: 250px;
+            bottom: -45px;
+            left: -26%;
         }
     }
 
@@ -47,19 +48,21 @@
     flex-direction: column;
     margin-top: 20px;
     color: #6A6464;
+
     &__title {
         font-size: 1.2rem;
 
     }
+
     &__num {
         font-size: 1.8rem;
         font-weight: 700;
     }
 
     &__btn {
-       display: flex;
-       justify-content: flex-end;
-       margin-top: 10px;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 10px;
     }
 
     &__btn-single {
@@ -69,7 +72,59 @@
 }
 
 
+@media(max-width:1240px) {
+    .calc__title {
+        &:before {
+            background-image: none;
+            background: #FDFDFD;
+            opacity: 0.5;
+            box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.25);
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            bottom: -35px;
+            left: -24%;
+        }
 
+        &:after {
+            content: '';
+            position: absolute;
+            border: 1px solid #000C31;
+            box-sizing: border-box;
+            border-radius: 26px;
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+            width: 76px;
+            height: 82px;
+            right: -61px;
+            top: -30px;
+        }
+    }
+}
+
+@media(max-width:550px) {
+    .calc__title {
+
+        &:before {
+            top: 20px;
+            width: 187px;
+            height: 187px;
+            left: -130px;
+        }
+
+
+        &::after {
+            display: none;
+        }
+    }
+
+
+
+    .calc__title-text_partnersForm {
+        font-size: 24px;
+    }
+
+
+}
 
 
 
@@ -169,11 +224,11 @@ select {
             margin-top: 2rem;
         }
 
-       
+
     }
 
     .calc-price {
-        
+
         &__btn {
             justify-content: center;
             margin-top: 1.5rem;
