@@ -538,6 +538,11 @@
     display: none;
 }
 
+@media(max-width:1440px) {
+    .header-contacts {
+        margin: 0 10px;
+    }
+}
 
 
 @media(min-width:1024px) {
