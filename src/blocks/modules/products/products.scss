@@ -1,8 +1,16 @@
 .products {
-    margin-top: 5rem;
+    margin-top: 150px;
 
     &__title {
         position: relative;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        text-transform: uppercase;
+
+        color: #000C31;
 
         &::after {
             content: '';
@@ -28,6 +36,9 @@
     }
 
     &__img-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         position: relative;
         z-index: 2;
         background-color: #DEDFE9;
@@ -44,7 +55,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            transform: translate(-20px, -20px);
+            transform: translate(-30px, -30px);
             border: 1px solid $main-color;
             border-radius: 26px;
         }
@@ -66,15 +77,36 @@
         position: relative;
         transform: scale(1.2);
         z-index: 10;
+        height: 320px;
+        width: 320px;
+        object-fit: contain;
     }
 
 }
 
 .products-descr {
-    margin-top: 1.5rem;
+    margin-top: 30px;
 
     &__title {
         color: $sec-color;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 122.69%;
+
+
+        color: #6A6464;
+    }
+
+    &__text {
+        font-family: Roboto;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 122.69%;
+        margin-left: 15px;
+
+        color: #6A6464;
     }
 
     &__icon {
@@ -85,7 +117,12 @@
 
     &__list {
         list-style: none;
-        margin-top: 0.75rem;
+        margin-top: 20px;
+    }
+
+    &__li {
+        display: flex;
+        align-items: center;
     }
 
     &__li:not(:first-child) {
@@ -97,7 +134,7 @@
 .thumb-btn {
     display: flex;
     align-items: center;
-    margin-top: 1.5rem;
+    margin-top: 60px;
 
     &__img-div {
         display: flex;
@@ -116,6 +153,16 @@
     }
 
 }
+
+
+
+@media(max-width:1050px) {
+    .products__item:last-child {
+        flex-basis: auto;
+    }
+}
+
+
 
 @media(max-width:950px) {
     .thumb-btn {
@@ -159,6 +206,27 @@
     .section-page1 {
         padding-top: 110px;
     }
+
+    .products__title {
+        font-size: 20px;
+    }
+
+    .products-descr__text {
+        margin-left: 10px;
+    }
+
+    .products__img-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 80%;
+        margin-top: 55px;
+        height: 200px;
+    }
+
+    .thumb-btn .btn-calc {
+        margin-top: 30px;
+    }
 }
 
 @media(max-width:375px) {
@@ -176,6 +244,7 @@
 
 .products__img {
     display: none;
+
     &_active {
         display: block;
     }

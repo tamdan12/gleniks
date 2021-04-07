@@ -15,7 +15,21 @@
 }
 
 
+.single-product-advantages__text {
+    font-size: 18px;
+}
 
+.single-product-choice__descr {
+    font-size: 18px;
+}
+
+.single-product__calc label {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: #6A6464;
+}
 
 .single-product-labels {
     position: relative;
@@ -128,6 +142,19 @@
     }
 }
 
+.single-product-advantages__text {
+    margin-left: 10px;
+}
+
+
+
+@media(max-width:1024px) {
+    .single-product__list {
+        font-size: 14px;
+    }
+}
+
+
 
 @media(max-width:768px) {
 
@@ -143,6 +170,7 @@
         &__btn {
             display: flex;
             width: 100%;
+
             button {
                 width: 100%;
             }

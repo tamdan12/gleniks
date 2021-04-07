@@ -13,16 +13,17 @@
 
     b {
         color: $main-color;
+        font-size: 20px;
     }
 
     &__main-row {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     &__row {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
 
 
     }
@@ -30,7 +31,7 @@
     &__col {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
         margin-top: 2rem;
     }
 
@@ -55,6 +56,15 @@
 
 
     }
+
+
+
+    &__text {
+        font-size: 16px;
+        line-height: 1.3;
+    }
+
+
 
     &__img-div {
         position: relative;
@@ -101,7 +111,7 @@
         z-index: 2;
         display: flex;
         align-items: center;
-        max-width: 220px;
+        max-width: 400px;
         flex-basis: 33.333%;
 
 
@@ -360,13 +370,20 @@
         left: 0;
         right: 0;
         height: 1px;
-        background-color: #000c31b9;
+        border-bottom: 2px dashed #C0C7D4;
         transform: scale(1);
 
     }
 
 }
 
+
+.js-product-change  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
 
 
 
@@ -444,7 +461,22 @@
 
 
 
+@media(max-width:1240px) {
 
+
+    .bed-review {
+      
+
+        b {
+            font-size: 18px;
+        }
+
+        &__text {
+            font-size: 14px;
+        }
+    }
+
+}
 
 
 
@@ -491,6 +523,7 @@
 .mob-swiper {
     top: 50px;
 }
+
 .swiper-container-mobile {
     position: relative;
     width: 100%;

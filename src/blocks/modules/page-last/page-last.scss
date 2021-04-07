@@ -52,6 +52,12 @@
     }
 }
 
+@media(max-width:1024px) {
+    .section-page-last {
+        padding: 100px 0;
+    }
+}
+
 @media(max-width:768px) {
     .page-last {
         text-align: center;
