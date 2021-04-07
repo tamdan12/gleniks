@@ -397,14 +397,6 @@ document.addEventListener("scroll", function (e) {
     content.classList.add('header-none-bgc');
   }
 });
-
-if (scrolled > position + 20) {
-  content.classList.add('header-bgc');
-} else {
-  content.classList.remove('header-bgc');
-  content.classList.add('header-none-bgc');
-}
-
 var btnScrollDown = document.querySelector('#scroll_down');
 
 if (btnScrollDown) {
