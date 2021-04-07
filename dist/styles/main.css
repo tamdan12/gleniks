@@ -1014,6 +1014,10 @@ body {
   color: #8A8382;
 }
 
+.overflow-body-hidden {
+  overflow-x: hidden;
+}
+
 .container-fluid {
   position: relative;
   max-width: 2098px;
