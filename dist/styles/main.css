@@ -3774,8 +3774,10 @@ select {
 
 .single-product__item_page-single-product:last-child {
   position: sticky;
-  top: 90px;
-  margin-left: 3rem;
+  top: 120px;
+  margin-left: 70px;
+  flex-basis: 100%;
+  max-width: 700px;
 }
 
 .single-product-advantages__text {
@@ -3877,6 +3879,16 @@ select {
 
 .page-single-product__btn {
   margin-top: 1.5rem;
+}
+
+.page-single-product__title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 44px;
+  text-transform: uppercase;
+  color: #000C31;
 }
 
 .more-option {
@@ -4085,7 +4097,7 @@ select {
 }
 
 .contacts__item {
-  flex-basis: 50%;
+  flex-basis: 100%;
 }
 
 .contacts__item:first-child {
@@ -4102,7 +4114,7 @@ select {
   background-position: 50% 50%;
   box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.2);
   border-radius: 26px;
-  padding: 100px 120px;
+  padding: 100px 200px;
   margin-right: 75px;
 }
 
@@ -4129,6 +4141,10 @@ select {
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url(../img/svg/circle-square.svg);
+}
+
+.contacts-form__btn {
+  height: 67px;
 }
 
 .contacts-tel-email {
@@ -4440,6 +4456,10 @@ select {
     position: absolute;
     right: 0;
     max-width: 650px;
+  }
+
+  .contacts__item:last-child {
+    padding: 100px 120px;
   }
 }
 
@@ -4971,6 +4991,12 @@ select {
 
   .bed-review__img-div {
     flex-basis: 40%;
+  }
+
+  .products__img-div {
+    width: 100%;
+    max-width: 50%;
+    margin-right: 50px;
   }
 
   .section-page-last {

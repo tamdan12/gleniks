@@ -10,8 +10,10 @@
 
 .single-product__item_page-single-product:last-child {
     position: sticky;
-    top: 90px;
-    margin-left: 3rem;
+    top: 120px;
+    margin-left: 70px;
+    flex-basis: 100%;
+    max-width: 700px;
 }
 
 
@@ -119,6 +121,20 @@
         margin-top: 1.5rem;
     }
 }
+
+
+.page-single-product__title {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    text-transform: uppercase;
+
+    color: #000C31;
+}
+
+
 
 .more-option {
     display: inline-block;
@@ -246,6 +262,7 @@
         font-size: 24px;
         text-align: left;
     }
+
     .single-product__span-bg {
         font-size: 24px;
     }
