@@ -1,8 +1,13 @@
-@media(min-width:767px) {
+@media(min-width:1001px) {
     
     .mob-swiper {
         display: none;
     }
+}
+
+.mob-swiper {
+    margin-left:auto;
+    margin-right: auto;
 }
 
 .swiper-container {
