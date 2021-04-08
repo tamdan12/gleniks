@@ -165,21 +165,4 @@
 
 
 
-@media(max-width:1240px) {
-    .single-product {
-        flex-direction: column;
-
-        &__span-bg {
-            &::after {
-                width: 100%;
-            }
-        }
-    }
-
-    .single-product-product {
-        margin-top: 60px;
-        max-width: 620px;
-    }
-}
-
 

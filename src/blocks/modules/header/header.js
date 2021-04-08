@@ -132,3 +132,35 @@ window.onload = function TypeText() {
         cursorChar: ''
     });
 }
+
+
+
+
+var singleProductCost = document.querySelector('.single-product-replace-bottom');
+var singleProductTop = document.querySelector('.single-product-replace-top');
+var singleProductTopWrap = document.querySelector('.single-product-replace-top-wrap');
+var singleProductBottomWrap = document.querySelector('.single-product-replace-bottom-wrap');
+var singleProductImg = document.querySelector('.single-product-choice__img');
+var singleProductImgWrap = document.querySelector('.single-product-img-wrap');
+
+var singleProductReplace = function singleProductReplace() {
+    if (window.innerWidth <= 1000) {
+        singleProductTopWrap.insertBefore(singleProductCost, singleProductTopWrap.children[1]);
+
+        singleProductCost.insertBefore(singleProductImg, singleProductCost.children[1]);
+
+        singleProductBottomWrap.insertBefore(singleProductTop, singleProductBottomWrap.children[1]);
+
+    } else {
+        singleProductBottomWrap.insertBefore(singleProductCost, singleProductBottomWrap.children[1]);
+        singleProductImgWrap.insertBefore(singleProductImg, singleProductImgWrap.children[1]);
+
+        singleProductTopWrap.insertBefore(singleProductTop, singleProductTopWrap.children[1]);
+    }
+};
+
+if (window.innerWidth <= 1000) {
+    singleProductReplace();
+}
+
+window.addEventListener('resize', singleProductReplace);
