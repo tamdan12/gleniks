@@ -158,9 +158,15 @@
 
 @media(max-width:1050px) {
     .products__item:last-child {
-        flex-basis: auto;
+        flex-basis: 55%;
+    }
+
+    .products__img {
+        zoom: 1.3;
     }
 }
+
+
 
 
 

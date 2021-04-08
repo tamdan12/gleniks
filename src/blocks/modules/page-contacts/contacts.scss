@@ -192,6 +192,7 @@
         border-radius: 20px;
         left: -25px;
         bottom: -25px;
+        max-height: 450px;
     }
 }
 
@@ -231,13 +232,45 @@
 }
 
 
+@media(max-width:1024px){
+    .contacts {
+        margin-left: -50px;
+    }
+    .contacts__item:first-child {
+        justify-content: flex-start;
+    }
+
+    #map-9cd199b9cc5410cd3b1ad21cab2e54d3  {
+        width: 450px;
+        height: 450px;
+    }
+}
+
 
 
 @media(max-width:1000px) {
 
+    .map-border {
+      
+    
+        &::before {
+       
+            max-height: 100%;
+        }
+    }
+
+    .contacts {
+        margin-left: 0;
+    }
+    .contacts__item:first-child {
+        justify-content: center;
+    }
+
     #map-9cd199b9cc5410cd3b1ad21cab2e54d3 {
         width: 100%;
-        height: 400px;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 

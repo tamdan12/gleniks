@@ -3058,7 +3058,7 @@ select {
 
 .select {
   border: 1px solid #B8ACA9;
-  border-radius: 10px;
+  border-radius: 12px;
   margin-top: 10px;
 }
 
@@ -3073,8 +3073,8 @@ select::-ms-expand {
 .select {
   position: relative;
   display: flex;
-  width: 20em;
-  height: 3em;
+  width: 530px;
+  height: 75px;
   line-height: 3;
   background: transparent;
   overflow: hidden;
@@ -3084,7 +3084,7 @@ select::-ms-expand {
 
 select {
   flex: 1;
-  padding: 0 .5em;
+  padding: 0 .5em 0 35px;
   cursor: pointer;
   color: #6A6464;
   transition: all .25s;
@@ -3862,6 +3862,7 @@ select {
 }
 
 .page-single-product__selects label {
+  font-weight: 700;
   color: #6A6464;
   font-size: 20px;
 }
@@ -3880,7 +3881,7 @@ select {
 }
 
 .page-single-product__btn {
-  margin-top: 1.5rem;
+  margin-top: 40px;
 }
 
 .page-single-product__title {
@@ -3899,7 +3900,7 @@ select {
 }
 
 .page-single-product-calc {
-  margin-top: 3rem;
+  margin-top: 80px;
 }
 
 .page-single-product-calc__cost {
@@ -4252,6 +4253,7 @@ select {
   border-radius: 20px;
   left: -25px;
   bottom: -25px;
+  max-height: 450px;
 }
 
 #map-9cd199b9cc5410cd3b1ad21cab2e54d3 {
@@ -4925,7 +4927,11 @@ select {
   }
 
   .products__item:last-child {
-    flex-basis: auto;
+    flex-basis: 55%;
+  }
+
+  .products__img {
+    zoom: 1.3;
   }
 }
 
@@ -4993,12 +4999,6 @@ select {
 
   .bed-review__img-div {
     flex-basis: 40%;
-  }
-
-  .products__img-div {
-    width: 100%;
-    max-width: 50%;
-    margin-right: 50px;
   }
 
   .section-page-last {
@@ -5121,6 +5121,19 @@ select {
   .delivery__item_region::after {
     display: none;
   }
+
+  .contacts {
+    margin-left: -50px;
+  }
+
+  .contacts__item:first-child {
+    justify-content: flex-start;
+  }
+
+  #map-9cd199b9cc5410cd3b1ad21cab2e54d3 {
+    width: 450px;
+    height: 450px;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -5187,9 +5200,23 @@ select {
     margin-left: 0;
   }
 
+  .map-border::before {
+    max-height: 100%;
+  }
+
+  .contacts {
+    margin-left: 0;
+  }
+
+  .contacts__item:first-child {
+    justify-content: center;
+  }
+
   #map-9cd199b9cc5410cd3b1ad21cab2e54d3 {
     width: 100%;
-    height: 400px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .contacts {
