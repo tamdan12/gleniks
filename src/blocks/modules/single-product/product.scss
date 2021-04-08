@@ -49,7 +49,7 @@
     }
 
     &__list {
-        margin-top: 1.5rem;
+        margin-top: 35px;
         font-size: 18px;
 
 
@@ -80,7 +80,7 @@
     }
 
     &__li:not(:first-child) {
-        margin-top: 1rem;
+        margin-top: 30px;
     }
 
     &__name {
@@ -166,3 +166,19 @@
 
 
 
+
+@media(max-width:1240px) {
+    .section-single-product_main {
+        .single-product {
+            flex-direction: column;
+         
+        }
+
+        .single-product-product {
+            max-width: 620px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 40px;
+        }
+    }
+}

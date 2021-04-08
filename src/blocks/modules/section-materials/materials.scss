@@ -102,6 +102,16 @@
     }
 }
 
+@media(max-width:1024px) {
+    .material__text {
+        margin-left: 0;
+        max-width: 95%;
+    }
+    .material__img-div {
+        max-width: 90%;
+    }
+}
+
 @media(max-width:1000px) {
     .materials {
         &__row {

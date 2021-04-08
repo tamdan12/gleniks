@@ -3174,7 +3174,7 @@ select {
 }
 
 .single-product__list {
-  margin-top: 1.5rem;
+  margin-top: 35px;
   font-size: 18px;
 }
 
@@ -3200,7 +3200,7 @@ select {
 }
 
 .review-list__li:not(:first-child) {
-  margin-top: 1rem;
+  margin-top: 30px;
 }
 
 .review-list__name {
@@ -4818,6 +4818,17 @@ select {
     top: -30px;
   }
 
+  .section-single-product_main .single-product {
+    flex-direction: column;
+  }
+
+  .section-single-product_main .single-product-product {
+    max-width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+  }
+
   .partnersForm {
     flex-direction: column;
     border-top: none;
@@ -5027,6 +5038,15 @@ select {
 
   .bed-review__img-div {
     flex-basis: 40%;
+  }
+
+  .material__text {
+    margin-left: 0;
+    max-width: 95%;
+  }
+
+  .material__img-div {
+    max-width: 90%;
   }
 
   .section-page-last {
