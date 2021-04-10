@@ -3147,7 +3147,7 @@ select {
 }
 
 .section-single-product {
-  padding: 3rem 0;
+  padding: 60px 0 100px;
 }
 
 .single-product {
@@ -3157,7 +3157,7 @@ select {
 }
 
 .single-product__item {
-  flex-basis: calc(35% - 50px);
+  flex-basis: calc(45% - 50px);
 }
 
 .single-product__h2 {
@@ -3235,12 +3235,12 @@ select {
 }
 
 .single-product-advantages {
-  max-width: 420px;
+  max-width: 480px;
   display: flex;
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  padding: 1rem 2.5rem;
+  padding: 40px 30px;
   background: #DEDFE9;
   box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.2);
   border-radius: 26px;
@@ -3272,7 +3272,7 @@ select {
   background-color: #FFFFFF;
   box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.2);
   border-radius: 26px;
-  padding: 3rem 3rem;
+  padding: 80px 40px;
 }
 
 .single-product-product::before {
@@ -3284,7 +3284,7 @@ select {
   left: 0;
   border: 1px solid #000C31;
   border-radius: 26px;
-  transform: translate(-20px, 20px);
+  transform: translate(-40px, 40px);
 }
 
 .single-product-product::after {
@@ -3362,6 +3362,7 @@ select {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 15px 0;
 }
 
 .breadCrumbs__title {
@@ -3397,7 +3398,7 @@ select {
 }
 
 .crumbs__item_active {
-  color: #000C31;
+  color: #6A6464;
 }
 
 .section-partnersInfo {
@@ -3422,7 +3423,7 @@ select {
 .partnersInfo__item:first-child::before {
   content: '';
   position: absolute;
-  top: 335px;
+  top: 225px;
   left: 14%;
   background-image: url(../img/svg/partnersInfo.svg);
   width: 640px;
@@ -3459,7 +3460,7 @@ select {
 }
 
 .partnersInfoList__li {
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .partnersInfoList__li:not(:first-child) {
@@ -4307,7 +4308,11 @@ select {
   position: relative;
   z-index: 10;
   display: block;
-  width: 600px;
+}
+
+#map-9cd199b9cc5410cd3b1ad21cab2e54d3 iframe {
+  width: 700px;
+  height: 700px;
 }
 
 .footer {
@@ -4603,7 +4608,7 @@ select {
 }
 
 @media (max-width: 1270px) {
-  #map-9cd199b9cc5410cd3b1ad21cab2e54d3 {
+  #map-9cd199b9cc5410cd3b1ad21cab2e54d3 iframe {
     width: 400px;
     height: 400px;
   }
@@ -6138,7 +6143,7 @@ select {
   }
 
   .container {
-    padding: 0 15px;
+    padding: 0 10px;
   }
 
   .uniq-service__item:last-child {

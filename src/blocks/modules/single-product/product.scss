@@ -1,5 +1,5 @@
 .section-single-product {
-    padding: 3rem 0;
+    padding: 60px 0 100px;
 }
 
 .single-product {
@@ -9,7 +9,7 @@
     align-items: center;
 
     &__item {
-        flex-basis: calc(35% - 50px);
+        flex-basis: calc(45% - 50px);
     }
 
     &__h2 {
@@ -95,12 +95,12 @@
 }
 
 .single-product-advantages {
-    max-width: 420px;
+    max-width: 480px;
     display: flex;
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    padding: 1rem 2.5rem;
+    padding: 40px 30px;
     background: #DEDFE9;
     box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.2);
     border-radius: 26px;
@@ -137,7 +137,7 @@
     background-color: #FFFFFF;
     box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.2);
     border-radius: 26px;
-    padding: 3rem 3rem;
+    padding: 80px 40px;
 
     &::before {
         content: '';
@@ -148,7 +148,7 @@
         left: 0;
         border: 1px solid $main-color;
         border-radius: 26px;
-        transform: translate(-20px, 20px);
+        transform: translate(-40px, 40px);
     }
 
     &::after {

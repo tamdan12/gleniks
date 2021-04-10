@@ -9,6 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 0;
 
     &__title {
         text-transform: uppercase;
@@ -44,7 +45,7 @@
         color: #C6CBCB;
 
         &_active {
-            color: $main-color;
+            color: #6A6464;
         }
     }
 }
@@ -52,7 +53,7 @@
 
 @media(max-width:1024px) {
     .breadCrumbs {
-      
+
 
         &__title {
             font-size: 24px;
