@@ -6,6 +6,29 @@
 }
 
 
+.bed-dot-icon_1 {}
+
+.bed-review__item_2 {
+    .bed-review__icon {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+
+.bed-review__img {
+    max-width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media(max-width:1560px) {
+    .bed-review__img {
+        max-width: 100%;
+    }
+}
+
 .bed-review {
     margin-top: 50px;
     color: #8A8382;
@@ -45,13 +68,11 @@
 
     &__icon {
         flex-shrink: 0;
-        width: 32px;
-        height: 32px;
-        margin-right: 5px;
+        margin-right: 15px;
 
         img {
-            width: 32px;
-            height: 32px;
+            width: 52px;
+            height: 52px;
             border-radius: 50%;
         }
 
@@ -70,7 +91,7 @@
 
     &__img-div {
         position: relative;
-        flex-basis: 40%;
+        flex-basis: 50%;
 
 
         &::before {
@@ -95,8 +116,8 @@
             background-size: contain;
             background-repeat: no-repeat;
             width: 100%;
-            left: 0;
-            right: 0;
+            left: 50%;
+            transform: translateX(-45%);
             height: 15px;
             bottom: -25px;
         }
@@ -119,7 +140,7 @@
 
 
         &_1 {
-            transform: translate(210px, 50px);
+            transform: translate(240px, 70px);
 
 
             &:after {
@@ -169,7 +190,7 @@
         }
 
         &_4 {
-            transform: translateX(140px);
+            transform: translateX(80px);
 
             &:after {
                 content: '';
@@ -185,8 +206,8 @@
         }
 
         &_5 {
-            transform: translateX(100px);
-            margin: 15px 0;
+            transform: translateX(40px);
+            margin: 30px 0 15px;
 
 
             &:after {
@@ -236,7 +257,7 @@
         }
 
         &_8 {
-            transform: translate(-160px, -60px);
+            transform: translate(-70px, -60px);
 
             &:after {
                 content: '';
@@ -252,7 +273,7 @@
         }
 
         &_9 {
-            transform: translate(-160px, -40px);
+            transform: translate(-80px, -40px);
 
             &:after {
                 content: '';
@@ -327,18 +348,18 @@
     }
 
     &_5 {
-        top: 8%;
+        top: 9%;
         right: 17%;
     }
 
     &_6 {
-        top: 19%;
-        right: 9%;
+        top: 20%;
+        right: 12%;
     }
 
     &_7 {
-        bottom: 38%;
-        left: 25%;
+        bottom: 28%;
+        left: 36%;
     }
 
     &_8 {
@@ -352,7 +373,7 @@
     }
 
     &_10 {
-        bottom: 49%;
+        bottom: 47%;
         right: 35%;
     }
 }
@@ -417,74 +438,96 @@
 
 
 @media(max-width:1300px) {
+
     .bed-review {
-        &__item {
-            display: flex;
-            align-items: center;
-            max-width: 220px;
-            flex-basis: 33.333%;
+        &__icon {
+            flex-shrink: 0;
+            margin-right: 15px;
 
-            &_1 {
-                transform: translate(70px, 50px);
-            }
-
-            &_3 {
-                transform: translate(-70px, 50px);
-            }
-
-            &_4 {
-                transform: translateX(70px);
-            }
-
-            &_5 {
-                transform: translateX(50px);
-            }
-
-            &_6 {
-                transform: translateX(80px);
-            }
-
-            &_7 {
-                transform: translateX(140px);
-            }
-
-            &_8 {
-                transform: translate(-60px, -15px);
-            }
-
-            &_9 {
-                transform: translateX(-60px);
-            }
-
-            &_10 {
-                transform: translate(-70px, -35px);
+            img {
+                width: 42px;
+                height: 42px;
+                border-radius: 50%;
             }
         }
+
     }
-}
 
 
+    .bed-review__item {
+        &_3 {
+            transform: translate(-80px, 80px);
+        }
 
-@media(max-width:1240px) {
+        &_4 {
+            transform: translate(10px, -50px);
+        }
 
+        &_8 {
+            transform: translate(0px, -60px);
+        }
+
+        &_9 {
+            transform: translate(-20px, -0px);
+        }
+
+        &_10 {
+            transform: translate(-130px, -5px);
+        }
+    }
 
     .bed-review {
+        font-size: 14px;
 
+        &__img-div {
+            flex-basis: 70%;
 
-        b {
-            font-size: 18px;
         }
 
         &__text {
-            font-size: 14px;
+            max-width: 210px;
+        }
+
+        b {
+            color: $main-color;
+            font-size: 16px;
         }
     }
+
 
 }
 
 
-
 @media(max-width:1024px) {
+
+    .bed-review__img {}
+
+    .bed-review {
+        &__item {
+            &_1 {
+                transform: translate(90px, 70px);
+            }
+
+            &_3 {
+                transform: translate(-40px, 100px);
+            }
+        }
+    }
+
+    .bed-dot_10 {
+        bottom: 55%;
+        right: 35%;
+    }
+
+    .bed-dot_9 {
+        bottom: 63%;
+        right: 25%;
+    }
+}
+
+
+
+@media(max-width:1023px) {
     .bed-review {
         font-size: 12px;
 
@@ -495,9 +538,9 @@
     }
 }
 
-@media(max-width:1000px) {
+@media(max-width:1023px) {
 
-    
+
     .bed-review__item {
         margin-right: auto;
         margin-left: auto;
@@ -508,6 +551,7 @@
         max-width: 600px;
         margin-left: auto;
         margin-right: auto;
+
         &__row {
             display: none;
         }
@@ -527,8 +571,25 @@
 
         &__text {
             margin-top: .5rem;
+            font-size: 16px;
+            b {
+                font-size: 20px;
+                color: #000C31;
+                text-transform: uppercase;
+            }
         }
     }
+
+
+    .bed-review__icon {
+        margin-right: 0;
+        img {
+            width: 52px;
+            height: 52px;
+        }
+    }
+
+
 }
 
 .mob-swiper {
@@ -545,3 +606,4 @@
 }
 
 // new
+

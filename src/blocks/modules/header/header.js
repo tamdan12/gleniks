@@ -144,7 +144,7 @@ var singleProductImg = document.querySelector('.single-product-choice__img');
 var singleProductImgWrap = document.querySelector('.single-product-img-wrap');
 
 var singleProductReplace = function singleProductReplace() {
-    if (window.innerWidth <= 1000) {
+    if (window.innerWidth <= 1023) {
         singleProductTopWrap.insertBefore(singleProductCost, singleProductTopWrap.children[1]);
 
         singleProductCost.insertBefore(singleProductImg, singleProductCost.children[1]);
@@ -159,7 +159,7 @@ var singleProductReplace = function singleProductReplace() {
     }
 };
 
-if (window.innerWidth <= 1000) {
+if (window.innerWidth <= 1023) {
     singleProductReplace();
 }
 

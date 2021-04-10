@@ -275,14 +275,18 @@ if (window.innerWidth <= 768) {
 /***/ (function(module, exports) {
 
 var footerContacts = document.querySelector('.js-replaceFooterContacts');
+var footerMenu = document.querySelector('.footer__nav_pc');
 var footerLogoWrapper = document.querySelector('.footer__logo-wrapper');
+var footerImgLogoWrapper = document.querySelector('.footer__img-logo-wrapper');
 var footerNavWrapper = document.querySelector('.footer__nav-wrapper');
 
 var footerReplace = function footerReplace() {
   if (window.innerWidth <= 1160) {
     footerLogoWrapper.insertBefore(footerContacts, footerLogoWrapper.children[1]);
+    footerImgLogoWrapper.insertBefore(footerMenu, footerImgLogoWrapper.children[1]);
   } else {
     footerNavWrapper.insertBefore(footerContacts, footerNavWrapper.children[2]);
+    footerNavWrapper.insertBefore(footerMenu, footerNavWrapper.children[1]);
   }
 };
 
@@ -441,7 +445,7 @@ var singleProductImg = document.querySelector('.single-product-choice__img');
 var singleProductImgWrap = document.querySelector('.single-product-img-wrap');
 
 var singleProductReplace = function singleProductReplace() {
-  if (window.innerWidth <= 1000) {
+  if (window.innerWidth <= 1023) {
     singleProductTopWrap.insertBefore(singleProductCost, singleProductTopWrap.children[1]);
     singleProductCost.insertBefore(singleProductImg, singleProductCost.children[1]);
     singleProductBottomWrap.insertBefore(singleProductTop, singleProductBottomWrap.children[1]);
@@ -452,7 +456,7 @@ var singleProductReplace = function singleProductReplace() {
   }
 };
 
-if (window.innerWidth <= 1000) {
+if (window.innerWidth <= 1023) {
   singleProductReplace();
 }
 
