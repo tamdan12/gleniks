@@ -258,11 +258,14 @@ mobSwiper.on('slideChange', function () {
   } // document.querySelector('.bed-dot_1').addClass('dot-active')
 
 });
+var bedDot = document.querySelector('.bed-dot_1');
 
-if (window.innerWidth <= 768) {
-  document.querySelector('.bed-dot_1').classList.add('dot-active');
-} else {
-  document.querySelector('.bed-dot_1').classList.remove('dot-active');
+if (bedDot) {
+  if (window.innerWidth <= 768) {
+    document.querySelector('.bed-dot_1').classList.add('dot-active');
+  } else {
+    document.querySelector('.bed-dot_1').classList.remove('dot-active');
+  }
 }
 
 /***/ }),
@@ -427,14 +430,18 @@ if (btnScrollDown) {
 }
 
 window.onload = function TypeText() {
-  new Typed('#typed1', {
-    strings: ['неломких ^2000', 'крепких ^2000', 'премиальных ^2000', 'УНИКАЛЬНЫХ ^2000'],
-    typeSpeed: 60,
-    backSpeed: 40,
-    loop: true,
-    startDelay: 2000,
-    cursorChar: ''
-  });
+  var typedTitle = document.querySelector('#typed1');
+
+  if (typedTitle) {
+    new Typed('#typed1', {
+      strings: ['неломких ^2000', 'крепких ^2000', 'премиальных ^2000', 'УНИКАЛЬНЫХ ^2000'],
+      typeSpeed: 60,
+      backSpeed: 40,
+      loop: true,
+      startDelay: 2000,
+      cursorChar: ''
+    });
+  }
 };
 
 var singleProductCost = document.querySelector('.single-product-replace-bottom');
@@ -616,6 +623,8 @@ var linkChanger2 = document.querySelector('.js-product-change_2');
 var changingImg1 = document.querySelector('.products__img_1');
 var changingImg2 = document.querySelector('.products__img_2');
 
+if (linkChanger1) {}
+
 if (linkChanger1) {
   linkChanger1.addEventListener('click', function () {
     changingImg1.classList.add("products__img_active");
@@ -624,278 +633,277 @@ if (linkChanger1) {
   linkChanger2.addEventListener('click', function () {
     changingImg1.classList.remove("products__img_active");
     changingImg2.classList.add("products__img_active");
-  });
-} // 1
+  }); // 1
 
+  (function () {
+    var item = document.querySelector('.bed-review__item_2');
+    var dot = document.querySelector('.bed-dot_1');
 
-(function () {
-  var item = document.querySelector('.bed-review__item_2');
-  var dot = document.querySelector('.bed-dot_1');
+    function showDot() {
+      dot.classList.add('dot-active');
+    }
 
-  function showDot() {
-    dot.classList.add('dot-active');
-  }
+    function hideDot() {
+      dot.classList.remove('dot-active');
+    }
 
-  function hideDot() {
-    dot.classList.remove('dot-active');
-  }
+    function activeIconDot() {
+      item.classList.add('dot-icon-active');
+    }
 
-  function activeIconDot() {
-    item.classList.add('dot-icon-active');
-  }
+    function deactiveIconDot() {
+      item.classList.remove('dot-icon-active');
+    }
 
-  function deactiveIconDot() {
-    item.classList.remove('dot-icon-active');
-  }
+    item.onmouseover = showDot;
+    item.onmouseleave = hideDot;
+    dot.onmouseover = activeIconDot;
+    dot.onmouseleave = deactiveIconDot;
+  })(); // 2
 
-  item.onmouseover = showDot;
-  item.onmouseleave = hideDot;
-  dot.onmouseover = activeIconDot;
-  dot.onmouseleave = deactiveIconDot;
-})(); // 2
 
+  (function () {
+    var item = document.querySelector('.bed-review__item_6');
+    var dot = document.querySelector('.bed-dot_2');
 
-(function () {
-  var item = document.querySelector('.bed-review__item_6');
-  var dot = document.querySelector('.bed-dot_2');
+    function showDot() {
+      dot.classList.add('dot-active');
+    }
 
-  function showDot() {
-    dot.classList.add('dot-active');
-  }
+    function hideDot() {
+      dot.classList.remove('dot-active');
+    }
 
-  function hideDot() {
-    dot.classList.remove('dot-active');
-  }
+    function activeIconDot() {
+      item.classList.add('dot-icon-active');
+    }
 
-  function activeIconDot() {
-    item.classList.add('dot-icon-active');
-  }
+    function deactiveIconDot() {
+      item.classList.remove('dot-icon-active');
+    }
 
-  function deactiveIconDot() {
-    item.classList.remove('dot-icon-active');
-  }
+    item.onmouseover = showDot;
+    item.onmouseleave = hideDot;
+    dot.onmouseover = activeIconDot;
+    dot.onmouseleave = deactiveIconDot;
+  })(); // 3
 
-  item.onmouseover = showDot;
-  item.onmouseleave = hideDot;
-  dot.onmouseover = activeIconDot;
-  dot.onmouseleave = deactiveIconDot;
-})(); // 3
 
+  (function () {
+    var item = document.querySelector('.bed-review__item_4');
+    var dot = document.querySelector('.bed-dot_3');
 
-(function () {
-  var item = document.querySelector('.bed-review__item_4');
-  var dot = document.querySelector('.bed-dot_3');
+    function showDot() {
+      dot.classList.add('dot-active');
+    }
 
-  function showDot() {
-    dot.classList.add('dot-active');
-  }
+    function hideDot() {
+      dot.classList.remove('dot-active');
+    }
 
-  function hideDot() {
-    dot.classList.remove('dot-active');
-  }
+    function activeIconDot() {
+      item.classList.add('dot-icon-active');
+    }
 
-  function activeIconDot() {
-    item.classList.add('dot-icon-active');
-  }
+    function deactiveIconDot() {
+      item.classList.remove('dot-icon-active');
+    }
 
-  function deactiveIconDot() {
-    item.classList.remove('dot-icon-active');
-  }
+    item.onmouseover = showDot;
+    item.onmouseleave = hideDot;
+    dot.onmouseover = activeIconDot;
+    dot.onmouseleave = deactiveIconDot;
+  })(); // 4
 
-  item.onmouseover = showDot;
-  item.onmouseleave = hideDot;
-  dot.onmouseover = activeIconDot;
-  dot.onmouseleave = deactiveIconDot;
-})(); // 4
 
+  (function () {
+    var item = document.querySelector('.bed-review__item_1');
+    var dot = document.querySelector('.bed-dot_4');
 
-(function () {
-  var item = document.querySelector('.bed-review__item_1');
-  var dot = document.querySelector('.bed-dot_4');
+    function showDot() {
+      dot.classList.add('dot-active');
+    }
 
-  function showDot() {
-    dot.classList.add('dot-active');
-  }
+    function hideDot() {
+      dot.classList.remove('dot-active');
+    }
 
-  function hideDot() {
-    dot.classList.remove('dot-active');
-  }
+    function activeIconDot() {
+      item.classList.add('dot-icon-active');
+    }
 
-  function activeIconDot() {
-    item.classList.add('dot-icon-active');
-  }
+    function deactiveIconDot() {
+      item.classList.remove('dot-icon-active');
+    }
 
-  function deactiveIconDot() {
-    item.classList.remove('dot-icon-active');
-  }
+    item.onmouseover = showDot;
+    item.onmouseleave = hideDot;
+    dot.onmouseover = activeIconDot;
+    dot.onmouseleave = deactiveIconDot;
+  })(); // 5
 
-  item.onmouseover = showDot;
-  item.onmouseleave = hideDot;
-  dot.onmouseover = activeIconDot;
-  dot.onmouseleave = deactiveIconDot;
-})(); // 5
 
+  (function () {
+    var item = document.querySelector('.bed-review__item_8');
+    var dot = document.querySelector('.bed-dot_5');
 
-(function () {
-  var item = document.querySelector('.bed-review__item_8');
-  var dot = document.querySelector('.bed-dot_5');
+    function showDot() {
+      dot.classList.add('dot-active');
+    }
 
-  function showDot() {
-    dot.classList.add('dot-active');
-  }
+    function hideDot() {
+      dot.classList.remove('dot-active');
+    }
 
-  function hideDot() {
-    dot.classList.remove('dot-active');
-  }
+    function activeIconDot() {
+      item.classList.add('dot-icon-active');
+    }
 
-  function activeIconDot() {
-    item.classList.add('dot-icon-active');
-  }
+    function deactiveIconDot() {
+      item.classList.remove('dot-icon-active');
+    }
 
-  function deactiveIconDot() {
-    item.classList.remove('dot-icon-active');
-  }
+    item.onmouseover = showDot;
+    item.onmouseleave = hideDot;
+    dot.onmouseover = activeIconDot;
+    dot.onmouseleave = deactiveIconDot;
+  })(); // 6
 
-  item.onmouseover = showDot;
-  item.onmouseleave = hideDot;
-  dot.onmouseover = activeIconDot;
-  dot.onmouseleave = deactiveIconDot;
-})(); // 6
 
+  (function () {
+    var item = document.querySelector('.bed-review__item_10');
+    var dot = document.querySelector('.bed-dot_6');
 
-(function () {
-  var item = document.querySelector('.bed-review__item_10');
-  var dot = document.querySelector('.bed-dot_6');
+    function showDot() {
+      dot.classList.add('dot-active');
+    }
 
-  function showDot() {
-    dot.classList.add('dot-active');
-  }
+    function hideDot() {
+      dot.classList.remove('dot-active');
+    }
 
-  function hideDot() {
-    dot.classList.remove('dot-active');
-  }
+    function activeIconDot() {
+      item.classList.add('dot-icon-active');
+    }
 
-  function activeIconDot() {
-    item.classList.add('dot-icon-active');
-  }
+    function deactiveIconDot() {
+      item.classList.remove('dot-icon-active');
+    }
 
-  function deactiveIconDot() {
-    item.classList.remove('dot-icon-active');
-  }
+    item.onmouseover = showDot;
+    item.onmouseleave = hideDot;
+    dot.onmouseover = activeIconDot;
+    dot.onmouseleave = deactiveIconDot;
+  })(); // 7
 
-  item.onmouseover = showDot;
-  item.onmouseleave = hideDot;
-  dot.onmouseover = activeIconDot;
-  dot.onmouseleave = deactiveIconDot;
-})(); // 7
 
+  (function () {
+    var item = document.querySelector('.bed-review__item_3');
+    var dot = document.querySelector('.bed-dot_7');
 
-(function () {
-  var item = document.querySelector('.bed-review__item_3');
-  var dot = document.querySelector('.bed-dot_7');
+    function showDot() {
+      dot.classList.add('dot-active');
+    }
 
-  function showDot() {
-    dot.classList.add('dot-active');
-  }
+    function hideDot() {
+      dot.classList.remove('dot-active');
+    }
 
-  function hideDot() {
-    dot.classList.remove('dot-active');
-  }
+    function activeIconDot() {
+      item.classList.add('dot-icon-active');
+    }
 
-  function activeIconDot() {
-    item.classList.add('dot-icon-active');
-  }
+    function deactiveIconDot() {
+      item.classList.remove('dot-icon-active');
+    }
 
-  function deactiveIconDot() {
-    item.classList.remove('dot-icon-active');
-  }
+    item.onmouseover = showDot;
+    item.onmouseleave = hideDot;
+    dot.onmouseover = activeIconDot;
+    dot.onmouseleave = deactiveIconDot;
+  })(); // 8
 
-  item.onmouseover = showDot;
-  item.onmouseleave = hideDot;
-  dot.onmouseover = activeIconDot;
-  dot.onmouseleave = deactiveIconDot;
-})(); // 8
 
+  (function () {
+    var item = document.querySelector('.bed-review__item_5');
+    var dot = document.querySelector('.bed-dot_8');
 
-(function () {
-  var item = document.querySelector('.bed-review__item_5');
-  var dot = document.querySelector('.bed-dot_8');
+    function showDot() {
+      dot.classList.add('dot-active');
+    }
 
-  function showDot() {
-    dot.classList.add('dot-active');
-  }
+    function hideDot() {
+      dot.classList.remove('dot-active');
+    }
 
-  function hideDot() {
-    dot.classList.remove('dot-active');
-  }
+    function activeIconDot() {
+      item.classList.add('dot-icon-active');
+    }
 
-  function activeIconDot() {
-    item.classList.add('dot-icon-active');
-  }
+    function deactiveIconDot() {
+      item.classList.remove('dot-icon-active');
+    }
 
-  function deactiveIconDot() {
-    item.classList.remove('dot-icon-active');
-  }
+    item.onmouseover = showDot;
+    item.onmouseleave = hideDot;
+    dot.onmouseover = activeIconDot;
+    dot.onmouseleave = deactiveIconDot;
+  })(); // 9
 
-  item.onmouseover = showDot;
-  item.onmouseleave = hideDot;
-  dot.onmouseover = activeIconDot;
-  dot.onmouseleave = deactiveIconDot;
-})(); // 9
 
+  (function () {
+    var item = document.querySelector('.bed-review__item_9');
+    var dot = document.querySelector('.bed-dot_9');
 
-(function () {
-  var item = document.querySelector('.bed-review__item_9');
-  var dot = document.querySelector('.bed-dot_9');
+    function showDot() {
+      dot.classList.add('dot-active');
+    }
 
-  function showDot() {
-    dot.classList.add('dot-active');
-  }
+    function hideDot() {
+      dot.classList.remove('dot-active');
+    }
 
-  function hideDot() {
-    dot.classList.remove('dot-active');
-  }
+    function activeIconDot() {
+      item.classList.add('dot-icon-active');
+    }
 
-  function activeIconDot() {
-    item.classList.add('dot-icon-active');
-  }
+    function deactiveIconDot() {
+      item.classList.remove('dot-icon-active');
+    }
 
-  function deactiveIconDot() {
-    item.classList.remove('dot-icon-active');
-  }
+    item.onmouseover = showDot;
+    item.onmouseleave = hideDot;
+    dot.onmouseover = activeIconDot;
+    dot.onmouseleave = deactiveIconDot;
+  })(); // 10
 
-  item.onmouseover = showDot;
-  item.onmouseleave = hideDot;
-  dot.onmouseover = activeIconDot;
-  dot.onmouseleave = deactiveIconDot;
-})(); // 10
 
+  (function () {
+    var item = document.querySelector('.bed-review__item_7');
+    var dot = document.querySelector('.bed-dot_10');
 
-(function () {
-  var item = document.querySelector('.bed-review__item_7');
-  var dot = document.querySelector('.bed-dot_10');
+    function showDot() {
+      dot.classList.add('dot-active');
+    }
 
-  function showDot() {
-    dot.classList.add('dot-active');
-  }
+    function hideDot() {
+      dot.classList.remove('dot-active');
+    }
 
-  function hideDot() {
-    dot.classList.remove('dot-active');
-  }
+    function activeIconDot() {
+      item.classList.add('dot-icon-active');
+    }
 
-  function activeIconDot() {
-    item.classList.add('dot-icon-active');
-  }
+    function deactiveIconDot() {
+      item.classList.remove('dot-icon-active');
+    }
 
-  function deactiveIconDot() {
-    item.classList.remove('dot-icon-active');
-  }
-
-  item.onmouseover = showDot;
-  item.onmouseleave = hideDot;
-  dot.onmouseover = activeIconDot;
-  dot.onmouseleave = deactiveIconDot;
-})();
+    item.onmouseover = showDot;
+    item.onmouseleave = hideDot;
+    dot.onmouseover = activeIconDot;
+    dot.onmouseleave = deactiveIconDot;
+  })();
+}
 
 /***/ }),
 

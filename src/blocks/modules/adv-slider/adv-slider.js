@@ -102,9 +102,14 @@ mobSwiper.on('slideChange', function () {
 
 
 
-if (window.innerWidth <= 768) {
-    document.querySelector('.bed-dot_1').classList.add('dot-active')
+let bedDot = document.querySelector('.bed-dot_1')
 
-} else {
-    document.querySelector('.bed-dot_1').classList.remove('dot-active')
+if (bedDot) {
+
+    if (window.innerWidth <= 768) {
+        document.querySelector('.bed-dot_1').classList.add('dot-active')
+
+    } else {
+        document.querySelector('.bed-dot_1').classList.remove('dot-active')
+    }
 }

@@ -25,6 +25,11 @@ const changingImg1 = document.querySelector('.products__img_1')
 const changingImg2 = document.querySelector('.products__img_2')
 
 
+if(linkChanger1) {
+
+}
+
+
 if (linkChanger1) {
 
     linkChanger1.addEventListener('click', function () {
@@ -35,7 +40,8 @@ if (linkChanger1) {
         changingImg1.classList.remove("products__img_active")
         changingImg2.classList.add("products__img_active")
     });
-}
+
+
 
 
 // 1
@@ -43,6 +49,7 @@ if (linkChanger1) {
 
     let item = document.querySelector('.bed-review__item_2');
     let dot = document.querySelector('.bed-dot_1');
+
 
     function showDot() {
         dot.classList.add('dot-active')
@@ -319,6 +326,12 @@ if (linkChanger1) {
     dot.onmouseleave = deactiveIconDot;
 
 })();
+
+
+
+}
+
+
 
 
 

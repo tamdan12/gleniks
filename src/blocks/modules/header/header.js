@@ -123,14 +123,20 @@ if (btnScrollDown) {
 
 window.onload = function TypeText() {
 
-    new Typed('#typed1', {
-        strings: ['неломких ^2000', 'крепких ^2000', 'премиальных ^2000', 'УНИКАЛЬНЫХ ^2000'],
-        typeSpeed: 60,
-        backSpeed: 40,
-        loop: true,
-        startDelay: 2000,
-        cursorChar: ''
-    });
+    let typedTitle = document.querySelector('#typed1')
+
+    if (typedTitle) {
+        new Typed('#typed1', {
+            strings: ['неломких ^2000', 'крепких ^2000', 'премиальных ^2000', 'УНИКАЛЬНЫХ ^2000'],
+            typeSpeed: 60,
+            backSpeed: 40,
+            loop: true,
+            startDelay: 2000,
+            cursorChar: ''
+        });
+    }
+
+
 }
 
 
