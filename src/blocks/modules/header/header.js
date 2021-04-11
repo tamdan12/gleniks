@@ -143,24 +143,27 @@ var singleProductBottomWrap = document.querySelector('.single-product-replace-bo
 var singleProductImg = document.querySelector('.single-product-choice__img');
 var singleProductImgWrap = document.querySelector('.single-product-img-wrap');
 
-var singleProductReplace = function singleProductReplace() {
+if (singleProductCost) {
+    var singleProductReplace = function singleProductReplace() {
+        if (window.innerWidth <= 1023) {
+            singleProductTopWrap.insertBefore(singleProductCost, singleProductTopWrap.children[1]);
+
+            singleProductCost.insertBefore(singleProductImg, singleProductCost.children[1]);
+
+            singleProductBottomWrap.insertBefore(singleProductTop, singleProductBottomWrap.children[1]);
+
+        } else {
+            singleProductBottomWrap.insertBefore(singleProductCost, singleProductBottomWrap.children[1]);
+            singleProductImgWrap.insertBefore(singleProductImg, singleProductImgWrap.children[1]);
+
+            singleProductTopWrap.insertBefore(singleProductTop, singleProductTopWrap.children[1]);
+        }
+    };
+
     if (window.innerWidth <= 1023) {
-        singleProductTopWrap.insertBefore(singleProductCost, singleProductTopWrap.children[1]);
-
-        singleProductCost.insertBefore(singleProductImg, singleProductCost.children[1]);
-
-        singleProductBottomWrap.insertBefore(singleProductTop, singleProductBottomWrap.children[1]);
-
-    } else {
-        singleProductBottomWrap.insertBefore(singleProductCost, singleProductBottomWrap.children[1]);
-        singleProductImgWrap.insertBefore(singleProductImg, singleProductImgWrap.children[1]);
-
-        singleProductTopWrap.insertBefore(singleProductTop, singleProductTopWrap.children[1]);
+        singleProductReplace();
     }
-};
 
-if (window.innerWidth <= 1023) {
-    singleProductReplace();
+    window.addEventListener('resize', singleProductReplace);
 }
 
-window.addEventListener('resize', singleProductReplace);
