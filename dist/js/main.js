@@ -616,6 +616,7 @@ if (newLi) {
   };
 
   window.addEventListener('resize', thumbBtnReplace);
+  thumbBtnReplace();
 }
 
 var linkChanger1 = document.querySelector('.js-product-change_1');
@@ -629,10 +630,14 @@ if (linkChanger1) {
   linkChanger1.addEventListener('click', function () {
     changingImg1.classList.add("products__img_active");
     changingImg2.classList.remove("products__img_active");
+    linkChanger1.classList.add('thumb-btn__img_active');
+    linkChanger2.classList.remove('thumb-btn__img_active');
   });
   linkChanger2.addEventListener('click', function () {
     changingImg1.classList.remove("products__img_active");
     changingImg2.classList.add("products__img_active");
+    linkChanger2.classList.add('thumb-btn__img_active');
+    linkChanger1.classList.remove('thumb-btn__img_active');
   }); // 1
 
   (function () {

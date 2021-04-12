@@ -171,6 +171,10 @@
         align-items: center;
     }
 
+    .uniq-service__item:first-child {
+        padding-right: 0;
+    }
+
     .uniq-service__h3 {
         width: auto;
         text-align: center;
@@ -242,7 +246,7 @@
         font-family: Montserrat;
         font-style: normal;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 22px;
         line-height: 29px;
         text-align: center;
         text-transform: uppercase;

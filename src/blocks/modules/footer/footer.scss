@@ -257,6 +257,18 @@
 
     .footer .header-callback {
         margin-top: 40px;
+        max-height: 50px;
+
+    }
+
+    .header-callback_footer a:first-child {
+        font-size: 18px;
+        margin-top: -5px;
+    }
+
+    .header-callback a:last-child {
+        font-size: 14px;
+        margin-top: -5px;
     }
 
     .footer__contacts {

@@ -405,18 +405,8 @@
                 <form class="callback-form" action="POST">
                     <label class="callback-form__label" for="tel">Ваш номер телефона</label> <br>
                     <input class="callback-form__input" type="tel" name="tel" placeholder="+7 (000) 000-00-00"
-                        pattern="[+]{1}[0-9]{11,14}">
-                    <!-- time-choise -->
-                    <div class="callback-form__time-choise callback_time_choise">
-                        <input class="callback_time_choise__input" type="radio" id="now" name="time-choise"
-                            value="Сейчас" checked>
-                        <label class="callback_time_choise__label" for="now">Сейчас</label>
-                        <input class="callback_time_choise__input" type="radio" id="later" name="time-choise"
-                            value="Точное время">
-                        <label class="callback_time_choise__label callback_time_choise__label_margin-left" for="later">Точное время</label>
-
-                    </div>
-                    <!-- time-choise -->
+                        pattern="[+]{1}[0-9]{11,14}" required>
+                  
                     <div class="callback-form__btn">
                         <button class="btn btn-calc">
                             жду звонка

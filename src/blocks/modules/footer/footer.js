@@ -32,3 +32,6 @@ if (window.innerWidth <= 1160) {
 window.addEventListener('resize', footerReplace);
 
 
+
+
+

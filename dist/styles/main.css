@@ -1549,7 +1549,7 @@ body {
 }
 
 .callback-form__btn {
-  margin-top: 1rem;
+  margin-top: 30px;
 }
 
 .callback_time_choise {
@@ -1816,7 +1816,7 @@ body {
   text-transform: uppercase;
   color: #000C31;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   background-color: #fff;
   box-shadow: 0px -1px 35px rgba(255, 255, 255, 0.5), 0px 15px 25px rgba(12, 12, 26, 0.12);
   cursor: pointer;
@@ -1835,7 +1835,7 @@ body {
   text-transform: uppercase;
   color: #000C31;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 16px;
   box-shadow: 0px -1px 35px rgba(255, 255, 255, 0.5), 0px 15px 25px rgba(12, 12, 26, 0.12);
   background-color: #000C31;
   color: #fff;
@@ -2620,6 +2620,18 @@ body {
   margin-right: 60px;
 }
 
+.js-product-change {
+  opacity: .5;
+}
+
+.js-product-change_1.thumb-btn__img_active {
+  opacity: 1;
+}
+
+.js-product-change_2.thumb-btn__img_active {
+  opacity: 1;
+}
+
 .products-descr__text {
   max-width: 440px;
 }
@@ -3247,7 +3259,7 @@ select {
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
-  padding: 40px 30px;
+  padding: 30px 15px;
   background: #DEDFE9;
   box-shadow: 0px 12px 35px rgba(0, 0, 0, 0.2);
   border-radius: 26px;
@@ -3352,6 +3364,14 @@ select {
 .page-last__descr {
   display: block;
   margin-top: .75rem;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #6A6464;
 }
 
 .page-last__btn {
@@ -5570,6 +5590,17 @@ select {
 
   .footer .header-callback {
     margin-top: 40px;
+    max-height: 50px;
+  }
+
+  .header-callback_footer a:first-child {
+    font-size: 18px;
+    margin-top: -5px;
+  }
+
+  .header-callback a:last-child {
+    font-size: 14px;
+    margin-top: -5px;
   }
 
   .footer__contacts {
@@ -5751,6 +5782,10 @@ select {
     align-items: center;
   }
 
+  .uniq-service__item:first-child {
+    padding-right: 0;
+  }
+
   .uniq-service__h3 {
     width: auto;
     text-align: center;
@@ -5829,8 +5864,14 @@ select {
 
   .page-last__h2 {
     position: relative;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
     text-transform: uppercase;
-    font-size: 24px;
+    color: #000C31;
   }
 
   .page-last__h2::before {
@@ -5848,6 +5889,17 @@ select {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 50%;
+  }
+
+  .page-last__descr {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #6A6464;
   }
 
   .partnersSliderContent {
@@ -6107,7 +6159,7 @@ select {
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 29px;
     text-align: center;
     text-transform: uppercase;
@@ -6164,6 +6216,13 @@ select {
 
   .calc__title-text_partnersForm {
     font-size: 24px;
+  }
+
+  .page-last__h2::after {
+    top: -90px;
+    right: -95px;
+    width: 190px;
+    height: 190px;
   }
 
   .breadCrumbs__btn {
@@ -6296,10 +6355,6 @@ select {
 
   .uniq-service__item:last-child {
     padding-left: 0;
-  }
-
-  .page-last__h2 {
-    font-size: 18px;
   }
 
   .catalog__title {
