@@ -16,7 +16,7 @@
     &__row {
         width: 100%;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
     }
 
@@ -28,7 +28,6 @@
     &__logo-nav {
         width: 100%;
         display: flex;
-        align-items: center;
     }
 
     &__nav-wrapper {

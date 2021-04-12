@@ -81,11 +81,15 @@
     &__title {
         font-size: 24px;
         display: flex;
+        align-items: center;
         color: #6A6464;
     }
 
     &__title-icon {
         margin-right: 0.5rem;
+        width: 14px;
+        height: 14px;
+        object-fit: cover;
     }
 
     &__list {
@@ -99,6 +103,8 @@
     &__tere {
         color: $main-color;
     }
+
+    
 }
 
 @media(max-width:1024px) {

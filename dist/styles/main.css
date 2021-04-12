@@ -2078,6 +2078,11 @@ body {
   font-size: 14px;
 }
 
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 24px !important;
+}
+
 .section-bed-info {
   margin-top: 100px;
   padding-bottom: 5rem;
@@ -2722,11 +2727,15 @@ body {
 .material__title {
   font-size: 24px;
   display: flex;
+  align-items: center;
   color: #6A6464;
 }
 
 .material__title-icon {
   margin-right: 0.5rem;
+  width: 14px;
+  height: 14px;
+  object-fit: cover;
 }
 
 .material__list {
@@ -3848,6 +3857,10 @@ select {
   font-size: 18px;
 }
 
+.single-product-choice__descr span {
+  font-weight: 700;
+}
+
 .single-product__calc label {
   font-family: Roboto;
   font-style: normal;
@@ -4361,7 +4374,7 @@ select {
 .footer__row {
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
@@ -4373,7 +4386,6 @@ select {
 .footer__logo-nav {
   width: 100%;
   display: flex;
-  align-items: center;
 }
 
 .footer__nav-wrapper {
@@ -5156,7 +5168,7 @@ select {
     content: '';
     position: absolute;
     top: -147px;
-    left: -149px;
+    left: -142px;
     width: 300px;
     height: 100%;
     background-size: contain;
@@ -6076,6 +6088,10 @@ select {
     display: none;
   }
 
+  .page1__descr {
+    font-size: 13px;
+  }
+
   .bed-review__img {
     max-width: 95%;
   }
@@ -6232,8 +6248,9 @@ select {
   }
 
   .slide__text {
-    padding-left: 35px;
-    padding-right: 35px;
+    max-width: 227px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .mob-swiper {

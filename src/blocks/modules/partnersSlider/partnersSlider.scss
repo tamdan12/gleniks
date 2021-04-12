@@ -156,8 +156,9 @@
 @media(max-width:550px) {
 
     .slide__text {
-        padding-left: 35px;
-        padding-right: 35px;
+        max-width: 227px;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .mob-swiper {
