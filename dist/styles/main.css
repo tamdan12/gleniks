@@ -2558,8 +2558,13 @@ body {
   margin-left: 60px;
 }
 
+.products__title {
+  transform: translateX(100px);
+}
+
 .products-descr {
   margin-top: 30px;
+  transform: translateX(100px);
 }
 
 .products-descr__title {
@@ -5070,6 +5075,16 @@ select {
   }
 }
 
+@media (max-width: 1100px) {
+  .products__title {
+    transform: translateX(80px);
+  }
+
+  .products-descr {
+    transform: translateX(80px);
+  }
+}
+
 @media (max-width: 1050px) {
   .page1-h1__title::before {
     display: block;
@@ -5434,6 +5449,14 @@ select {
   .bed-review__icon img {
     width: 52px;
     height: 52px;
+  }
+
+  .products__title {
+    transform: translateX(0);
+  }
+
+  .products-descr {
+    transform: translateX(0);
   }
 
   .catalog__row {
