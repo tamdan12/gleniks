@@ -6115,6 +6115,9 @@ select {
 
   .page1__descr {
     font-size: 13px;
+    margin-left: 5px;
+    padding-left: 5px;
+    margin-bottom: 20px;
   }
 
   .bed-review__img {
